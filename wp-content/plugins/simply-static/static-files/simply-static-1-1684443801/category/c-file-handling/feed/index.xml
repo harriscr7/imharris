@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>C++ File Handling &#8211; imharris</title>
+	<atom:link href="https://harriscr7.github.io/imharris/category/c-file-handling/feed/" rel="self" type="application/rss+xml" />
+	<link>https://harriscr7.github.io/imharris</link>
+	<description></description>
+	<lastBuildDate>Thu, 18 May 2023 20:07:02 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.2</generator>
+
+<image>
+	<url>https://harriscr7.github.io/imharris/wp-content/uploads/2023/05/image_2023-05-14_210105897.png</url>
+	<title>C++ File Handling &#8211; imharris</title>
+	<link>https://harriscr7.github.io/imharris</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Using Open Function()</title>
+		<link>https://harriscr7.github.io/imharris/using-open-function/</link>
+					<comments>https://harriscr7.github.io/imharris/using-open-function/#respond</comments>
+		
+		<dc:creator><![CDATA[harrixxaeed]]></dc:creator>
+		<pubDate>Thu, 18 May 2023 19:51:45 +0000</pubDate>
+				<category><![CDATA[C++ Content]]></category>
+		<category><![CDATA[C++ File Handling]]></category>
+		<category><![CDATA[Uncategorized]]></category>
+		<guid isPermaLink="false">https://harriscr7.github.io/imharris/?p=294</guid>
+
+					<description><![CDATA[Using fstream class: To read and write data using fstream in C++, you can follow these steps: include &#60;fstream> fstream file; file.open("filename.txt", ios::in &#124; ios::out); You can also use different variable name, like &#8220;fstream myfile;&#8221; but than you have to replace variable name everywhere. For example &#8220;myfile.open("filename.txt", ios::in &#124; ios::out);" To only read data you [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<p><strong>Using fstream class:</strong></p>
+
+
+
+<p>To read and write data using <code>fstream</code> in C++, you can follow these steps:</p>
+
+
+
+<ol>
+<li>Include the necessary header file:</li>
+</ol>
+
+
+
+<pre class="wp-block-preformatted"><code>include &lt;fstream>
+</code></pre>
+
+
+
+<ol start="2">
+<li>Create an instance of <code>fstream</code> and open a file:</li>
+</ol>
+
+
+
+<pre class="wp-block-preformatted"><code>fstream file;
+file.open("filename.txt", ios::in | ios::out);
+</code></pre>
+
+
+
+<p>You can also use different variable name, like &#8220;fstream myfile;&#8221; but than you have to replace variable name everywhere. </p>
+
+
+
+<p>For example &#8220;my<code>file.open("filename.txt", ios::in | ios::out);"</code></p>
+
+
+
+<p>To only read data you can only write &#8220;my<code>file.open("filename.txt", ios::in);"</code></p>
+
+
+
+<p>To only write you can only write &#8220;my<code>file.open("filename.txt", ios::out);"</code></p>
+
+
+
+<p>To do both what you can do is write &#8220;my<code>file.open("filename.txt", ios::in <code>| ios::out</code>);"</code></p>
+
+
+
+<figure class="wp-block-table"><table><tbody><tr><td><code>ios::in</code></td><td>Open for input operations.</td></tr><tr><td><code>ios::out</code></td><td>Open for output operations.</td></tr><tr><td><code>ios::binary</code></td><td>Open in binary mode.</td></tr><tr><td><code>ios::ate</code></td><td>Set the initial position at the end of the file.<br>If this flag is not set, the initial position is the beginning of the file.</td></tr><tr><td><code>ios::app</code></td><td>All output operations are performed at the end of the file, appending the content to the current content of the file.</td></tr><tr><td><code>ios::trunc</code></td><td>If the file is opened for output operations and it already existed, its previous content is deleted and replaced by the new one.</td></tr></tbody></table></figure>
+
+
+
+<p>Replace <code>"filename.txt"</code> with the actual name and path of the file you want to read and write.</p>
+
+
+
+<ol start="3">
+<li>Check if the file was opened successfully:</li>
+</ol>
+
+
+
+<pre class="wp-block-preformatted"><code>if (file.is_open()) {
+    // Perform read and write operations
+} else {
+    // File opening failed, handle the error
+}
+</code></pre>
+
+
+
+<ol start="4">
+<li>Read data from the file:</li>
+</ol>
+
+
+
+<pre class="wp-block-preformatted"><code>// Assuming the file contains text data
+string line;
+while (getline(file, line)) {
+    // Process each line of data
+    // Example: print the line
+    cout &lt;&lt; line &lt;&lt; endl;
+}
+</code></pre>
+
+
+
+<ol start="5">
+<li>Write data to the file:</li>
+</ol>
+
+
+
+<pre class="wp-block-preformatted"><code>file &lt;&lt; "Hello, World!" &lt;&lt; std::endl;
+</code></pre>
+
+
+
+<p>This will write the specified text to the file.</p>
+
+
+
+<ol start="6">
+<li>Close the file when you are done:</li>
+</ol>
+
+
+
+<pre class="wp-block-preformatted"><code>file.close();
+</code></pre>
+
+
+
+<p>It&#8217;s important to close the file to release system resources and ensure data integrity.</p>
+
+
+
+<p>Here&#8217;s a complete example that demonstrates reading and writing data using <code>std::fstream</code>:</p>
+
+
+
+<pre class="wp-block-preformatted"><code>#include &lt;iostream>
+#include &lt;fstream>
+#include &lt;string>
+using namespace std;</code>
+<code>
+int main() {
+    fstream file;
+    file.open("data.txt", ios::in | ios::out);
+
+    if (file.is_open()) {
+        string line;
+        while (getline(file, line)) {
+            cout &lt;&lt; line &lt;&lt; endl;
+        }
+
+        file &lt;&lt; "Hello, World!" &lt;&lt; endl;
+
+        file.close();
+    } else {
+        cout &lt;&lt; "Failed to open the file." &lt;&lt; endl;
+    }
+
+    return 0;
+}
+</code></pre>
+
+
+
+<p>Remember to replace <code>"data.txt"</code> with the actual filename and path you want to read and write.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://harriscr7.github.io/imharris/using-open-function/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Using Constructos</title>
+		<link>https://harriscr7.github.io/imharris/using-constructos/</link>
+					<comments>https://harriscr7.github.io/imharris/using-constructos/#respond</comments>
+		
+		<dc:creator><![CDATA[harrixxaeed]]></dc:creator>
+		<pubDate>Thu, 18 May 2023 19:14:44 +0000</pubDate>
+				<category><![CDATA[C++ Content]]></category>
+		<category><![CDATA[C++ File Handling]]></category>
+		<category><![CDATA[Uncategorized]]></category>
+		<guid isPermaLink="false">https://harriscr7.github.io/imharris/?p=284</guid>
+
+					<description><![CDATA[IfStream Class: ifstream is a class in C++ that stands for &#8220;input file stream.&#8221; It is used for reading data from files. To use ifstream, you need to include the &#60;fstream&#62; header file in your C++ program. Here&#8217;s a simple example that demonstrates how to use ifstream: #include &#60;fstream> #include &#60;iostream> using namespace std; int [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<p><strong>IfStream Class:</strong></p>
+
+
+
+<p><code>ifstream</code> is a class in C++ that stands for &#8220;input file stream.&#8221; It is used for reading data from files.</p>
+
+
+
+<p>To use <code>ifstream</code>, you need to include the <code>&lt;fstream&gt;</code> header file in your C++ program. Here&#8217;s a simple example that demonstrates how to use <code>ifstream</code>:</p>
+
+
+
+<pre class="wp-block-preformatted"><code>#include &lt;fstream>
+#include &lt;iostream>
+using namespace std;
+int main() {
+    ifstream inputFile("example.txt");  // Open the file "example.txt" for reading
+
+    if (inputFile.is_open()) {  // Check if the file was successfully opened
+        string line;
+        while (getline(inputFile, line)) {  // Read each line from the file
+            cout &lt;&lt; line &lt;&lt; endl;  // Output the line to the console
+        }
+
+        inputFile.close();  // Close the file
+    } else {
+        cout &lt;&lt; "Unable to open the file." &lt;&lt; endl;
+    }
+
+    return 0;
+}
+</code></pre>
+
+
+
+<p>In this example, we create an <code>ifstream</code> object named <code>inputFile</code> and open the file &#8220;example.txt&#8221; for reading. We then check if the file was successfully opened using the <code>is_open()</code> function. If the file is open, we use a <code>while</code> loop to read each line from the file using <code>std::getline()</code>, and then output each line to the console using <code>std::cout</code>. Finally, we close the file using the <code>close()</code> function.</p>
+
+
+
+<p>If the file cannot be opened, an error message is displayed. Remember to provide the correct file path and ensure that the file exists in the specified location.</p>
+
+
+
+<p><strong>OfStream Class:</strong></p>
+
+
+
+<p><code>ofstream</code> is a class in C++ that stands for &#8220;output file stream.&#8221; It is used for writing data to files.</p>
+
+
+
+<p>To use <code>ofstream</code>, you need to include the <code>&lt;fstream&gt;</code> header file in your C++ program. Here&#8217;s a simple example that demonstrates how to use <code>ofstream</code>:</p>
+
+
+
+<pre class="wp-block-preformatted"><code>#include &lt;fstream>
+#include &lt;iostream>
+using namespace std;
+int main() {
+    ofstream outputFile("example.txt");  // Open/create the file "example.txt" for writing
+
+    if (outputFile.is_open()) {  // Check if the file was successfully opened/created
+        outputFile &lt;&lt; "Hello, world!" &lt;&lt; endl;  // Write a string to the file
+        outputFile.close();  // Close the file
+    } else {
+        cout &lt;&lt; "Unable to open/create the file." &lt;&lt; endl;
+    }
+
+    return 0;
+}
+</code></pre>
+
+
+
+<p>In this example, we create an <code>ofstream</code> object named <code>outputFile</code> and open/create the file &#8220;example.txt&#8221; for writing. We then check if the file was successfully opened/created using the <code>is_open()</code> function. If the file is open, we can write data to it using the <code>&lt;&lt;</code> operator, just like we would with <code>std::cout</code>. In this case, we write the string &#8220;Hello, world!&#8221; to the file. Finally, we close the file using the <code>close()</code> function.</p>
+
+
+
+<p>If the file cannot be opened/created, an error message is displayed. Remember to provide the correct file path and ensure that you have write permissions to the specified location.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://harriscr7.github.io/imharris/using-constructos/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>
