@@ -12,7 +12,7 @@
 	<atom:link href="https://harriscr7.github.io/imharris/category/c-functions/feed/" rel="self" type="application/rss+xml" />
 	<link>https://harriscr7.github.io/imharris</link>
 	<description></description>
-	<lastBuildDate>Wed, 17 May 2023 18:19:03 +0000</lastBuildDate>
+	<lastBuildDate>Thu, 18 May 2023 21:26:51 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -38,13 +38,13 @@
 		<category><![CDATA[C++ Functions]]></category>
 		<guid isPermaLink="false">https://harriscr7.github.io/imharris/?p=215</guid>
 
-					<description><![CDATA[In this tutorial, we will learn about recursive function in C++ and its working with the help of examples. A&#160;function&#160;that calls itself is known as a recursive function. And, this technique is known as recursion. Working of Recursion in C++ The figure below shows how recursion works by calling itself over and over again. The [&#8230;]]]></description>
+					<description><![CDATA[In this tutorial, we will learn about recursive function in C++ and its working with the help of examples. A function that calls itself is known as a recursive function. And, this technique is known as recursion. Working of Recursion in C++ The figure below shows how recursion works by calling itself over and over again. The [&#8230;]]]></description>
 										<content:encoded><![CDATA[
 <p>In this tutorial, we will learn about recursive function in C++ and its working with the help of examples.</p>
 
 
 
-<p id="introduction">A&nbsp;<a href="https://www.programiz.com/cpp-programming/function">function</a>&nbsp;that calls itself is known as a recursive function. And, this technique is known as recursion.</p>
+<p id="introduction">A function that calls itself is known as a recursive function. And, this technique is known as recursion.</p>
 
 
 
@@ -84,7 +84,7 @@ int main()
 
 
 
-<p>To prevent infinite recursion,&nbsp;<a href="https://www.programiz.com/cpp-programming/if-else">if&#8230;else statement</a>&nbsp;(or similar approach) can be used where one branch makes the recursive call and the other doesn&#8217;t.</p>
+<p>To prevent infinite recursion, if&#8230;else statement (or similar approach) can be used where one branch makes the recursive call and the other doesn&#8217;t.</p>
 
 
 
@@ -210,7 +210,7 @@ Factorial of 4 = 24</samp></pre>
 		
 			</item>
 		<item>
-		<title>C++ Programming Default Arguments (Parameters)</title>
+		<title>C++ Default Arguments (Parameters)</title>
 		<link>https://harriscr7.github.io/imharris/c-programming-default-arguments-parameters/</link>
 					<comments>https://harriscr7.github.io/imharris/c-programming-default-arguments-parameters/#respond</comments>
 		
@@ -220,13 +220,13 @@ Factorial of 4 = 24</samp></pre>
 		<category><![CDATA[C++ Functions]]></category>
 		<guid isPermaLink="false">https://harriscr7.github.io/imharris/?p=211</guid>
 
-					<description><![CDATA[In this tutorial, we will learn C++ default arguments and their working with the help of examples. In C++ programming, we can provide default values for&#160;function&#160;parameters. If a function with default arguments is called without passing arguments, then the default parameters are used. However, if arguments are passed while calling the function, the default arguments [&#8230;]]]></description>
+					<description><![CDATA[In this tutorial, we will learn C++ default arguments and their working with the help of examples. In C++ programming, we can provide default values for function parameters. If a function with default arguments is called without passing arguments, then the default parameters are used. However, if arguments are passed while calling the function, the default arguments [&#8230;]]]></description>
 										<content:encoded><![CDATA[
 <p>In this tutorial, we will learn C++ default arguments and their working with the help of examples.</p>
 
 
 
-<p id="introduction">In C++ programming, we can provide default values for&nbsp;<a href="https://www.programiz.com/cpp-programming/function">function</a>&nbsp;parameters.</p>
+<p id="introduction">In C++ programming, we can provide default values for function parameters.</p>
 
 
 
@@ -625,19 +625,19 @@ Integer number: 5 and double number: 5.5</samp></pre>
 
 
 <ul>
-<li><a href="https://www.programiz.com/cpp-programming/user-defined-function-types#no_argument_no_return">Function with no argument&nbsp;and no return value</a></li>
+<li>Function with no argument and no return value</li>
 
 
 
-<li><a href="https://www.programiz.com/cpp-programming/user-defined-function-types#no_argument_yes_return">Function with no argument but return value</a></li>
+<li>Function with no argument but return value</li>
 
 
 
-<li><a href="https://www.programiz.com/cpp-programming/user-defined-function-types#yes_argument_no_return">Function with argument but no return value</a></li>
+<li>Function with argument but no return value</li>
 
 
 
-<li><a href="https://www.programiz.com/cpp-programming/user-defined-function-types#yes_argument_yes_return">Function with argument and return value</a></li>
+<li>Function with argument and return value</li>
 </ul>
 
 
@@ -1541,7 +1541,7 @@ int main() {
 
 
 
-<p>To learn more, visit&nbsp;<a href="https://www.programiz.com/cpp-programming/library-function">C++ Standard Library functions</a>.</p>
+<p>To learn more, visit C++ Standard Library functions.</p>
 ]]></content:encoded>
 					
 					<wfw:commentRss>https://harriscr7.github.io/imharris/c-functions/feed/</wfw:commentRss>

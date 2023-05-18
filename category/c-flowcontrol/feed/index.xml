@@ -12,7 +12,7 @@
 	<atom:link href="https://harriscr7.github.io/imharris/category/c-flowcontrol/feed/" rel="self" type="application/rss+xml" />
 	<link>https://harriscr7.github.io/imharris</link>
 	<description></description>
-	<lastBuildDate>Wed, 17 May 2023 18:19:07 +0000</lastBuildDate>
+	<lastBuildDate>Thu, 18 May 2023 21:27:09 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -38,13 +38,13 @@
 		<category><![CDATA[C++ FlowControl]]></category>
 		<guid isPermaLink="false">https://harriscr7.github.io/imharris/?p=217</guid>
 
-					<description><![CDATA[In this article, you&#8217;ll learn how to return a value by reference in a function and use it efficiently in your program. In C++ Programming, not only can you pass values by reference to a&#160;function&#160;but you can also return a value by reference. To understand this feature, you should have the knowledge of: Example: Return [&#8230;]]]></description>
+					<description><![CDATA[In this article, you&#8217;ll learn how to return a value by reference in a function and use it efficiently in your program. In C++ Programming, not only can you pass values by reference to a function but you can also return a value by reference. To understand this feature, you should have the knowledge of: Example: Return [&#8230;]]]></description>
 										<content:encoded><![CDATA[
 <p>In this article, you&#8217;ll learn how to return a value by reference in a function and use it efficiently in your program.</p>
 
 
 
-<p>In C++ Programming, not only can you pass values by reference to a&nbsp;<a href="https://www.programiz.com/cpp-programming/function">function</a>&nbsp;but you can also return a value by reference.</p>
+<p>In C++ Programming, not only can you pass values by reference to a function but you can also return a value by reference.</p>
 
 
 
@@ -53,7 +53,7 @@
 
 
 <ul>
-<li><a href="https://www.programiz.com/cpp-programming/storage-class#global_variable">Global variables</a></li>
+<li>Global variables</li>
 </ul>
 
 
@@ -174,15 +174,15 @@ int&amp; test() {
 
 
 <ul>
-<li><a href="https://www.programiz.com/cpp-programming/for-loop">C++ for loop</a></li>
+<li>C++ for loop</li>
 
 
 
-<li><a href="https://www.programiz.com/cpp-programming/for-loop">C++ if&#8230;else</a></li>
+<li>C++ if&#8230;else</li>
 
 
 
-<li><a href="https://www.programiz.com/cpp-programming/do-while-loop">C++ while loop</a></li>
+<li>C++ while loop</li>
 </ul>
 
 
@@ -442,7 +442,7 @@ i = 3, j = 3</samp></pre>
 
 
 
-<p><strong>Note</strong>: The&nbsp;<a href="https://www.programiz.com/cpp-programming/break-statement">break statement</a>&nbsp;terminates the loop entirely. However, the&nbsp;<code>continue</code>&nbsp;statement only skips the current iteration.</p>
+<p><strong>Note</strong>: The break statement terminates the loop entirely. However, the <code>continue</code> statement only skips the current iteration.</p>
 ]]></content:encoded>
 					
 					<wfw:commentRss>https://harriscr7.github.io/imharris/c-continue-statement/feed/</wfw:commentRss>
@@ -484,15 +484,15 @@ i = 3, j = 3</samp></pre>
 
 
 <ul>
-<li><a href="https://www.programiz.com/cpp-programming/for-loop">C++ for loop</a></li>
+<li>C++ for loop</li>
 
 
 
-<li><a href="https://www.programiz.com/cpp-programming/for-loop">C++ if&#8230;else</a></li>
+<li>C++ if&#8230;else</li>
 
 
 
-<li><a href="https://www.programiz.com/cpp-programming/do-while-loop">C++ while loop</a></li>
+<li>C++ while loop</li>
 </ul>
 
 
@@ -711,7 +711,7 @@ i = 3, j = 3</samp></pre>
 
 
 
-<p>The&nbsp;<code>break</code>&nbsp;statement is also used with the&nbsp;<code>switch</code>&nbsp;statement. To learn more, visit&nbsp;<a href="https://www.programiz.com/cpp-programming/switch-case">C++ switch statement</a>.</p>
+<p>The <code>break</code> statement is also used with the <code>switch</code> statement. To learn more, visit C++ switch statement.</p>
 ]]></content:encoded>
 					
 					<wfw:commentRss>https://harriscr7.github.io/imharris/c-break-statement/feed/</wfw:commentRss>
@@ -766,7 +766,7 @@ i = 3, j = 3</samp></pre>
 
 
 
-<p>In the previous tutorial, we learned about the&nbsp;<a href="https://www.programiz.com/cpp-programming/for-loop">C++ for loop</a>. Here, we are going to learn about&nbsp;<code>while</code>&nbsp;and&nbsp;<code>do...while</code>&nbsp;loops.</p>
+<p>In the previous tutorial, we learned about the C++ for loop. Here, we are going to learn about <code>while</code> and <code>do...while</code> loops.</p>
 
 
 
@@ -814,7 +814,7 @@ i = 3, j = 3</samp></pre>
 
 
 
-<p>To learn more about the&nbsp;<code>conditions</code>, visit&nbsp;<a href="https://www.programiz.com/cpp-programming/relational-logical-operators">C++ Relational and Logical Operators</a>.</p>
+<p>To learn more about the <code>conditions</code>, visit C++ Relational and Logical Operators.</p>
 
 
 
@@ -1295,7 +1295,7 @@ for (int i = 1; i &lt;=5; ++i) {
 
 
 
-<p>To learn more about&nbsp;<code>conditions</code>, check out our tutorial on&nbsp;<a href="https://www.programiz.com/cpp-programming/relational-logical-operators">C++ Relational and Logical Operators</a>.</p>
+<p>To learn more about <code>conditions</code>, check out our tutorial on C++ Relational and Logical Operators.</p>
 
 
 
@@ -1578,24 +1578,20 @@ for(int i = 1; i &gt; 0; i++) {
 
 
 <ul>
-<li><a href="https://www.programiz.com/cpp-programming/examples/sum-natural-number">C++ Program to Calculate Sum of Natural Numbers</a></li>
+<li>C++ Program to Calculate Sum of Natural Numbers</li>
 
 
 
-<li><a href="https://www.programiz.com/cpp-programming/examples/factorial">C++ Program to Find Factorial</a></li>
+<li>C++ Program to Find Factorial</li>
 
 
 
-<li><a href="https://www.programiz.com/cpp-programming/examples/multiplication-table">C++ Program to Generate Multiplication Table</a></li>
+<li>C++ Program to Generate Multiplication Table</li>
 </ul>
 
 
 
 <hr class="wp-block-separator has-alpha-channel-opacity"/>
-
-
-
-<p>In the next tutorial, we will learn about&nbsp;<code>while</code>&nbsp;and&nbsp;<code>do...while</code>&nbsp;loop.</p>
 ]]></content:encoded>
 					
 					<wfw:commentRss>https://harriscr7.github.io/imharris/c-for-loop/feed/</wfw:commentRss>
@@ -1657,7 +1653,7 @@ for(int i = 1; i &gt; 0; i++) {
 
 
 <ul>
-<li>If there is a match, the corresponding code after the matching label is executed. For example, if the value of the variable is equal to&nbsp;<code>constant2</code>, the code after&nbsp;<code>case constant2:</code>&nbsp;is executed until the&nbsp;<a href="https://www.programiz.com/cpp-programming/break-statement">break statement</a>&nbsp;is encountered.</li>
+<li>If there is a match, the corresponding code after the matching label is executed. For example, if the value of the variable is equal to <code>constant2</code>, the code after <code>case constant2:</code> is executed until the break statement is encountered.</li>
 
 
 
