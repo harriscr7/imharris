@@ -1,0 +1,2486 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>C++ FlowControl &#8211; imharris</title>
+	<atom:link href="https://harriscr7.github.io/imharris/category/c-flowcontrol/feed/" rel="self" type="application/rss+xml" />
+	<link>https://harriscr7.github.io/imharris</link>
+	<description></description>
+	<lastBuildDate>Thu, 18 May 2023 21:27:09 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.2</generator>
+
+<image>
+	<url>https://harriscr7.github.io/imharris/wp-content/uploads/2023/05/image_2023-05-14_210105897.png</url>
+	<title>C++ FlowControl &#8211; imharris</title>
+	<link>https://harriscr7.github.io/imharris</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>C++ Return by Reference</title>
+		<link>https://harriscr7.github.io/imharris/c-return-by-reference/</link>
+					<comments>https://harriscr7.github.io/imharris/c-return-by-reference/#respond</comments>
+		
+		<dc:creator><![CDATA[harrixxaeed]]></dc:creator>
+		<pubDate>Mon, 15 May 2023 20:54:39 +0000</pubDate>
+				<category><![CDATA[C++ Content]]></category>
+		<category><![CDATA[C++ FlowControl]]></category>
+		<guid isPermaLink="false">https://harriscr7.github.io/imharris/?p=217</guid>
+
+					<description><![CDATA[In this article, you&#8217;ll learn how to return a value by reference in a function and use it efficiently in your program. In C++ Programming, not only can you pass values by reference to a function but you can also return a value by reference. To understand this feature, you should have the knowledge of: Example: Return [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<p>In this article, you&#8217;ll learn how to return a value by reference in a function and use it efficiently in your program.</p>
+
+
+
+<p>In C++ Programming, not only can you pass values by reference to a function but you can also return a value by reference.</p>
+
+
+
+<p>To understand this feature, you should have the knowledge of:</p>
+
+
+
+<ul>
+<li>Global variables</li>
+</ul>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading" id="example-return-by-reference">Example: Return by Reference</h2>
+
+
+
+<pre class="wp-block-code"><code>#include &lt;iostream&gt;
+using namespace std;
+
+// global variable
+int num;
+
+// function declaration
+int&amp; test();
+
+int main() {
+
+&nbsp; // assign 5 to num variable
+&nbsp; // equivalent to num = 5;
+  test() = 5;
+
+  cout &lt;&lt; num;
+
+  return 0;
+}
+
+// function definition
+// returns the address of num variable
+int&amp; test() {
+  return num;
+}</code></pre>
+
+
+
+<p><strong>Output</strong></p>
+
+
+
+<pre class="wp-block-preformatted"><samp>5</samp></pre>
+
+
+
+<p>In program above, the return type of function&nbsp;<code>test()</code>&nbsp;is&nbsp;<code>int&amp;</code>. Hence, this function returns a reference of the variable&nbsp;<var>num</var>.</p>
+
+
+
+<p>The return statement is&nbsp;<code>return num;</code>. Unlike return by value, this statement doesn&#8217;t return value of&nbsp;<var>num</var>, instead it returns the variable itself (address).</p>
+
+
+
+<p>So, when the&nbsp;<strong>variable</strong>&nbsp;is returned, it can be assigned a value as done in&nbsp;<code>test() = 5;</code></p>
+
+
+
+<p>This stores&nbsp;<strong>5</strong>&nbsp;to the variable&nbsp;<var>num</var>, which is displayed onto the screen.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h3 class="wp-block-heading" id="important-things-to-remember-when-returning-by-reference">Important Things to Remember When Returning by Reference.</h3>
+
+
+
+<ul>
+<li>Ordinary function returns value but this function doesn&#8217;t. Hence, you cannot return a constant from the function.int&amp; test() { return 2; }</li>
+
+
+
+<li>You cannot return a local variable from this function.int&amp; test() { int n = 2; return n; }</li>
+</ul>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://harriscr7.github.io/imharris/c-return-by-reference/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>C++ Continue Statement</title>
+		<link>https://harriscr7.github.io/imharris/c-continue-statement/</link>
+					<comments>https://harriscr7.github.io/imharris/c-continue-statement/#respond</comments>
+		
+		<dc:creator><![CDATA[harrixxaeed]]></dc:creator>
+		<pubDate>Mon, 15 May 2023 20:39:29 +0000</pubDate>
+				<category><![CDATA[C++ Content]]></category>
+		<category><![CDATA[C++ FlowControl]]></category>
+		<guid isPermaLink="false">https://harriscr7.github.io/imharris/?p=197</guid>
+
+					<description><![CDATA[In this tutorial, we will learn about the continue statement and its working with loops with the help of examples. In computer programming, the&#160;continue&#160;statement is used to skip the current iteration of the loop and the control of the program goes to the next iteration. The syntax of the&#160;continue&#160;statement is: Before you learn about the [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<p>In this tutorial, we will learn about the continue statement and its working with loops with the help of examples.</p>
+
+
+
+<p id="introduction">In computer programming, the&nbsp;<code>continue</code>&nbsp;statement is used to skip the current iteration of the loop and the control of the program goes to the next iteration.</p>
+
+
+
+<p>The syntax of the&nbsp;<code>continue</code>&nbsp;statement is:</p>
+
+
+
+<pre class="wp-block-code"><code>continue;</code></pre>
+
+
+
+<p>Before you learn about the continue statement, make sure you know about,</p>
+
+
+
+<ul>
+<li>C++ for loop</li>
+
+
+
+<li>C++ if&#8230;else</li>
+
+
+
+<li>C++ while loop</li>
+</ul>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading" id="working">Working of C++ continue Statement</h2>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://www.programiz.com/sites/tutorial2program/files/cpp-continue-statement_1.png" alt="Working of C++ continue Statement" title="Working of continue statement in C++"/><figcaption class="wp-element-caption">Working of continue statement in C++</figcaption></figure>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading" id="continue-for">Example 1: continue with for loop</h2>
+
+
+
+<p>In a&nbsp;<code>for</code>&nbsp;loop,&nbsp;<code>continue</code>&nbsp;skips the current iteration and the control flow jumps to the&nbsp;<code>update</code>&nbsp;expression.</p>
+
+
+
+<pre class="wp-block-code"><code>// program to print the value of i
+
+#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    for (int i = 1; i &lt;= 5; i++) {
+        // condition to continue
+        if (i == 3) {
+            continue;
+        }
+
+        cout &lt;&lt; i &lt;&lt; endl;
+    }
+
+    return 0;
+}</code></pre>
+
+
+
+<p><a href="https://www.programiz.com/cpp-programming/online-compiler" target="_blank" rel="noreferrer noopener">Run Code</a></p>
+
+
+
+<p><strong>Output</strong></p>
+
+
+
+<pre class="wp-block-preformatted"><samp>1
+2
+4
+5</samp></pre>
+
+
+
+<p>In the above program, we have used the the&nbsp;<code>for</code>&nbsp;loop to print the value of&nbsp;<var>i</var>&nbsp;in each iteration. Here, notice the code,</p>
+
+
+
+<pre class="wp-block-code"><code>if (i == 3) {
+    continue;
+}</code></pre>
+
+
+
+<p>This means</p>
+
+
+
+<ul>
+<li>When&nbsp;<var>i</var>&nbsp;is equal to&nbsp;<code>3</code>, the&nbsp;<code>continue</code>&nbsp;statement skips the current iteration and starts the next iteration</li>
+
+
+
+<li>Then,&nbsp;<var>i</var>&nbsp;becomes&nbsp;<code>4</code><strong>,</strong>&nbsp;and the&nbsp;<code>condition</code>&nbsp;is evaluated again.</li>
+
+
+
+<li>Hence,&nbsp;<code>4</code>&nbsp;and&nbsp;<code>5</code>&nbsp;are printed in the next two iterations.</li>
+</ul>
+
+
+
+<p><strong>Note</strong>: The&nbsp;<code>continue</code>&nbsp;statement is almost always used with decision-making statements.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading" id="continue-while">Example 2: continue with while loop</h2>
+
+
+
+<p>In a&nbsp;<code>while</code>&nbsp;loop,&nbsp;<code>continue</code>&nbsp;skips the current iteration and control flow of the program jumps back to the&nbsp;<code>while</code>&nbsp;<code>condition</code>.</p>
+
+
+
+<pre class="wp-block-code"><code>// program to calculate positive numbers till 50 only
+// if the user enters a negative number,
+// that number is skipped from the calculation
+
+// negative number -&gt; loop terminate
+// numbers above 50 -&gt; skip iteration
+
+#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    int sum = 0;
+    int number = 0;
+
+    while (number &gt;= 0) {
+        // add all positive numbers
+        sum += number;
+
+        // take input from the user
+        cout &lt;&lt; "Enter a number: ";
+        cin &gt;&gt; number;
+
+        // continue condition
+        if (number &gt; 50) {
+            cout &lt;&lt; "The number is greater than 50 and won't be calculated." &lt;&lt; endl;
+            number = 0;  // the value of number is made 0 again
+            continue;
+        }
+    }
+
+    // display the sum
+    cout &lt;&lt; "The sum is " &lt;&lt; sum &lt;&lt; endl;
+
+    return 0;
+}</code></pre>
+
+
+
+<p><a href="https://www.programiz.com/cpp-programming/online-compiler" target="_blank" rel="noreferrer noopener">Run Code</a></p>
+
+
+
+<p><strong>Output</strong></p>
+
+
+
+<pre class="wp-block-preformatted"><samp>Enter a number: 12
+Enter a number: 0
+Enter a number: 2
+Enter a number: 30
+Enter a number: 50
+Enter a number: 56
+The number is greater than 50 and won't be calculated.
+Enter a number: 5
+Enter a number: -3
+The sum is 99 </samp></pre>
+
+
+
+<p>In the above program, the user enters a number. The&nbsp;<code>while</code>&nbsp;loop is used to print the total sum of positive numbers entered by the user, as long as the numbers entered are not greater than&nbsp;<code>50</code>.</p>
+
+
+
+<p>Notice the use of the&nbsp;<code>continue</code>&nbsp;statement.</p>
+
+
+
+<pre class="wp-block-code"><code> if (number &gt; 50){
+    continue;
+}</code></pre>
+
+
+
+<ul>
+<li>When the user enters a number greater than&nbsp;<code>50</code>, the&nbsp;<code>continue</code>&nbsp;statement skips the current iteration. Then the control flow of the program goes to the&nbsp;<code>condition</code>&nbsp;of&nbsp;<code>while</code>&nbsp;loop.</li>
+
+
+
+<li>When the user enters a number less than&nbsp;<code>0</code>, the loop terminates.</li>
+</ul>
+
+
+
+<p><strong>Note</strong>: The&nbsp;<code>continue</code>&nbsp;statement works in the same way for the&nbsp;<code>do...while</code>&nbsp;loops.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading" id="nested">continue with Nested loop</h2>
+
+
+
+<p>When&nbsp;<code>continue</code>&nbsp;is used with nested loops, it skips the current iteration of the inner loop. For example,</p>
+
+
+
+<pre class="wp-block-code"><code>// using continue statement inside
+// nested for loop
+
+#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    int number;
+    int sum = 0;
+
+    // nested for loops
+
+    // first loop
+    for (int i = 1; i &lt;= 3; i++) {
+        // second loop
+        for (int j = 1; j &lt;= 3; j++) {
+            if (j == 2) {
+                continue;
+            }
+            cout &lt;&lt; "i = " &lt;&lt; i &lt;&lt; ", j = " &lt;&lt; j &lt;&lt; endl;
+        }
+    }
+
+    return 0;
+}</code></pre>
+
+
+
+<p><a href="https://www.programiz.com/cpp-programming/online-compiler" target="_blank" rel="noreferrer noopener">Run Code</a></p>
+
+
+
+<p><strong>Output</strong></p>
+
+
+
+<pre class="wp-block-preformatted"><samp>i = 1, j = 1
+i = 1, j = 3
+i = 2, j = 1
+i = 2, j = 3
+i = 3, j = 1
+i = 3, j = 3</samp></pre>
+
+
+
+<p>In the above program, when the&nbsp;<code>continue</code>&nbsp;statement executes, it skips the current iteration in the inner loop. And the control of the program moves to the&nbsp;<strong>update expression</strong>&nbsp;of the inner loop.</p>
+
+
+
+<p>Hence, the value of&nbsp;<samp>j = 2</samp>&nbsp;is never displayed in the output.</p>
+
+
+
+<p><strong>Note</strong>: The break statement terminates the loop entirely. However, the <code>continue</code> statement only skips the current iteration.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://harriscr7.github.io/imharris/c-continue-statement/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>C++ Break Statement</title>
+		<link>https://harriscr7.github.io/imharris/c-break-statement/</link>
+					<comments>https://harriscr7.github.io/imharris/c-break-statement/#respond</comments>
+		
+		<dc:creator><![CDATA[harrixxaeed]]></dc:creator>
+		<pubDate>Mon, 15 May 2023 20:38:58 +0000</pubDate>
+				<category><![CDATA[C++ Content]]></category>
+		<category><![CDATA[C++ FlowControl]]></category>
+		<guid isPermaLink="false">https://harriscr7.github.io/imharris/?p=195</guid>
+
+					<description><![CDATA[In this tutorial, we will learn about the break statement and its working in loops with the help of examples. In C++, the&#160;break&#160;statement terminates the loop when it is encountered. The syntax of the&#160;break&#160;statement is: Before you learn about the&#160;break&#160;statement, make sure you know about: Working of C++ break Statement Example 1: break with for [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<p>In this tutorial, we will learn about the break statement and its working in loops with the help of examples.</p>
+
+
+
+<p id="introduction">In C++, the&nbsp;<code>break</code>&nbsp;statement terminates the loop when it is encountered.</p>
+
+
+
+<p>The syntax of the&nbsp;<code>break</code>&nbsp;statement is:</p>
+
+
+
+<pre class="wp-block-code"><code>break;</code></pre>
+
+
+
+<p>Before you learn about the&nbsp;<code>break</code>&nbsp;statement, make sure you know about:</p>
+
+
+
+<ul>
+<li>C++ for loop</li>
+
+
+
+<li>C++ if&#8230;else</li>
+
+
+
+<li>C++ while loop</li>
+</ul>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading" id="working">Working of C++ break Statement</h2>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://cdn.programiz.com/sites/tutorial2program/files/cpp-break-statement.png" alt="Working of C++ break Statement" title="Working of break statement in C++"/><figcaption class="wp-element-caption">Working of break statement in C++</figcaption></figure>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading" id="example1">Example 1: break with for loop</h2>
+
+
+
+<pre class="wp-block-code"><code>// program to print the value of i
+
+#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    for (int i = 1; i &lt;= 5; i++) {
+        // break condition     
+        if (i == 3) {
+            break;
+        }
+        cout &lt;&lt; i &lt;&lt; endl;
+    }
+
+return 0;
+}</code></pre>
+
+
+
+<p><a href="https://www.programiz.com/cpp-programming/online-compiler" target="_blank" rel="noreferrer noopener">Run Code</a></p>
+
+
+
+<p><strong>Output</strong></p>
+
+
+
+<pre class="wp-block-preformatted"><samp>1
+2</samp></pre>
+
+
+
+<p>In the above program, the&nbsp;<code>for</code>&nbsp;loop is used to print the value of&nbsp;<var>i</var>&nbsp;in each iteration. Here, notice the code:</p>
+
+
+
+<pre class="wp-block-code"><code>if (i == 3) {
+    break;
+}</code></pre>
+
+
+
+<p>This means, when&nbsp;<var>i</var>&nbsp;is equal to&nbsp;<strong>3</strong>, the&nbsp;<code>break</code>&nbsp;statement terminates the loop. Hence, the output doesn&#8217;t include values greater than or equal to 3.</p>
+
+
+
+<p>Note: The&nbsp;<code>break</code>&nbsp;statement is usually used with decision-making statements.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading" id="example2">Example 2: break with while loop</h2>
+
+
+
+<pre class="wp-block-code"><code>// program to find the sum of positive numbers
+// if the user enters a negative numbers, break ends the loop
+// the negative number entered is not added to sum
+
+#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    int number;
+    int sum = 0;
+
+    while (true) {
+        // take input from the user
+        cout &lt;&lt; "Enter a number: ";
+        cin &gt;&gt; number;
+
+        // break condition
+        if (number &lt; 0) {
+            break;
+        }
+
+        // add all positive numbers
+        sum += number;
+    }
+
+    // display the sum
+    cout &lt;&lt; "The sum is " &lt;&lt; sum &lt;&lt; endl;
+
+    return 0;
+}</code></pre>
+
+
+
+<p><a href="https://www.programiz.com/cpp-programming/online-compiler" target="_blank" rel="noreferrer noopener">Run Code</a></p>
+
+
+
+<p><strong>Output</strong></p>
+
+
+
+<pre class="wp-block-preformatted"><samp>Enter a number: 1
+Enter a number: 2
+Enter a number: 3
+Enter a number: -5
+The sum is 6. </samp></pre>
+
+
+
+<p>In the above program, the user enters a number. The&nbsp;<code>while</code>&nbsp;loop is used to print the total sum of numbers entered by the user. Here, notice the code,</p>
+
+
+
+<pre class="wp-block-code"><code>if(number &lt; 0) {
+    break;
+}</code></pre>
+
+
+
+<p>This means, when the user enters a negative number, the&nbsp;<code>break</code>&nbsp;statement terminates the loop and codes outside the loop are executed.</p>
+
+
+
+<p>The&nbsp;<code>while</code>&nbsp;loop continues until the user enters a negative number.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading" id="nested">break with Nested loop</h2>
+
+
+
+<p>When&nbsp;<code>break</code>&nbsp;is used with nested loops,&nbsp;<code>break</code>&nbsp;terminates the inner loop. For example,</p>
+
+
+
+<pre class="wp-block-code"><code>// using break statement inside
+// nested for loop
+
+#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    int number;
+    int sum = 0;
+
+    // nested for loops
+
+    // first loop
+    for (int i = 1; i &lt;= 3; i++) {
+        // second loop
+        for (int j = 1; j &lt;= 3; j++) {
+            if (i == 2) {
+                break;
+            }
+            cout &lt;&lt; "i = " &lt;&lt; i &lt;&lt; ", j = " &lt;&lt; j &lt;&lt; endl;
+        }
+    }
+
+    return 0;
+}</code></pre>
+
+
+
+<p><a href="https://www.programiz.com/cpp-programming/online-compiler" target="_blank" rel="noreferrer noopener">Run Code</a></p>
+
+
+
+<p><strong>Output</strong></p>
+
+
+
+<pre class="wp-block-preformatted"><samp>i = 1, j = 1
+i = 1, j = 2
+i = 1, j = 3
+i = 3, j = 1
+i = 3, j = 2
+i = 3, j = 3</samp></pre>
+
+
+
+<p>In the above program, the&nbsp;<code>break</code>&nbsp;statement is executed when&nbsp;<code>i == 2</code>. It terminates the inner loop, and the control flow of the program moves to the outer loop.</p>
+
+
+
+<p>Hence, the value of&nbsp;<samp>i = 2</samp>&nbsp;is never displayed in the output.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<p>The <code>break</code> statement is also used with the <code>switch</code> statement. To learn more, visit C++ switch statement.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://harriscr7.github.io/imharris/c-break-statement/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>C++ While and do&#8230;while Loop</title>
+		<link>https://harriscr7.github.io/imharris/c-while-and-do-while-loop/</link>
+					<comments>https://harriscr7.github.io/imharris/c-while-and-do-while-loop/#respond</comments>
+		
+		<dc:creator><![CDATA[harrixxaeed]]></dc:creator>
+		<pubDate>Mon, 15 May 2023 20:38:15 +0000</pubDate>
+				<category><![CDATA[C++ Content]]></category>
+		<category><![CDATA[C++ FlowControl]]></category>
+		<guid isPermaLink="false">https://harriscr7.github.io/imharris/?p=193</guid>
+
+					<description><![CDATA[In this tutorial, we will learn the use of while and do&#8230;while loops in C++ programming with the help of some examples. In computer programming, loops are used to repeat a block of code. For example, let&#8217;s say we want to show a message 100 times. Then instead of writing the print statement 100 times, [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<p>In this tutorial, we will learn the use of while and do&#8230;while loops in C++ programming with the help of some examples.</p>
+
+
+
+<p id="introduction">In computer programming, loops are used to repeat a block of code.</p>
+
+
+
+<p>For example, let&#8217;s say we want to show a message 100 times. Then instead of writing the print statement 100 times, we can use a loop.</p>
+
+
+
+<p>That was just a simple example;&nbsp;we can achieve much more efficiency and sophistication in our programs by making effective use of&nbsp;loops.</p>
+
+
+
+<p>There are&nbsp;<strong>3</strong>&nbsp;types of loops in C++.</p>
+
+
+
+<ol>
+<li><code>for</code>&nbsp;loop</li>
+
+
+
+<li><code>while</code>&nbsp;loop</li>
+
+
+
+<li><code>do...while</code>&nbsp;loop</li>
+</ol>
+
+
+
+<p>In the previous tutorial, we learned about the C++ for loop. Here, we are going to learn about <code>while</code> and <code>do...while</code> loops.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading" id="while-loop">C++ while Loop</h2>
+
+
+
+<p>The syntax of the&nbsp;<code>while</code>&nbsp;loop is:</p>
+
+
+
+<pre class="wp-block-code"><code>while (condition) {
+    // body of the loop
+}</code></pre>
+
+
+
+<p>Here,</p>
+
+
+
+<ul>
+<li>A&nbsp;<code>while</code>&nbsp;loop evaluates the&nbsp;<code>condition</code></li>
+
+
+
+<li>If the&nbsp;<code>condition</code>&nbsp;evaluates to&nbsp;<code>true</code>, the code inside the&nbsp;<code>while</code>&nbsp;loop is executed.</li>
+
+
+
+<li>The&nbsp;<code>condition</code>&nbsp;is evaluated again.</li>
+
+
+
+<li>This process continues until the&nbsp;<code>condition</code>&nbsp;is&nbsp;<code>false</code>.</li>
+
+
+
+<li>When the&nbsp;<code>condition</code>&nbsp;evaluates to&nbsp;<code>false</code>, the loop terminates.</li>
+</ul>
+
+
+
+<p>To learn more about the <code>conditions</code>, visit C++ Relational and Logical Operators.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h3 class="wp-block-heading" id="flowchart-of-while-loop">Flowchart of while Loop</h3>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://cdn.programiz.com/sites/tutorial2program/files/cpp-while-loop-flowchart.png" alt="C++ while loop flowchart" title="C++ while loop flowchart"/><figcaption class="wp-element-caption">Flowchart of C++ while loop</figcaption></figure>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h3 class="wp-block-heading" id="example1">Example 1: Display Numbers from 1 to 5</h3>
+
+
+
+<pre class="wp-block-code"><code>// C++ Program to print numbers from 1 to 5
+
+#include &lt;iostream&gt;
+
+using namespace std;
+
+int main() {
+    int i = 1; 
+
+    // while loop from 1 to 5
+    while (i &lt;= 5) {
+        cout &lt;&lt; i &lt;&lt; " ";
+        ++i;
+    }
+    
+    return 0;
+}</code></pre>
+
+
+
+<p><a href="https://www.programiz.com/cpp-programming/online-compiler" target="_blank" rel="noreferrer noopener">Run Code</a></p>
+
+
+
+<p><strong>Output</strong></p>
+
+
+
+<pre class="wp-block-preformatted"><samp>1 2 3 4 5</samp></pre>
+
+
+
+<p>Here is how the program works.</p>
+
+
+
+<figure class="wp-block-table"><table><tbody><tr><th>Iteration</th><th>Variable</th><th>i &lt;= 5</th><th>Action</th></tr><tr><td>1st</td><td><code>i = 1</code></td><td><code>true</code></td><td><samp>1</samp> is printed and <code>i</code> is increased to <code>2</code>.</td></tr><tr><td>2nd</td><td><code>i = 2</code></td><td><code>true</code></td><td><samp>2</samp> is printed and <code>i</code> is increased to <code>3</code>.</td></tr><tr><td>3rd</td><td><code>i = 3</code></td><td><code>true</code></td><td><samp>3</samp> is printed and <code>i</code> is increased to <code>4</code></td></tr><tr><td>4th</td><td><code>i = 4</code></td><td><code>true</code></td><td><samp>4</samp> is printed and <code>i</code> is increased to <code>5</code>.</td></tr><tr><td>5th</td><td><code>i = 5</code></td><td><code>true</code></td><td><samp>5</samp> is printed and <code>i</code> is increased to <code>6</code>.</td></tr><tr><td>6th</td><td><code>i = 6</code></td><td><code>false</code></td><td>The loop is terminated</td></tr></tbody></table></figure>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h3 class="wp-block-heading" id="example2">Example 2: Sum of Positive Numbers Only</h3>
+
+
+
+<pre class="wp-block-code"><code>// program to find the sum of positive numbers
+// if the user enters a negative number, the loop ends
+// the negative number entered is not added to the sum
+
+#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    int number;
+    int sum = 0;
+
+    // take input from the user
+    cout &lt;&lt; "Enter a number: ";
+    cin &gt;&gt; number;
+
+    while (number &gt;= 0) {
+        // add all positive numbers
+        sum += number;
+
+        // take input again if the number is positive
+        cout &lt;&lt; "Enter a number: ";
+        cin &gt;&gt; number;
+    }
+
+    // display the sum
+    cout &lt;&lt; "\nThe sum is " &lt;&lt; sum &lt;&lt; endl;
+    
+    return 0;
+}</code></pre>
+
+
+
+<p><a href="https://www.programiz.com/cpp-programming/online-compiler" target="_blank" rel="noreferrer noopener">Run Code</a></p>
+
+
+
+<p><strong>Output</strong></p>
+
+
+
+<pre class="wp-block-preformatted"><samp>Enter a number: 6
+Enter a number: 12
+Enter a number: 7
+Enter a number: 0
+Enter a number: -2
+
+The sum is 25</samp></pre>
+
+
+
+<p>In this program, the user is prompted to enter a number, which is stored in the variable&nbsp;<var>number</var>.</p>
+
+
+
+<p>In order to store the sum of the numbers, we declare a variable&nbsp;<var>sum</var>&nbsp;and initialize it to the value of&nbsp;<code>0</code>.</p>
+
+
+
+<p>The&nbsp;<code>while</code>&nbsp;loop continues until the user enters a negative number. During each iteration, the number entered by the user is added to the&nbsp;<var>sum</var>&nbsp;variable.</p>
+
+
+
+<p>When the user enters a negative number, the loop terminates. Finally, the total sum is displayed.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading" id="do-while-loop">C++ do&#8230;while Loop</h2>
+
+
+
+<p>The&nbsp;<code>do...while</code>&nbsp;loop is a variant of the&nbsp;<code>while</code>&nbsp;loop with one important difference: the body of&nbsp;<code>do...while</code>&nbsp;loop is executed once before the&nbsp;<code>condition</code>&nbsp;is checked.</p>
+
+
+
+<p>Its syntax is:</p>
+
+
+
+<pre class="wp-block-code"><code>do {
+   // body of loop;
+}
+while (condition);</code></pre>
+
+
+
+<p>Here,</p>
+
+
+
+<ul>
+<li>The body of the loop is executed at first. Then the&nbsp;<code>condition</code>&nbsp;is evaluated.</li>
+
+
+
+<li>If the&nbsp;<code>condition</code>&nbsp;evaluates to&nbsp;<code>true</code>, the body of the loop inside the&nbsp;<code>do</code>&nbsp;statement is executed again.</li>
+
+
+
+<li>The&nbsp;<code>condition</code>&nbsp;is evaluated once again.</li>
+
+
+
+<li>If the&nbsp;<code>condition</code>&nbsp;evaluates to&nbsp;<code>true</code>, the body of the loop inside the&nbsp;<code>do</code>&nbsp;statement is executed again.</li>
+
+
+
+<li>This process continues until the&nbsp;<code>condition</code>&nbsp;evaluates to&nbsp;<code>false</code>. Then the loop stops.</li>
+</ul>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h3 class="wp-block-heading" id="flowchart-of-do-while-loop">Flowchart of do&#8230;while Loop</h3>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://cdn.programiz.com/sites/tutorial2program/files/cpp-do-while-loop-flowchart.png" alt="C++ do...while loop flowchart" title="C++ do...while loop flowchart"/><figcaption class="wp-element-caption">Flowchart of C++ do&#8230;while loop</figcaption></figure>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h3 class="wp-block-heading" id="example3">Example 3: Display Numbers from 1 to 5</h3>
+
+
+
+<pre class="wp-block-code"><code>// C++ Program to print numbers from 1 to 5
+
+#include &lt;iostream&gt;
+
+using namespace std;
+
+int main() {
+    int i = 1; 
+
+    // do...while loop from 1 to 5
+    do {
+        cout &lt;&lt; i &lt;&lt; " ";
+        ++i;
+    }
+    while (i &lt;= 5);
+    
+    return 0;
+}</code></pre>
+
+
+
+<p><a href="https://www.programiz.com/cpp-programming/online-compiler" target="_blank" rel="noreferrer noopener">Run Code</a></p>
+
+
+
+<p><strong>Output</strong></p>
+
+
+
+<pre class="wp-block-preformatted"><samp>1 2 3 4 5</samp></pre>
+
+
+
+<p>Here is how the program works.</p>
+
+
+
+<figure class="wp-block-table"><table><tbody><tr><th>Iteration</th><th>Variable</th><th>i &lt;= 5</th><th>Action</th></tr><tr><td>&nbsp;</td><td><code>i = 1</code></td><td>not checked</td><td><samp>1</samp> is printed and <code>i</code> is increased to 2</td></tr><tr><td>1st</td><td><code>i = 2</code></td><td><code>true</code></td><td><samp>2</samp> is printed and <code>i</code> is increased to 3</td></tr><tr><td>2nd</td><td><code>i = 3</code></td><td><code>true</code></td><td><samp>3</samp> is printed and <code>i</code> is increased to 4</td></tr><tr><td>3rd</td><td><code>i = 4</code></td><td><code>true</code></td><td><samp>4</samp> is printed and <code>i</code> is increased to 5</td></tr><tr><td>4th</td><td><code>i = 5</code></td><td><code>true</code></td><td><samp>5</samp> is printed and <code>i</code> is increased to <strong>6</strong></td></tr><tr><td>5th</td><td><code>i = 6</code></td><td><code>false</code></td><td>The loop is terminated</td></tr></tbody></table></figure>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h3 class="wp-block-heading" id="example4">Example 4: Sum of Positive Numbers Only</h3>
+
+
+
+<pre class="wp-block-code"><code>// program to find the sum of positive numbers
+// If the user enters a negative number, the loop ends
+// the negative number entered is not added to the sum
+
+#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    int number = 0;
+    int sum = 0;
+
+    do {
+        sum += number;
+
+        // take input from the user
+        cout &lt;&lt; "Enter a number: ";
+        cin &gt;&gt; number;
+    }
+    while (number &gt;= 0);
+    
+    // display the sum
+    cout &lt;&lt; "\nThe sum is " &lt;&lt; sum &lt;&lt; endl;
+    
+    return 0;
+}</code></pre>
+
+
+
+<p><a href="https://www.programiz.com/cpp-programming/online-compiler" target="_blank" rel="noreferrer noopener">Run Code</a></p>
+
+
+
+<p><strong>Output 1</strong></p>
+
+
+
+<pre class="wp-block-preformatted"><samp>Enter a number: 6
+Enter a number: 12
+Enter a number: 7
+Enter a number: 0
+Enter a number: -2
+
+The sum is 25</samp></pre>
+
+
+
+<p>Here, the&nbsp;<code>do...while</code>&nbsp;loop continues until the user enters a negative number. When the number is negative, the loop terminates; the negative number is not added to the&nbsp;<code>sum</code>&nbsp;variable.</p>
+
+
+
+<p><strong>Output 2</strong></p>
+
+
+
+<pre class="wp-block-preformatted"><samp>Enter a number: -6
+The sum is 0.</samp></pre>
+
+
+
+<p>The body of the&nbsp;<code>do...while</code>&nbsp;loop runs only once if the user enters a negative number.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading" id="infinite-loop">Infinite while loop</h2>
+
+
+
+<p>If the&nbsp;<code>condition</code>&nbsp;of a loop is always&nbsp;<code>true</code>, the loop runs for infinite times (until the memory is full). For example,</p>
+
+
+
+<pre class="wp-block-code"><code>// infinite while loop
+while(true) {
+    // body of the loop
+}</code></pre>
+
+
+
+<p>Here is an example of an infinite&nbsp;<code>do...while</code>&nbsp;loop.</p>
+
+
+
+<pre class="wp-block-code"><code>// infinite do...while loop
+
+int count = 1;
+
+do {
+   // body of loop
+} 
+while(count == 1);</code></pre>
+
+
+
+<p>In the above programs, the&nbsp;<code>condition</code>&nbsp;is always&nbsp;<code>true</code>. Hence, the loop body will run for infinite times.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading" id="for-while">for vs while loops</h2>
+
+
+
+<p>A&nbsp;<code>for</code>&nbsp;loop is usually used when the number of iterations is known. For example,</p>
+
+
+
+<pre class="wp-block-code"><code>// This loop is iterated 5 times
+for (int i = 1; i &lt;=5; ++i) {
+   // body of the loop
+}</code></pre>
+
+
+
+<p>Here, we know that the for-loop will be executed 5 times.</p>
+
+
+
+<p>However,&nbsp;<code>while</code>&nbsp;and&nbsp;<code>do...while</code>&nbsp;loops are usually used when the number of iterations is unknown. For example,</p>
+
+
+
+<pre class="wp-block-code"><code>while (condition) {
+    // body of the loop
+}</code></pre>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://harriscr7.github.io/imharris/c-while-and-do-while-loop/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>C++ For Loop</title>
+		<link>https://harriscr7.github.io/imharris/c-for-loop/</link>
+					<comments>https://harriscr7.github.io/imharris/c-for-loop/#respond</comments>
+		
+		<dc:creator><![CDATA[harrixxaeed]]></dc:creator>
+		<pubDate>Mon, 15 May 2023 20:37:35 +0000</pubDate>
+				<category><![CDATA[C++ Content]]></category>
+		<category><![CDATA[C++ FlowControl]]></category>
+		<guid isPermaLink="false">https://harriscr7.github.io/imharris/?p=191</guid>
+
+					<description><![CDATA[In this tutorial, we will learn about the C++ for loop and its working with the help of some examples. In computer programming, loops are used to repeat a block of code. For example, let&#8217;s say we want to show a message 100 times. Then instead of writing the print statement 100 times, we can [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<p>In this tutorial, we will learn about the C++ for loop and its working with the help of some examples.</p>
+
+
+
+<p id="introduction">In computer programming, loops are used to repeat a block of code.</p>
+
+
+
+<p>For example, let&#8217;s say we want to show a message 100 times. Then instead of writing the print statement 100 times, we can use a loop.</p>
+
+
+
+<p>That was just a simple example; we can achieve much more efficiency and sophistication in our programs by making effective use of loops.</p>
+
+
+
+<p>There are 3 types of loops in C++.</p>
+
+
+
+<ul>
+<li><code>for</code>&nbsp;loop</li>
+
+
+
+<li><code>while</code>&nbsp;loop</li>
+
+
+
+<li><code>do...while</code>&nbsp;loop</li>
+</ul>
+
+
+
+<p>This tutorial focuses on C++&nbsp;<code>for</code>&nbsp;loop. We will learn about the other type of loops in the upcoming tutorials.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading" id="for-loop">C++ for loop</h2>
+
+
+
+<p>The syntax of for-loop is:</p>
+
+
+
+<pre class="wp-block-code"><code>for (initialization; condition; update) {
+    // body of-loop 
+}</code></pre>
+
+
+
+<p>Here,</p>
+
+
+
+<ul>
+<li><code>initialization</code>&nbsp;&#8211; initializes variables and is executed only once</li>
+
+
+
+<li><code>condition</code>&nbsp;&#8211; if&nbsp;<code>true</code>, the body of&nbsp;<code>for</code>&nbsp;loop is executed<br>if&nbsp;<code>false</code>, the for loop is terminated</li>
+
+
+
+<li><code>update</code>&nbsp;&#8211; updates the value of initialized variables and again checks the condition</li>
+</ul>
+
+
+
+<p>To learn more about <code>conditions</code>, check out our tutorial on C++ Relational and Logical Operators.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading" id="flowchart-of-for-loop-in-c">Flowchart of for Loop in C++</h2>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://cdn.programiz.com/sites/tutorial2program/files/cpp-for-loop-flowchart.png" alt="C++ for loop flowchart" title="C++ for loop flowchart"/><figcaption class="wp-element-caption">Flowchart of for loop in C++</figcaption></figure>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h3 class="wp-block-heading" id="example1">Example 1: Printing Numbers From 1 to 5</h3>
+
+
+
+<pre class="wp-block-code"><code>#include &lt;iostream&gt;
+
+using namespace std;
+
+int main() {
+        for (int i = 1; i &lt;= 5; ++i) {
+        cout &lt;&lt; i &lt;&lt; " ";
+    }
+    return 0;
+}</code></pre>
+
+
+
+<p><a href="https://www.programiz.com/cpp-programming/online-compiler" target="_blank" rel="noreferrer noopener">Run Code</a></p>
+
+
+
+<p><strong>Output</strong></p>
+
+
+
+<pre class="wp-block-preformatted"><samp>1 2 3 4 5</samp></pre>
+
+
+
+<p>Here is how this program works</p>
+
+
+
+<figure class="wp-block-table"><table><tbody><tr><th>Iteration</th><th>Variable</th><th>i &lt;= 5</th><th>Action</th></tr><tr><td>1st</td><td><code>i = 1</code></td><td><code>true</code></td><td><samp>1</samp> is printed. <code>i</code> is increased to <code>2</code>.</td></tr><tr><td>2nd</td><td><code>i = 2</code></td><td><code>true</code></td><td><samp>2</samp> is printed. <code>i</code> is increased to <code>3</code>.</td></tr><tr><td>3rd</td><td><code>i = 3</code></td><td><code>true</code></td><td><samp>3</samp> is printed. <code>i</code> is increased to <code>4</code>.</td></tr><tr><td>4th</td><td><code>i = 4</code></td><td><code>true</code></td><td><samp>4</samp> is printed. <code>i</code> is increased to <code>5</code>.</td></tr><tr><td>5th</td><td><code>i = 5</code></td><td><code>true</code></td><td><samp>5</samp> is printed. <code>i</code> is increased to <code>6</code>.</td></tr><tr><td>6th</td><td><code>i = 6</code></td><td><code>false</code></td><td>The loop is terminated</td></tr></tbody></table></figure>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h3 class="wp-block-heading" id="example2">Example 2: Display a text 5 times</h3>
+
+
+
+<pre class="wp-block-code"><code>// C++ Program to display a text 5 times
+
+#include &lt;iostream&gt;
+
+using namespace std;
+
+int main() {
+    for (int i = 1; i &lt;= 5; ++i) {
+        cout &lt;&lt;  "Hello World! " &lt;&lt; endl;
+    }
+    return 0;
+}</code></pre>
+
+
+
+<p><a href="https://www.programiz.com/cpp-programming/online-compiler" target="_blank" rel="noreferrer noopener">Run Code</a></p>
+
+
+
+<p><strong>Output</strong></p>
+
+
+
+<pre class="wp-block-preformatted"><samp>Hello World!
+Hello World!
+Hello World!
+Hello World!
+Hello World!</samp></pre>
+
+
+
+<p>Here is how this program works</p>
+
+
+
+<figure class="wp-block-table"><table><tbody><tr><th>Iteration</th><th>Variable</th><th>i &lt;= 5</th><th>Action</th></tr><tr><td>1st</td><td><code>i = 1</code></td><td><code>true</code></td><td><samp>Hello World!</samp> is printed and <code>i</code> is increased to <code>2</code>.</td></tr><tr><td>2nd</td><td><code>i = 2</code></td><td><code>true</code></td><td><samp>Hello World!</samp> is printed and <code>i</code> is increased to <code>3</code>.</td></tr><tr><td>3rd</td><td><code>i = 3</code></td><td><code>true</code></td><td><samp>Hello World!</samp> is printed and <code>i</code> is increased to <code>4</code>.</td></tr><tr><td>4th</td><td><code>i = 4</code></td><td><code>true</code></td><td><samp>Hello World!</samp> is printed and <code>i</code> is increased to <code>5</code>.</td></tr><tr><td>5th</td><td><code>i = 5</code></td><td><code>true</code></td><td><samp>Hello World!</samp> is printed and <code>i</code> is increased to <code>6</code>.</td></tr><tr><td>6th</td><td><code>i = 6</code></td><td><code>false</code></td><td>The loop is terminated</td></tr></tbody></table></figure>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h3 class="wp-block-heading" id="example3">Example 3: Find the sum of first n Natural Numbers</h3>
+
+
+
+<pre class="wp-block-code"><code>// C++ program to find the sum of first n natural numbers
+// positive integers such as 1,2,3,...n are known as natural numbers
+
+#include &lt;iostream&gt;
+
+using namespace std;
+
+int main() {
+    int num, sum;
+    sum = 0;
+
+    cout &lt;&lt; "Enter a positive integer: ";
+    cin &gt;&gt; num;
+
+    for (int i = 1; i &lt;= num; ++i) {
+        sum += i;
+    }
+
+    cout &lt;&lt; "Sum = " &lt;&lt; sum &lt;&lt; endl;
+
+    return 0;
+}</code></pre>
+
+
+
+<p><a href="https://www.programiz.com/cpp-programming/online-compiler" target="_blank" rel="noreferrer noopener">Run Code</a></p>
+
+
+
+<p><strong>Output</strong></p>
+
+
+
+<pre class="wp-block-preformatted"><samp>Enter a positive integer: 10
+Sum = 55</samp></pre>
+
+
+
+<p>In the above example, we have two variables&nbsp;<var>num</var>&nbsp;and&nbsp;<var>sum</var>. The&nbsp;<var>sum</var>&nbsp;variable is assigned with&nbsp;<var>0</var>&nbsp;and the&nbsp;<var>num</var>&nbsp;variable is assigned with the value provided by the user.</p>
+
+
+
+<p>Note that we have used a&nbsp;<code>for</code>&nbsp;loop.</p>
+
+
+
+<pre class="wp-block-code"><code>for(int i = 1; i &lt;= num; ++i)</code></pre>
+
+
+
+<p>Here,</p>
+
+
+
+<ul>
+<li><code>int i&nbsp;= 1</code>: initializes the&nbsp;<var>i</var>&nbsp;variable</li>
+
+
+
+<li><code>i &lt;= num</code>: runs the loop as long as&nbsp;<var>i</var>&nbsp;is less than or equal to&nbsp;<var>num</var></li>
+
+
+
+<li><code>++i</code>: increases the&nbsp;<var>i</var>&nbsp;variable by 1 in each iteration</li>
+</ul>
+
+
+
+<p>When&nbsp;<var>i</var>&nbsp;becomes&nbsp;<code>11</code>, the&nbsp;<code>condition</code>&nbsp;is&nbsp;<code>false</code>&nbsp;and&nbsp;<var>sum</var>&nbsp;will be equal to&nbsp;<code>0 + 1 + 2 + ... + 10</code>.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading" id="ranged">Ranged Based for Loop</h2>
+
+
+
+<p>In C++11, a new range-based&nbsp;<code>for</code>&nbsp;loop was introduced to work with collections such as&nbsp;<strong>arrays</strong>&nbsp;and&nbsp;<strong>vectors</strong>. Its syntax is:</p>
+
+
+
+<pre class="wp-block-code"><code>for (variable : collection) {
+    // body of loop
+}</code></pre>
+
+
+
+<p>Here, for every value in the&nbsp;<var>collection</var>, the for loop is executed and the value is assigned to the&nbsp;<var>variable</var>.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h3 class="wp-block-heading" id="example-4-range-based-for-loop">Example 4: Range Based for Loop</h3>
+
+
+
+<pre class="wp-block-code"><code>#include &lt;iostream&gt;
+
+using namespace std;
+
+int main() {
+  
+    int num_array&#91;] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+  
+    for (int n : num_array) {
+        cout &lt;&lt; n &lt;&lt; " ";
+    }
+  
+    return 0;
+}</code></pre>
+
+
+
+<p><a href="https://www.programiz.com/cpp-programming/online-compiler" target="_blank" rel="noreferrer noopener">Run Code</a></p>
+
+
+
+<p><strong>Output</strong></p>
+
+
+
+<pre class="wp-block-preformatted"><samp>1 2 3 4 5 6 7 8 9 10</samp></pre>
+
+
+
+<p>In the above program, we have declared and initialized an&nbsp;<code>int</code>&nbsp;array named&nbsp;<var>num_array</var>. It has 10 items.</p>
+
+
+
+<p>Here, we have used a range-based&nbsp;<code>for</code>&nbsp;loop to access all the items in the array.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h3 class="wp-block-heading" id="infinite-loop">C++ Infinite for loop</h3>
+
+
+
+<p>If the&nbsp;<code>condition</code>&nbsp;in a&nbsp;<code>for</code>&nbsp;loop is always&nbsp;<code>true</code>, it runs forever (until memory is full). For example,</p>
+
+
+
+<pre class="wp-block-code"><code>// infinite for loop
+for(int i = 1; i &gt; 0; i++) {
+    // block of code
+}</code></pre>
+
+
+
+<p>In the above program, the&nbsp;<code>condition</code>&nbsp;is always&nbsp;<code>true</code>&nbsp;which will then run the code for infinite times.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<p>Check out these examples to learn more:</p>
+
+
+
+<ul>
+<li>C++ Program to Calculate Sum of Natural Numbers</li>
+
+
+
+<li>C++ Program to Find Factorial</li>
+
+
+
+<li>C++ Program to Generate Multiplication Table</li>
+</ul>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://harriscr7.github.io/imharris/c-for-loop/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>C++ Switch..case Statement</title>
+		<link>https://harriscr7.github.io/imharris/c-switch-case-statement/</link>
+					<comments>https://harriscr7.github.io/imharris/c-switch-case-statement/#respond</comments>
+		
+		<dc:creator><![CDATA[harrixxaeed]]></dc:creator>
+		<pubDate>Mon, 15 May 2023 20:36:17 +0000</pubDate>
+				<category><![CDATA[C++ Content]]></category>
+		<category><![CDATA[C++ FlowControl]]></category>
+		<guid isPermaLink="false">https://harriscr7.github.io/imharris/?p=189</guid>
+
+					<description><![CDATA[In this tutorial, we will learn about switch statement and its working in C++ programming with the help of some examples. The&#160;switch&#160;statement allows us to execute a block of code among many alternatives. The syntax of the&#160;switch&#160;statement in C++ is: How does the switch statement work? The&#160;expression&#160;is evaluated once and compared with the values of [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<p>In this tutorial, we will learn about switch statement and its working in C++ programming with the help of some examples.</p>
+
+
+
+<p id="introduction">The&nbsp;<code>switch</code>&nbsp;statement allows us to execute a block of code among many alternatives.</p>
+
+
+
+<p>The syntax of the&nbsp;<code>switch</code>&nbsp;statement in C++ is:</p>
+
+
+
+<pre class="wp-block-code"><code>switch (expression)  {
+    case constant1:
+        // code to be executed if 
+        // expression is equal to constant1;
+        break;
+
+    case constant2:
+        // code to be executed if
+        // expression is equal to constant2;
+        break;
+        .
+        .
+        .
+    default:
+        // code to be executed if
+        // expression doesn't match any constant
+}</code></pre>
+
+
+
+<p><strong>How does the switch statement work?</strong></p>
+
+
+
+<p>The&nbsp;<code>expression</code>&nbsp;is evaluated once and compared with the values of each&nbsp;<code>case</code>&nbsp;label.</p>
+
+
+
+<ul>
+<li>If there is a match, the corresponding code after the matching label is executed. For example, if the value of the variable is equal to <code>constant2</code>, the code after <code>case constant2:</code> is executed until the break statement is encountered.</li>
+
+
+
+<li>If there is no match, the code after&nbsp;<code>default:</code>&nbsp;is executed.</li>
+</ul>
+
+
+
+<p><strong>Note</strong>: We can do the same thing with the&nbsp;<code>if...else..if</code>&nbsp;ladder. However, the syntax of the&nbsp;<code>switch</code>&nbsp;statement is cleaner and much easier to read and write.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading" id="flowchart">Flowchart of switch Statement</h2>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://cdn.programiz.com/sites/tutorial2program/files/cpp-switch-flowchart.png" alt="C++ switch...case flowchart" title="C++ switch...case flowchart"/><figcaption class="wp-element-caption">Flowchart of C++ switch&#8230;case statement</figcaption></figure>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h3 class="wp-block-heading" id="example">Example: Create a Calculator using the switch Statement</h3>
+
+
+
+<pre class="wp-block-code"><code>// Program to build a simple calculator using switch Statement
+#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    char oper;
+    float num1, num2;
+    cout &lt;&lt; "Enter an operator (+, -, *, /): ";
+    cin &gt;&gt; oper;
+    cout &lt;&lt; "Enter two numbers: " &lt;&lt; endl;
+    cin &gt;&gt; num1 &gt;&gt; num2;
+
+    switch (oper) {
+        case '+':
+            cout &lt;&lt; num1 &lt;&lt; " + " &lt;&lt; num2 &lt;&lt; " = " &lt;&lt; num1 + num2;
+            break;
+        case '-':
+            cout &lt;&lt; num1 &lt;&lt; " - " &lt;&lt; num2 &lt;&lt; " = " &lt;&lt; num1 - num2;
+            break;
+        case '*':
+            cout &lt;&lt; num1 &lt;&lt; " * " &lt;&lt; num2 &lt;&lt; " = " &lt;&lt; num1 * num2;
+            break;
+        case '/':
+            cout &lt;&lt; num1 &lt;&lt; " / " &lt;&lt; num2 &lt;&lt; " = " &lt;&lt; num1 / num2;
+            break;
+        default:
+            // operator is doesn't match any case constant (+, -, *, /)
+            cout &lt;&lt; "Error! The operator is not correct";
+            break;
+    }
+
+    return 0;
+}</code></pre>
+
+
+
+<p><a href="https://www.programiz.com/cpp-programming/online-compiler" target="_blank" rel="noreferrer noopener">Run Code</a></p>
+
+
+
+<p><strong>Output 1</strong></p>
+
+
+
+<pre class="wp-block-preformatted"><samp>Enter an operator (+, -, *, /): +
+Enter two numbers: 
+2.3
+4.5
+2.3 + 4.5 = 6.8</samp></pre>
+
+
+
+<p><strong>Output 2</strong></p>
+
+
+
+<pre class="wp-block-preformatted"><samp>Enter an operator (+, -, *, /): -
+Enter two numbers: 
+2.3
+4.5
+2.3 - 4.5 = -2.2</samp></pre>
+
+
+
+<p><strong>Output 3</strong></p>
+
+
+
+<pre class="wp-block-preformatted"><samp>Enter an operator (+, -, *, /): *
+Enter two numbers: 
+2.3
+4.5
+2.3 * 4.5 = 10.35</samp></pre>
+
+
+
+<p><strong>Output 4</strong></p>
+
+
+
+<pre class="wp-block-preformatted"><samp>Enter an operator (+, -, *, /): /
+Enter two numbers: 
+2.3
+4.5
+2.3 / 4.5 = 0.511111</samp></pre>
+
+
+
+<p><strong>Output 5</strong></p>
+
+
+
+<pre class="wp-block-preformatted"><samp>Enter an operator (+, -, *, /): ?
+Enter two numbers: 
+2.3
+4.5
+Error! The operator is not correct.</samp></pre>
+
+
+
+<p>In the above program, we are using the&nbsp;<code>switch...case</code>&nbsp;statement to perform addition, subtraction, multiplication, and division.</p>
+
+
+
+<p><strong>How This Program Works</strong></p>
+
+
+
+<ol>
+<li>We first prompt the user to enter the desired operator. This input is then stored in the&nbsp;<code>char</code>&nbsp;variable named&nbsp;<var>oper</var>.</li>
+
+
+
+<li>We then prompt the user to enter two numbers, which are stored in the float variables&nbsp;<var>num1</var>&nbsp;and&nbsp;<var>num2</var>.</li>
+
+
+
+<li>The&nbsp;<code>switch</code>&nbsp;statement is then used to check the operator entered by the user:
+<ul>
+<li>If the user enters&nbsp;<code>+</code>, addition is performed on the numbers.</li>
+
+
+
+<li>If the user enters&nbsp;<code>-</code>, subtraction is performed on the numbers.</li>
+
+
+
+<li>If the user enters&nbsp;<code>*</code>, multiplication is performed on the numbers.</li>
+
+
+
+<li>If the user enters&nbsp;<code>/</code>, division is performed on the numbers.</li>
+
+
+
+<li>If the user enters any other character, the default code is printed.</li>
+</ul>
+</li>
+</ol>
+
+
+
+<p>Notice that the&nbsp;<code>break</code>&nbsp;statement is used inside each&nbsp;<code>case</code>&nbsp;block. This terminates the&nbsp;<code>switch</code>&nbsp;statement.</p>
+
+
+
+<p>If the&nbsp;<code>break</code>&nbsp;statement is not used, all cases after the correct&nbsp;<code>case</code>&nbsp;are executed.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://harriscr7.github.io/imharris/c-switch-case-statement/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>C++ If, if&#8230;else and Nested if&#8230;else</title>
+		<link>https://harriscr7.github.io/imharris/c-if-if-else-and-nested-if-else/</link>
+					<comments>https://harriscr7.github.io/imharris/c-if-if-else-and-nested-if-else/#respond</comments>
+		
+		<dc:creator><![CDATA[harrixxaeed]]></dc:creator>
+		<pubDate>Mon, 15 May 2023 20:35:37 +0000</pubDate>
+				<category><![CDATA[C++ Content]]></category>
+		<category><![CDATA[C++ FlowControl]]></category>
+		<guid isPermaLink="false">https://harriscr7.github.io/imharris/?p=187</guid>
+
+					<description><![CDATA[In this tutorial, we will learn about the if&#8230;else statement to create decision making programs with the help of examples. In computer programming, we use the&#160;if...else&#160;statement to run one block of code under certain conditions and another block of code under different conditions. For example, assigning grades (A, B, C) based on marks obtained by [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<p>In this tutorial, we will learn about the if&#8230;else statement to create decision making programs with the help of examples.</p>
+
+
+
+<p id="introduction">In computer programming, we use the&nbsp;<code>if...else</code>&nbsp;statement to run one block of code under certain conditions and another block of code under different conditions.</p>
+
+
+
+<p>For example, assigning grades (A, B, C) based on marks obtained by a student.</p>
+
+
+
+<ul>
+<li>if the percentage is above&nbsp;<strong>90</strong>, assign grade&nbsp;<strong>A</strong></li>
+
+
+
+<li>if the percentage is above&nbsp;<strong>75</strong>, assign grade&nbsp;<strong>B</strong></li>
+
+
+
+<li>if the percentage is above&nbsp;<strong>65</strong>, assign grade&nbsp;<strong>C</strong></li>
+</ul>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<p>There are three forms of&nbsp;<code>if...else</code>&nbsp;statements in C++.</p>
+
+
+
+<ol>
+<li><code>if</code>&nbsp;statement</li>
+
+
+
+<li><code>if...else</code>&nbsp;statement</li>
+
+
+
+<li><code>if...else if...else</code>&nbsp;statement</li>
+</ol>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading" id="if-statement">C++ if Statement</h2>
+
+
+
+<p>The syntax of the&nbsp;<code>if</code>&nbsp;statement is:</p>
+
+
+
+<pre class="wp-block-code"><code>if (condition) {
+  // body of if statement
+}</code></pre>
+
+
+
+<p>The&nbsp;<code>if</code>&nbsp;statement evaluates the&nbsp;<code>condition</code>&nbsp;inside the parentheses&nbsp;<code>( )</code>.</p>
+
+
+
+<ul>
+<li>If the&nbsp;<code>condition</code>&nbsp;evaluates to&nbsp;<code>true</code>, the code inside the body of&nbsp;<code>if</code>&nbsp;is executed.</li>
+
+
+
+<li>If the&nbsp;<code>condition</code>&nbsp;evaluates to&nbsp;<code>false</code>, the code inside the body of&nbsp;<code>if</code>&nbsp;is skipped.</li>
+</ul>
+
+
+
+<p><strong>Note:</strong>&nbsp;The code inside&nbsp;<code>{ }</code>&nbsp;is the body of the&nbsp;<code>if</code>&nbsp;statement.</p>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://www.programiz.com/sites/tutorial2program/files/cpp-if-working.png" alt="Working of if Statement" title="How if Statement Works"/><figcaption class="wp-element-caption">How if Statement Works</figcaption></figure>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h3 class="wp-block-heading" id="example1">Example 1: C++ if Statement</h3>
+
+
+
+<pre class="wp-block-code"><code>// Program to print positive number entered by the user
+// If the user enters a negative number, it is skipped
+
+#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+
+  int number;
+
+  cout &lt;&lt; "Enter an integer: ";
+  cin &gt;&gt; number;
+
+  // checks if the number is positive
+  if (number &gt; 0) {
+    cout &lt;&lt; "You entered a positive integer: " &lt;&lt; number &lt;&lt; endl;
+  }
+
+  cout &lt;&lt; "This statement is always executed.";
+
+  return 0;
+}</code></pre>
+
+
+
+<p><a href="https://www.programiz.com/cpp-programming/online-compiler" target="_blank" rel="noreferrer noopener">Run Code</a></p>
+
+
+
+<p><strong>Output 1</strong></p>
+
+
+
+<pre class="wp-block-preformatted"><samp>Enter an integer: 5
+You entered a positive number: 5
+This statement is always executed.</samp></pre>
+
+
+
+<p>When the user enters&nbsp;<code>5</code>, the condition&nbsp;<code>number &gt; 0</code>&nbsp;is evaluated to&nbsp;<code>true</code>&nbsp;and the statement inside the body of&nbsp;<code>if</code>&nbsp;is executed.</p>
+
+
+
+<p><strong>Output 2</strong></p>
+
+
+
+<pre class="wp-block-preformatted"><samp>Enter a number: -5
+This statement is always executed.</samp></pre>
+
+
+
+<p>When the user enters&nbsp;<code>-5</code>, the condition&nbsp;<code>number &gt; 0</code>&nbsp;is evaluated to&nbsp;<code>false</code>&nbsp;and the statement inside the body of&nbsp;<code>if</code>&nbsp;is not executed.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading" id="if-else">C++ if&#8230;else</h2>
+
+
+
+<p>The&nbsp;<code>if</code>&nbsp;statement can have an optional&nbsp;<code>else</code>&nbsp;clause. Its syntax is:</p>
+
+
+
+<pre class="wp-block-code"><code>if (condition) {
+  // block of code if condition is true
+}
+else {
+  // block of code if condition is false
+}</code></pre>
+
+
+
+<p>The&nbsp;<code>if..else</code>&nbsp;statement evaluates the&nbsp;<code>condition</code>&nbsp;inside the parenthesis.</p>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://www.programiz.com/sites/tutorial2program/files/cpp-if-else-working.png" alt="Working of if...else Statement" title="How if...else Statement Works"/><figcaption class="wp-element-caption">How if&#8230;else Statement Works</figcaption></figure>
+
+
+
+<p>If the&nbsp;<code>condition</code>&nbsp;evaluates&nbsp;<code>true</code>,</p>
+
+
+
+<ul>
+<li>the code inside the body of&nbsp;<code>if</code>&nbsp;is executed</li>
+
+
+
+<li>the code inside the body of&nbsp;<code>else</code>&nbsp;is skipped from execution</li>
+</ul>
+
+
+
+<p>If the&nbsp;<code>condition</code>&nbsp;evaluates&nbsp;<code>false</code>,</p>
+
+
+
+<ul>
+<li>the code inside the body of&nbsp;<code>else</code>&nbsp;is executed</li>
+
+
+
+<li>the code inside the body of&nbsp;<code>if</code>&nbsp;is skipped from execution</li>
+</ul>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h3 class="wp-block-heading" id="example2">Example 2: C++ if&#8230;else Statement</h3>
+
+
+
+<pre class="wp-block-code"><code>// Program to check whether an integer is positive or negative
+// This program considers 0 as a positive number
+
+#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+
+  int number;
+
+  cout &lt;&lt; "Enter an integer: ";
+  cin &gt;&gt; number;
+
+  if (number &gt;= 0) {
+    cout &lt;&lt; "You entered a positive integer: " &lt;&lt; number &lt;&lt; endl;
+  }
+  else {
+    cout &lt;&lt; "You entered a negative integer: " &lt;&lt; number &lt;&lt; endl;
+  }
+
+  cout &lt;&lt; "This line is always printed.";
+
+  return 0;
+}</code></pre>
+
+
+
+<p><a href="https://www.programiz.com/cpp-programming/online-compiler" target="_blank" rel="noreferrer noopener">Run Code</a></p>
+
+
+
+<p><strong>Output 1</strong></p>
+
+
+
+<pre class="wp-block-preformatted"><samp>Enter an integer: 4
+You entered a positive integer: 4.
+This line is always printed.</samp></pre>
+
+
+
+<p>In the above program, we have the condition&nbsp;<code>number &gt;= 0</code>. If we enter the number greater or equal to&nbsp;<var>0</var>, then the condition evaluates&nbsp;<code>true</code>.</p>
+
+
+
+<p>Here, we enter&nbsp;<var>4</var>. So, the condition is&nbsp;<code>true</code>. Hence, the statement inside the body of&nbsp;<code>if</code>&nbsp;is executed.</p>
+
+
+
+<p><strong>Output 2</strong></p>
+
+
+
+<pre class="wp-block-preformatted"><samp>Enter an integer: -4
+You entered a negative integer: -4.
+This line is always printed.</samp></pre>
+
+
+
+<p>Here, we enter&nbsp;<var>-4</var>. So, the condition is&nbsp;<code>false</code>. Hence, the statement inside the body of&nbsp;<code>else</code>&nbsp;is executed.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading" id="else-if">C++ if&#8230;else&#8230;else if statement</h2>
+
+
+
+<p>The&nbsp;<code>if...else</code>&nbsp;statement is used to execute a block of code among two alternatives. However, if we need to make a choice between more than two alternatives, we use the&nbsp;<code>if...else if...else</code>&nbsp;statement.</p>
+
+
+
+<p>The syntax of the&nbsp;<code>if...else if...else</code>&nbsp;statement is:</p>
+
+
+
+<pre class="wp-block-code"><code>if (condition1) {
+  // code block 1
+}
+else if (condition2){
+  // code block 2
+}
+else {
+  // code block 3
+}</code></pre>
+
+
+
+<p>Here,</p>
+
+
+
+<ul>
+<li>If&nbsp;<code>condition1</code>&nbsp;evaluates to&nbsp;<code>true</code>, the&nbsp;<code>code block 1</code>&nbsp;is executed.</li>
+
+
+
+<li>If&nbsp;<code>condition1</code>&nbsp;evaluates to&nbsp;<code>false</code>, then&nbsp;<code>condition2</code>&nbsp;is evaluated.</li>
+
+
+
+<li>If&nbsp;<code>condition2</code>&nbsp;is&nbsp;<code>true</code>, the&nbsp;<code>code block 2</code>&nbsp;is executed.</li>
+
+
+
+<li>If&nbsp;<code>condition2</code>&nbsp;is&nbsp;<code>false</code>, the&nbsp;<code>code block 3</code>&nbsp;is executed.</li>
+</ul>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://www.programiz.com/sites/tutorial2program/files/cpp-if-else-if-else-working.png" alt="Working of if...else if...else Statement" title="How if...else if...else Statement Works"/><figcaption class="wp-element-caption">How if&#8230;else if&#8230;else Statement Works</figcaption></figure>
+
+
+
+<p><strong>Note:</strong>&nbsp;There can be more than one&nbsp;<code>else if</code>&nbsp;statement but only one&nbsp;<code>if</code>&nbsp;and&nbsp;<code>else</code>&nbsp;statements.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h3 class="wp-block-heading" id="example3">Example 3: C++ if&#8230;else&#8230;else if</h3>
+
+
+
+<pre class="wp-block-code"><code>// Program to check whether an integer is positive, negative or zero
+
+#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+
+  int number;
+
+  cout &lt;&lt; "Enter an integer: ";
+  cin &gt;&gt; number;
+
+  if (number &gt; 0) {
+    cout &lt;&lt; "You entered a positive integer: " &lt;&lt; number &lt;&lt; endl;
+  } 
+  else if (number &lt; 0) {
+    cout &lt;&lt; "You entered a negative integer: " &lt;&lt; number &lt;&lt; endl;
+  } 
+  else {
+    cout &lt;&lt; "You entered 0." &lt;&lt; endl;
+  }
+
+  cout &lt;&lt; "This line is always printed.";
+
+  return 0;
+}</code></pre>
+
+
+
+<p><a href="https://www.programiz.com/cpp-programming/online-compiler" target="_blank" rel="noreferrer noopener">Run Code</a></p>
+
+
+
+<p><strong>Output 1</strong></p>
+
+
+
+<pre class="wp-block-preformatted"><samp>Enter an integer: 1
+You entered a positive integer: 1.
+This line is always printed.</samp></pre>
+
+
+
+<p><strong>Output 2</strong></p>
+
+
+
+<pre class="wp-block-preformatted"><samp>Enter an integer: -2
+You entered a negative integer: -2.
+This line is always printed.</samp></pre>
+
+
+
+<p><strong>Output 3</strong></p>
+
+
+
+<pre class="wp-block-preformatted"><samp>Enter an integer: 0
+You entered 0.
+This line is always printed.</samp></pre>
+
+
+
+<p>In this program, we take a number from the user. We then use the&nbsp;<code>if...else if...else</code>&nbsp;ladder to check whether the number is positive, negative, or zero.</p>
+
+
+
+<p>If the number is greater than&nbsp;<code>0</code>, the code inside the&nbsp;<code>if</code>&nbsp;block is executed. If the number is less than&nbsp;<code>0</code>, the code inside the&nbsp;<code>else if</code>&nbsp;block is executed. Otherwise, the code inside the&nbsp;<code>else</code>&nbsp;block is executed.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading" id="nested-if">C++ Nested if&#8230;else</h2>
+
+
+
+<p>Sometimes, we need to use an&nbsp;<code>if</code>&nbsp;statement inside another&nbsp;<code>if</code>&nbsp;statement. This is known as nested&nbsp;<code>if</code>&nbsp;statement.</p>
+
+
+
+<p>Think of it as multiple layers of&nbsp;<code>if</code>&nbsp;statements. There is a first, outer&nbsp;<code>if</code>&nbsp;statement, and inside it is another, inner&nbsp;<code>if</code>&nbsp;statement. Its syntax is:</p>
+
+
+
+<pre class="wp-block-code"><code>// outer if statement
+if (condition1) {
+
+  // statements
+
+  // inner if statement
+  if (condition2) {
+    // statements
+  }
+}</code></pre>
+
+
+
+<p><strong>Notes:</strong></p>
+
+
+
+<ul>
+<li>We can add&nbsp;<code>else</code>&nbsp;and&nbsp;<code>else if</code>&nbsp;statements to the inner&nbsp;<code>if</code>&nbsp;statement as required.</li>
+
+
+
+<li>The inner&nbsp;<code>if</code>&nbsp;statement can also be inserted inside the outer&nbsp;<code>else</code>&nbsp;or&nbsp;<code>else if</code>&nbsp;statements (if they exist).</li>
+
+
+
+<li>We can nest multiple layers of&nbsp;<code>if</code>&nbsp;statements.</li>
+</ul>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h3 class="wp-block-heading" id="example4">Example 4: C++ Nested if</h3>
+
+
+
+<pre class="wp-block-code"><code>// C++ program to find if an integer is positive, negative or zero
+// using nested if statements
+
+#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+
+  int num;
+    
+  cout &lt;&lt; "Enter an integer: ";  
+   cin &gt;&gt; num;    
+
+  // outer if condition
+  if (num != 0) {
+        
+    // inner if condition
+    if (num &gt; 0) {
+      cout &lt;&lt; "The number is positive." &lt;&lt; endl;
+    }
+    // inner else condition
+    else {
+      cout &lt;&lt; "The number is negative." &lt;&lt; endl;
+    }  
+  }
+  // outer else condition
+  else {
+    cout &lt;&lt; "The number is 0 and it is neither positive nor negative." &lt;&lt; endl;
+  }
+
+  cout &lt;&lt; "This line is always printed." &lt;&lt; endl;
+
+  return 0;
+}</code></pre>
+
+
+
+<p><a href="https://www.programiz.com/cpp-programming/online-compiler" target="_blank" rel="noreferrer noopener">Run Code</a></p>
+
+
+
+<p><strong>Output 1</strong></p>
+
+
+
+<pre class="wp-block-preformatted"><samp>Enter an integer: 35
+The number is positive.
+This line is always printed.</samp></pre>
+
+
+
+<p><strong>Output 2</strong></p>
+
+
+
+<pre class="wp-block-preformatted"><samp>Enter an integer: -35
+The number is negative.
+This line is always printed.</samp></pre>
+
+
+
+<p><strong>Output 3</strong></p>
+
+
+
+<pre class="wp-block-preformatted"><samp>Enter an integer: 0
+The number is 0 and it is neither positive nor negative.
+This line is always printed.</samp></pre>
+
+
+
+<p>In the above example,</p>
+
+
+
+<ul>
+<li>We take an integer as an input from the user and store it in the variable&nbsp;<var>num</var>.</li>
+
+
+
+<li>We then use an&nbsp;<code>if...else</code>&nbsp;statement to check whether num is not equal to&nbsp;<code>0</code>.
+<ul>
+<li>If&nbsp;<code>true</code>, then the&nbsp;<strong>inner</strong>&nbsp;<code>if...else</code>&nbsp;statement is executed.</li>
+
+
+
+<li>If&nbsp;<code>false</code>, the code inside the&nbsp;<strong>outer</strong>&nbsp;<code>else</code>&nbsp;condition is executed, which prints&nbsp;<code>"The number is 0 and it is neither positive nor negative."</code></li>
+</ul>
+</li>
+
+
+
+<li>The&nbsp;<strong>inner</strong><code>if...else</code>&nbsp;statement checks whether the input number is positive i.e. if&nbsp;<var>num</var>&nbsp;is greater than&nbsp;<strong>0</strong>.
+<ul>
+<li>If&nbsp;<code>true</code>, then we print a statement saying that the number is positive.</li>
+
+
+
+<li>If&nbsp;<code>false</code>, we print that the number is negative.</li>
+</ul>
+</li>
+</ul>
+
+
+
+<p><strong>Note:</strong>&nbsp;As you can see, nested&nbsp;<code>if...else</code>&nbsp;makes your logic complicated. If possible, you should always try to avoid nested&nbsp;<code>if...else</code>.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading" id="body-of-if-else-with-only-one-statement">Body of if&#8230;else With Only One Statement</h2>
+
+
+
+<p>If the body of&nbsp;<code>if...else</code>&nbsp;has only one statement, you can omit&nbsp;<code>{ }</code>&nbsp;in the program. For example, you can replace</p>
+
+
+
+<pre class="wp-block-code"><code>int number = 5;
+
+if (number &gt; 0) {
+  cout &lt;&lt; "The number is positive." &lt;&lt; endl;
+}
+else {
+  cout &lt;&lt; "The number is negative." &lt;&lt; endl;
+}</code></pre>
+
+
+
+<p>with</p>
+
+
+
+<pre class="wp-block-code"><code>int number = 5;
+
+if (number &gt; 0)
+  cout &lt;&lt; "The number is positive." &lt;&lt; endl;
+else
+  cout &lt;&lt; "The number is negative." &lt;&lt; endl;</code></pre>
+
+
+
+<p>The output of both programs will be the same.</p>
+
+
+
+<p><strong>Note:</strong>&nbsp;Although it&#8217;s not necessary to use&nbsp;<code>{ }</code>&nbsp;if the body of&nbsp;<code>if...else</code>&nbsp;has only one statement, using&nbsp;<code>{ }</code>&nbsp;makes your code more readable.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://harriscr7.github.io/imharris/c-if-if-else-and-nested-if-else/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

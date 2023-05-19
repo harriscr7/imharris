@@ -4,10 +4,9 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="max-image-preview:large">
-<title>C++ Goto Statement &#8211; imharris</title>
+<title>C++ Operators &#8211; imharris</title>
 <link rel="alternate" type="application/rss+xml" title="imharris &raquo; Feed" href="https://harriscr7.github.io/imharris/feed/">
 <link rel="alternate" type="application/rss+xml" title="imharris &raquo; Comments Feed" href="https://harriscr7.github.io/imharris/comments/feed/">
-<link rel="alternate" type="application/rss+xml" title="imharris &raquo; C++ Goto Statement Comments Feed" href="https://harriscr7.github.io/imharris/c-goto-statement/feed/">
 <script>
 window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/harriscr7.github.io\/imharris\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.2"}};
 /*! This file is auto-generated */
@@ -44,17 +43,23 @@ img.emoji {
 <style id="wp-block-post-featured-image-inline-css">.wp-block-post-featured-image{margin-left:0;margin-right:0}.wp-block-post-featured-image a{display:block}.wp-block-post-featured-image img{box-sizing:border-box;height:auto;max-width:100%;vertical-align:bottom;width:100%}.wp-block-post-featured-image.alignfull img,.wp-block-post-featured-image.alignwide img{width:100%}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim{background-color:#000;inset:0;position:absolute}.wp-block-post-featured-image{position:relative}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-gradient{background-color:transparent}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-0{opacity:0}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-10{opacity:.1}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-20{opacity:.2}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-30{opacity:.3}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-40{opacity:.4}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-50{opacity:.5}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-60{opacity:.6}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-70{opacity:.7}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-80{opacity:.8}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-90{opacity:.9}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-100{opacity:1}</style>
 <style id="wp-block-paragraph-inline-css">.is-small-text{font-size:.875em}.is-regular-text{font-size:1em}.is-large-text{font-size:2.25em}.is-larger-text{font-size:3em}.has-drop-cap:not(:focus):first-letter{float:left;font-size:8.4em;font-style:normal;font-weight:100;line-height:.68;margin:.05em .1em 0 0;text-transform:uppercase}body.rtl .has-drop-cap:not(:focus):first-letter{float:none;margin-left:.1em}p.has-drop-cap.has-background{overflow:hidden}p.has-background{padding:1.25em 2.375em}:where(p.has-text-color:not(.has-link-color)) a{color:inherit}
 p{margin-top: 0px;margin-bottom: var(--wp--custom--spacing--blockbottom);}</style>
+<style id="wp-block-list-inline-css">ol,ul{box-sizing:border-box}ol.has-background,ul.has-background{padding:1.25em 2.375em}</style>
+<style id="wp-block-separator-inline-css">@charset "UTF-8";.wp-block-separator{border:1px solid;border-left:none;border-right:none}.wp-block-separator.is-style-dots{background:none!important;border:none;height:auto;line-height:1;text-align:center}.wp-block-separator.is-style-dots:before{color:currentColor;content:"···";font-family:serif;font-size:1.5em;letter-spacing:2em;padding-left:2em}
+.wp-block-separator.has-css-opacity{opacity:.4}.wp-block-separator{border:none;border-bottom:2px solid;margin-left:auto;margin-right:auto}.wp-block-separator.has-alpha-channel-opacity{opacity:1}.wp-block-separator:not(.is-style-wide):not(.is-style-dots){width:100px}.wp-block-separator.has-background:not(.is-style-dots){border-bottom:none;height:1px}.wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots){height:2px}
+.wp-block-separator{color: var(--wp--preset--color--lightborder);font-size: var(--wp--preset--font-size--large);margin-top: var(--wp--custom--spacing--blockbottom);margin-bottom: var(--wp--custom--spacing--blockbottom);}</style>
+<style id="greenshift_core_separator-inline-css">.wp-block-separator{opacity:1}.wp-block-separator.has-background:not(.is-style-dots),.wp-block-separator:not(.is-style-dots){border-bottom:1px solid currentColor;height:1px}.wp-block-separator.is-style-dots:before{font-family:inherit;font-size:var(--wp--preset--font-size--large);letter-spacing:10px;padding-left:10px}</style>
 <style id="wp-block-heading-inline-css">h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-background,h6.has-background{padding:1.25em 2.375em}
 .wp-block-heading{font-family: var(--wp--preset--font-family--primary);}</style>
-<style id="wp-block-preformatted-inline-css">.wp-block-preformatted{white-space:pre-wrap}.wp-block-preformatted.has-background{padding:1.25em 2.375em}
-.wp-block-preformatted{background-color: var(--wp--custom--color--black);border-radius: 0;border-color: var(--wp--custom--color--black);color: var(--wp--custom--color--white);font-family: var(--wp--preset--font-family--monospace);font-size: var(--wp--preset--font-size--small);margin-bottom: var(--wp--custom--spacing--blockbottom);padding-top: 25px;padding-right: 30px;padding-bottom: 25px;padding-left: 30px;}</style>
-<style id="greenshift_core_code-inline-css">.wp-block-code code, .wp-block-preformatted{overflow-wrap:normal;overflow-x:auto;white-space:pre}code::selection{background: #777}</style>
-<style id="wp-block-image-inline-css">.wp-block-image img{height:auto;max-width:100%;vertical-align:bottom}.wp-block-image img,.wp-block-image.has-custom-border img{box-sizing:border-box}.wp-block-image.aligncenter{text-align:center}.wp-block-image.alignfull img,.wp-block-image.alignwide img{height:auto;width:100%}.wp-block-image .aligncenter,.wp-block-image .alignleft,.wp-block-image .alignright,.wp-block-image.aligncenter,.wp-block-image.alignleft,.wp-block-image.alignright{display:table}.wp-block-image .aligncenter>figcaption,.wp-block-image .alignleft>figcaption,.wp-block-image .alignright>figcaption,.wp-block-image.aligncenter>figcaption,.wp-block-image.alignleft>figcaption,.wp-block-image.alignright>figcaption{caption-side:bottom;display:table-caption}.wp-block-image .alignleft{float:left;margin:.5em 1em .5em 0}.wp-block-image .alignright{float:right;margin:.5em 0 .5em 1em}.wp-block-image .aligncenter{margin-left:auto;margin-right:auto}.wp-block-image figcaption{margin-bottom:1em;margin-top:.5em}.wp-block-image .is-style-rounded img,.wp-block-image.is-style-circle-mask img,.wp-block-image.is-style-rounded img{border-radius:9999px}@supports ((-webkit-mask-image:none) or (mask-image:none)) or (-webkit-mask-image:none){.wp-block-image.is-style-circle-mask img{border-radius:0;-webkit-mask-image:url('data:image/svg+xml;utf8,<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="50"/></svg>');mask-image:url('data:image/svg+xml;utf8,<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="50"/></svg>');mask-mode:alpha;-webkit-mask-position:center;mask-position:center;-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;-webkit-mask-size:contain;mask-size:contain}}.wp-block-image :where(.has-border-color){border-style:solid}.wp-block-image :where([style*=border-top-color]){border-top-style:solid}.wp-block-image :where([style*=border-right-color]){border-right-style:solid}.wp-block-image :where([style*=border-bottom-color]){border-bottom-style:solid}.wp-block-image :where([style*=border-left-color]){border-left-style:solid}.wp-block-image :where([style*=border-width]){border-style:solid}.wp-block-image :where([style*=border-top-width]){border-top-style:solid}.wp-block-image :where([style*=border-right-width]){border-right-style:solid}.wp-block-image :where([style*=border-bottom-width]){border-bottom-style:solid}.wp-block-image :where([style*=border-left-width]){border-left-style:solid}.wp-block-image figure{margin:0}
-.wp-block-image figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-image figcaption{color:hsla(0,0%,100%,.65)}.wp-block-image{margin:0 0 1em}
-.wp-block-image{margin-top: var( --wp--style--block-gap );margin-bottom: var(--wp--custom--spacing--blockbottom);}</style>
 <style id="wp-block-code-inline-css">.wp-block-code{box-sizing:border-box}.wp-block-code code{display:block;font-family:inherit;overflow-wrap:break-word;white-space:pre-wrap}
 .wp-block-code{border:1px solid #ccc;border-radius:4px;font-family:Menlo,Consolas,monaco,monospace;padding:.8em 1em}
 .wp-block-code{background-color: var(--wp--custom--color--black);border-radius: 0;border-color: var(--wp--custom--color--black);color: var(--wp--custom--color--white);font-family: var(--wp--preset--font-family--monospace);font-size: var(--wp--preset--font-size--small);margin-bottom: var(--wp--custom--spacing--blockbottom);padding-top: 25px;padding-right: 30px;padding-bottom: 25px;padding-left: 30px;}</style>
+<style id="greenshift_core_code-inline-css">.wp-block-code code, .wp-block-preformatted{overflow-wrap:normal;overflow-x:auto;white-space:pre}code::selection{background: #777}</style>
+<style id="wp-block-table-inline-css">.wp-block-table{overflow-x:auto}.wp-block-table table{border-collapse:collapse;width:100%}.wp-block-table thead{border-bottom:3px solid}.wp-block-table tfoot{border-top:3px solid}.wp-block-table td,.wp-block-table th{border:1px solid;padding:.5em}.wp-block-table .has-fixed-layout{table-layout:fixed;width:100%}.wp-block-table .has-fixed-layout td,.wp-block-table .has-fixed-layout th{word-break:break-word}.wp-block-table.aligncenter,.wp-block-table.alignleft,.wp-block-table.alignright{display:table;width:auto}.wp-block-table.aligncenter td,.wp-block-table.aligncenter th,.wp-block-table.alignleft td,.wp-block-table.alignleft th,.wp-block-table.alignright td,.wp-block-table.alignright th{word-break:break-word}.wp-block-table .has-subtle-light-gray-background-color{background-color:#f3f4f5}.wp-block-table .has-subtle-pale-green-background-color{background-color:#e9fbe5}.wp-block-table .has-subtle-pale-blue-background-color{background-color:#e7f5fe}.wp-block-table .has-subtle-pale-pink-background-color{background-color:#fcf0ef}.wp-block-table.is-style-stripes{background-color:transparent;border-bottom:1px solid #f0f0f0;border-collapse:inherit;border-spacing:0}.wp-block-table.is-style-stripes tbody tr:nth-child(odd){background-color:#f0f0f0}.wp-block-table.is-style-stripes.has-subtle-light-gray-background-color tbody tr:nth-child(odd){background-color:#f3f4f5}.wp-block-table.is-style-stripes.has-subtle-pale-green-background-color tbody tr:nth-child(odd){background-color:#e9fbe5}.wp-block-table.is-style-stripes.has-subtle-pale-blue-background-color tbody tr:nth-child(odd){background-color:#e7f5fe}.wp-block-table.is-style-stripes.has-subtle-pale-pink-background-color tbody tr:nth-child(odd){background-color:#fcf0ef}.wp-block-table.is-style-stripes td,.wp-block-table.is-style-stripes th{border-color:transparent}.wp-block-table .has-border-color td,.wp-block-table .has-border-color th,.wp-block-table .has-border-color tr,.wp-block-table .has-border-color>*{border-color:inherit}.wp-block-table table[style*=border-top-color] tr:first-child,.wp-block-table table[style*=border-top-color] tr:first-child td,.wp-block-table table[style*=border-top-color] tr:first-child th,.wp-block-table table[style*=border-top-color]>*,.wp-block-table table[style*=border-top-color]>* td,.wp-block-table table[style*=border-top-color]>* th{border-top-color:inherit}.wp-block-table table[style*=border-top-color] tr:not(:first-child){border-top-color:currentColor}.wp-block-table table[style*=border-right-color] td:last-child,.wp-block-table table[style*=border-right-color] th,.wp-block-table table[style*=border-right-color] tr,.wp-block-table table[style*=border-right-color]>*{border-right-color:inherit}.wp-block-table table[style*=border-bottom-color] tr:last-child,.wp-block-table table[style*=border-bottom-color] tr:last-child td,.wp-block-table table[style*=border-bottom-color] tr:last-child th,.wp-block-table table[style*=border-bottom-color]>*,.wp-block-table table[style*=border-bottom-color]>* td,.wp-block-table table[style*=border-bottom-color]>* th{border-bottom-color:inherit}.wp-block-table table[style*=border-bottom-color] tr:not(:last-child){border-bottom-color:currentColor}.wp-block-table table[style*=border-left-color] td:first-child,.wp-block-table table[style*=border-left-color] th,.wp-block-table table[style*=border-left-color] tr,.wp-block-table table[style*=border-left-color]>*{border-left-color:inherit}.wp-block-table table[style*=border-style] td,.wp-block-table table[style*=border-style] th,.wp-block-table table[style*=border-style] tr,.wp-block-table table[style*=border-style]>*{border-style:inherit}.wp-block-table table[style*=border-width] td,.wp-block-table table[style*=border-width] th,.wp-block-table table[style*=border-width] tr,.wp-block-table table[style*=border-width]>*{border-style:inherit;border-width:inherit}
+.wp-block-table{margin:0 0 1em}.wp-block-table td,.wp-block-table th{word-break:normal}.wp-block-table figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-table figcaption{color:hsla(0,0%,100%,.65)}
+.wp-block-table > table{font-size: var(--wp--preset--font-size--small);line-height: var(--wp--custom--line-height--medium);margin-bottom: var(--wp--custom--spacing--blockbottom);}</style>
+<style id="greenshift_core_table-inline-css">.wp-block-table.is-style-stripes{border-bottom:none}.wp-block-table table{border-collapse:collapse}.wp-block-table thead{border-bottom:3px solid var(--wp--preset--color--lightborder)}.wp-block-table tfoot{border-top:3px solid var(--wp--preset--color--lightborder)}.wp-block-table td,.wp-block-table th,.wp-block-table tr,.wp-block-table.is-style-stripes td,.wp-block-table.is-style-stripes th,.wp-block-table.is-style-stripes tr{border:1px solid var(--wp--preset--color--lightborder)}.wp-block-table th{font-weight:var(--wp--custom--font-weight--normal)}.wp-block-table td,.wp-block-table th{padding:6px 12px}.wp-block-table.is-style-stripes tbody tr:nth-child(odd){background-color:var(--wp--preset--color--lightbg)}</style>
+<style id="wp-block-preformatted-inline-css">.wp-block-preformatted{white-space:pre-wrap}.wp-block-preformatted.has-background{padding:1.25em 2.375em}
+.wp-block-preformatted{background-color: var(--wp--custom--color--black);border-radius: 0;border-color: var(--wp--custom--color--black);color: var(--wp--custom--color--white);font-family: var(--wp--preset--font-family--monospace);font-size: var(--wp--preset--font-size--small);margin-bottom: var(--wp--custom--spacing--blockbottom);padding-top: 25px;padding-right: 30px;padding-bottom: 25px;padding-left: 30px;}</style>
 <style id="wp-block-post-navigation-link-inline-css">.wp-block-post-navigation-link .wp-block-post-navigation-link__arrow-previous{display:inline-block;margin-right:1ch}.wp-block-post-navigation-link .wp-block-post-navigation-link__arrow-previous:not(.is-arrow-chevron){transform:scaleX(1)}.wp-block-post-navigation-link .wp-block-post-navigation-link__arrow-next{display:inline-block;margin-left:1ch}.wp-block-post-navigation-link .wp-block-post-navigation-link__arrow-next:not(.is-arrow-chevron){transform:scaleX(1)}</style>
 <style id="greenshift_core_postnavigation-inline-css">.wp-block-post-navigation-link{display:flex;gap:15px;position:relative; z-index:0}.post-navigation-link__label{font-size:40px;color:var(--wp--preset--color--lightborder);transition:transform .5s var(--greenshift-transition);line-height:25px}.wp-block-post-navigation-link a{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;position:relative}.wp-block-post-navigation-link:hover .post-navigation-link__label{transform:translateX(-5px)}.wp-block-post-navigation-link.has-text-align-right{justify-content:flex-end}.wp-block-post-navigation-link.has-text-align-right .post-navigation-link__label{order:2}</style>
 <style id="wp-block-columns-inline-css">.wp-block-columns{align-items:normal!important;box-sizing:border-box;display:flex;flex-wrap:wrap!important;margin-bottom:1.75em}@media (min-width:782px){.wp-block-columns{flex-wrap:nowrap!important}}.wp-block-columns.are-vertically-aligned-top{align-items:flex-start}.wp-block-columns.are-vertically-aligned-center{align-items:center}.wp-block-columns.are-vertically-aligned-bottom{align-items:flex-end}@media (max-width:781px){.wp-block-columns:not(.is-not-stacked-on-mobile)>.wp-block-column{flex-basis:100%!important}}@media (min-width:782px){.wp-block-columns:not(.is-not-stacked-on-mobile)>.wp-block-column{flex-basis:0;flex-grow:1}.wp-block-columns:not(.is-not-stacked-on-mobile)>.wp-block-column[style*=flex-basis]{flex-grow:0}}.wp-block-columns.is-not-stacked-on-mobile{flex-wrap:nowrap!important}.wp-block-columns.is-not-stacked-on-mobile>.wp-block-column{flex-basis:0;flex-grow:1}.wp-block-columns.is-not-stacked-on-mobile>.wp-block-column[style*=flex-basis]{flex-grow:0}:where(.wp-block-columns.has-background){padding:1.25em 2.375em}.wp-block-column{flex-grow:1;min-width:0;overflow-wrap:break-word;word-break:break-word}.wp-block-column.is-vertically-aligned-top{align-self:flex-start}.wp-block-column.is-vertically-aligned-center{align-self:center}.wp-block-column.is-vertically-aligned-bottom{align-self:flex-end}.wp-block-column.is-vertically-aligned-bottom,.wp-block-column.is-vertically-aligned-center,.wp-block-column.is-vertically-aligned-top{width:100%}
@@ -72,21 +77,21 @@ p{margin-top: 0px;margin-bottom: var(--wp--custom--spacing--blockbottom);}</styl
 <script src="https://harriscr7.github.io/imharris/wp-includes/blocks/navigation/view.min.js?ver=c24330f635f5cb9d5e0e" id="wp-block-navigation-view-js"></script>
 <script src="https://harriscr7.github.io/imharris/wp-includes/blocks/navigation/view-modal.min.js?ver=f51363b18f0497ec84da" id="wp-block-navigation-view-2-js"></script>
 <link rel="https://api.w.org/" href="https://harriscr7.github.io/imharris/wp-json/">
-<link rel="alternate" type="application/json" href="https://harriscr7.github.io/imharris/wp-json/wp/v2/posts/219">
+<link rel="alternate" type="application/json" href="https://harriscr7.github.io/imharris/wp-json/wp/v2/posts/45">
 <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://harriscr7.github.io/imharris/xmlrpc.php?rsd">
 <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://harriscr7.github.io/imharris/wp-includes/wlwmanifest.xml">
 <meta name="generator" content="WordPress 6.2">
-<link rel="canonical" href="https://harriscr7.github.io/imharris/c-goto-statement/">
-<link rel="shortlink" href="https://harriscr7.github.io/imharris/?p=219">
-<link rel="alternate" type="application/json+oembed" href="https://harriscr7.github.io/imharris/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fharriscr7.github.io%2Fimharris%2Fc-goto-statement%2F">
-<link rel="alternate" type="text/xml+oembed" href="https://harriscr7.github.io/imharris/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fharriscr7.github.io%2Fimharris%2Fc-goto-statement%2F#038;format=xml">
+<link rel="canonical" href="https://harriscr7.github.io/imharris/c-operators/">
+<link rel="shortlink" href="https://harriscr7.github.io/imharris/?p=45">
+<link rel="alternate" type="application/json+oembed" href="https://harriscr7.github.io/imharris/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fharriscr7.github.io%2Fimharris%2Fc-operators%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://harriscr7.github.io/imharris/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fharriscr7.github.io%2Fimharris%2Fc-operators%2F#038;format=xml">
 <link rel="icon" href="https://harriscr7.github.io/imharris/wp-content/uploads/2023/05/image_2023-05-14_210105897.png" sizes="32x32">
 <link rel="icon" href="https://harriscr7.github.io/imharris/wp-content/uploads/2023/05/image_2023-05-14_210105897.png" sizes="192x192">
 <link rel="apple-touch-icon" href="https://harriscr7.github.io/imharris/wp-content/uploads/2023/05/image_2023-05-14_210105897.png">
 <meta name="msapplication-TileImage" content="https://harriscr7.github.io/imharris/wp-content/uploads/2023/05/image_2023-05-14_210105897.png">
 </head>
 
-<body class="post-template-default single single-post postid-219 single-format-standard wp-custom-logo wp-embed-responsive gspbody gspb-bodyfront">
+<body class="post-template-default single single-post postid-45 single-format-standard wp-custom-logo wp-embed-responsive gspbody gspb-bodyfront">
 <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-dark-grayscale"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0 0.49803921568627"></fefuncr><fefuncg type="table" tablevalues="0 0.49803921568627"></fefuncg><fefuncb type="table" tablevalues="0 0.49803921568627"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-grayscale"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0 1"></fefuncr><fefuncg type="table" tablevalues="0 1"></fefuncg><fefuncb type="table" tablevalues="0 1"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-purple-yellow"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0.54901960784314 0.98823529411765"></fefuncr><fefuncg type="table" tablevalues="0 1"></fefuncg><fefuncb type="table" tablevalues="0.71764705882353 0.25490196078431"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-blue-red"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0 1"></fefuncr><fefuncg type="table" tablevalues="0 0.27843137254902"></fefuncg><fefuncb type="table" tablevalues="0.5921568627451 0.27843137254902"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-midnight"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0 0"></fefuncr><fefuncg type="table" tablevalues="0 0.64705882352941"></fefuncg><fefuncb type="table" tablevalues="0 1"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-magenta-yellow"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0.78039215686275 1"></fefuncr><fefuncg type="table" tablevalues="0 0.94901960784314"></fefuncg><fefuncb type="table" tablevalues="0.35294117647059 0.47058823529412"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-purple-green"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0.65098039215686 0.40392156862745"></fefuncr><fefuncg type="table" tablevalues="0 1"></fefuncg><fefuncb type="table" tablevalues="0.44705882352941 0.4"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-blue-orange"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0.098039215686275 1"></fefuncr><fefuncg type="table" tablevalues="0 0.66274509803922"></fefuncg><fefuncb type="table" tablevalues="0.84705882352941 0.41960784313725"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg>
 <div class="wp-site-blocks">
 <header class="site-header wp-block-template-part">
@@ -129,7 +134,7 @@ p{margin-top: 0px;margin-bottom: var(--wp--custom--spacing--blockbottom);}</styl
 
 <div class="wp-block-group site-title-area has-global-padding is-layout-constrained" style="margin-top:0;margin-bottom:0"><div class="alignwide site-title-area wp-block-template-part">
 <div class="wp-block-group has-basecolor-color has-contrastcolor-background-color has-text-color has-background has-global-padding is-layout-constrained" style="padding-top:40px">
-<h1 class="wp-block-post-title has-max-huge-font-size">C++ Goto Statement</h1>
+<h1 class="wp-block-post-title has-max-huge-font-size">C++ Operators</h1>
 
 </div>
 </div></div>
@@ -137,73 +142,130 @@ p{margin-top: 0px;margin-bottom: var(--wp--custom--spacing--blockbottom);}</styl
 
 
 <main class="wp-block-group site-content has-basecolor-color has-contrastcolor-background-color has-text-color has-background is-layout-flow" style="margin-top:0;margin-bottom:0;padding-top:50px;padding-right:0;padding-bottom:50px;padding-left:0"><div class="entry-content wp-block-post-content has-global-padding is-layout-constrained">
-<p>In this article, you&#8217;ll learn about goto statment, how it works and why should it be avoided.</p>
+<p>In this tutorial, we will learn about the different types of operators in C++ with the help of examples. In programming, an operator is a symbol that operates on a value or a variable.</p>
 
 
 
-<p>In C++ programming, the goto statement is used for altering the normal sequence of program execution by transferring control to some other part of the program.</p>
+<p id="introduction">Operators are symbols that perform operations on variables and values. For example,&nbsp;<code>+</code>&nbsp;is an operator used for addition, while&nbsp;<code>-</code>&nbsp;is an operator used for subtraction.</p>
 
 
 
-<h2 class="wp-block-heading" id="syntax-of-goto-statement">Syntax of goto Statement</h2>
+<p>Operators in C++ can be classified into 6 types:</p>
 
 
 
-<pre class="wp-block-preformatted">goto label;
-... .. ...
-... .. ...
-... .. ...
-label: 
-statement;
-... .. ...</pre>
+<ol>
+<li><a href="https://www.programiz.com/cpp-programming/operators#arithmetic">Arithmetic Operators</a></li>
 
 
 
-<p>In the syntax above,&nbsp;<var>label</var>&nbsp;is an identifier. When&nbsp;<code>goto label;</code>&nbsp;is encountered, the control of program jumps to&nbsp;<code>label:</code>&nbsp;and executes the code below it.</p>
+<li><a href="https://www.programiz.com/cpp-programming/operators#assignment">Assignment Operators</a></li>
 
 
 
-<figure class="wp-block-image"><img decoding="async" src="https://cdn.programiz.com/sites/tutorial2program/files/cpp-goto-working.png" alt="Working of goto statement in C++ programming"><figcaption class="wp-element-caption">Working of goto in C++</figcaption></figure>
+<li><a href="https://www.programiz.com/cpp-programming/operators#relational">Relational Operators</a></li>
 
 
 
-<h3 class="wp-block-heading" id="example-goto-statement">Example: goto Statement</h3>
+<li><a href="https://www.programiz.com/cpp-programming/operators#logical">Logical Operators</a></li>
 
 
 
-<pre class="wp-block-code"><code>// This program calculates the average of numbers entered by the user.
-// If the user enters a negative number, it ignores the number and 
-// calculates the average number entered before it.
+<li><a href="https://www.programiz.com/cpp-programming/operators#bitwise">Bitwise Operators</a></li>
 
-# include &lt;iostream&gt;
+
+
+<li><a href="https://www.programiz.com/cpp-programming/operators#other-operators">Other Operators</a></li>
+</ol>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity">
+
+
+
+<h2 class="wp-block-heading" id="arithmetic">1. C++ Arithmetic Operators</h2>
+
+
+
+<p>Arithmetic operators are used to perform arithmetic operations on variables and data. For example,</p>
+
+
+
+<pre class="wp-block-code"><code>a + b;</code></pre>
+
+
+
+<p>Here, the&nbsp;<code>+</code>&nbsp;operator is used to add two variables&nbsp;<var>a</var>&nbsp;and&nbsp;<var>b</var>. Similarly there are various other arithmetic operators in C++.</p>
+
+
+
+<figure class="wp-block-table"><table><tbody>
+<tr>
+<th>Operator</th>
+<th>Operation</th>
+</tr>
+<tr>
+<td><code>+</code></td>
+<td>Addition</td>
+</tr>
+<tr>
+<td><code>-</code></td>
+<td>Subtraction</td>
+</tr>
+<tr>
+<td><code>*</code></td>
+<td>Multiplication</td>
+</tr>
+<tr>
+<td><code>/</code></td>
+<td>Division</td>
+</tr>
+<tr>
+<td><code>%</code></td>
+<td>Modulo Operation (Remainder after division)</td>
+</tr>
+</tbody></table></figure>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity">
+
+
+
+<h3 class="wp-block-heading">Example 1: Arithmetic Operators</h3>
+
+
+
+<pre class="wp-block-code"><code>#include &lt;iostream&gt;
 using namespace std;
 
-int main()
-{
-    float num, average, sum = 0.0;
-    int i, n;
+int main() {
+    int a, b;
+    a = 7;
+    b = 2;
 
-    cout &lt;&lt; "Maximum number of inputs: ";
-    cin &gt;&gt; n;
+    // printing the sum of a and b
+    cout &lt;&lt; "a + b = " &lt;&lt; (a + b) &lt;&lt; endl;
 
-    for(i = 1; i &lt;= n; ++i)
-    {
-        cout &lt;&lt; "Enter n" &lt;&lt; i &lt;&lt; ": ";
-        cin &gt;&gt; num;
-        
-        if(num &lt; 0.0)
-        {
-           // Control of the program move to jump:
-            goto jump;
-        } 
-        sum += num;
-    }
-    
-jump:
-    average = sum / (i - 1);
-    cout &lt;&lt; "\nAverage = " &lt;&lt; average;
+    // printing the difference of a and b
+    cout &lt;&lt; "a - b = " &lt;&lt; (a - b) &lt;&lt; endl;
+
+    // printing the product of a and b
+    cout &lt;&lt; "a * b = " &lt;&lt; (a * b) &lt;&lt; endl;
+
+    // printing the division of a by b
+    cout &lt;&lt; "a / b = " &lt;&lt; (a / b) &lt;&lt; endl;
+
+    // printing the modulo of a by b
+    cout &lt;&lt; "a % b = " &lt;&lt; (a % b) &lt;&lt; endl;
+
     return 0;
 }</code></pre>
+
+
+
+<p><a href="https://www.programiz.com/cpp-programming/online-compiler" target="_blank" rel="noreferrer noopener">Run Code</a></p>
 
 
 
@@ -211,32 +273,662 @@ jump:
 
 
 
-<pre class="wp-block-preformatted"><samp>Maximum number of inputs: 10
-Enter n1: 2.3
-Enter n2: 5.6
-Enter n3: -5.6
-
-Average = 3.95</samp></pre>
-
-
-
-<p>You can write any C++ program without the use of&nbsp;<code>goto</code>&nbsp;statement and is generally considered a good idea not to use them.</p>
+<pre class="wp-block-preformatted"><samp>a + b = 9
+a - b = 5
+a * b = 14
+a / b = 3
+a % b = 1</samp></pre>
 
 
 
-<h3 class="wp-block-heading" id="reason-to-avoid-goto-statement">Reason to Avoid goto Statement</h3>
+<p>Here, the operators&nbsp;<code>+</code>,&nbsp;<code>-</code>&nbsp;and&nbsp;<code>*</code>&nbsp;compute addition, subtraction, and multiplication respectively as we might have expected.</p>
 
 
 
-<p>The goto statement gives the power to jump to any part of a program but, makes the logic of the program complex and tangled.</p>
+<p><strong>/ Division Operator</strong></p>
 
 
 
-<p>In modern programming, the goto statement is considered a harmful construct and a bad programming practice.</p>
+<p>Note the operation&nbsp;<code>(a / b)</code>&nbsp;in our program. The&nbsp;<code>/</code>&nbsp;operator is the division operator.</p>
 
 
 
-<p>The goto statement can be replaced in most of C++ program with the use of break and continue statements.</p>
+<p>As we can see from the above example, if an integer is divided by another integer, we will get the quotient. However, if either divisor or dividend is a floating-point number, we will get the result in decimals.</p>
+
+
+
+<pre class="wp-block-preformatted">In C++,
+
+7/2 is 3
+7.0 / 2 is 3.5
+7 / 2.0 is 3.5
+7.0 / 2.0 is 3.5</pre>
+
+
+
+<p><strong>% Modulo Operator</strong></p>
+
+
+
+<p>The modulo operator&nbsp;<code>%</code>&nbsp;computes the remainder. When&nbsp;<code>a = 9</code>&nbsp;is divided by&nbsp;<code>b = 4</code>, the remainder is&nbsp;<strong>1</strong>.</p>
+
+
+
+<p><strong>Note:</strong>&nbsp;The&nbsp;<code>%</code>&nbsp;operator can only be used with integers.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity">
+
+
+
+<h3 class="wp-block-heading" id="increment-decrement">Increment and Decrement Operators</h3>
+
+
+
+<p>C++ also provides increment and decrement operators:&nbsp;<code>++</code>&nbsp;and&nbsp;<code>--</code>&nbsp;respectively.</p>
+
+
+
+<ul>
+<li>
+<code>++</code>&nbsp;increases the value of the operand by&nbsp;<strong>1</strong>
+</li>
+
+
+
+<li>
+<code>--</code>&nbsp;decreases it by&nbsp;<strong>1</strong>
+</li>
+</ul>
+
+
+
+<p>For example,</p>
+
+
+
+<pre class="wp-block-code"><code>int num = 5;
+
+// increment operator
+++num;  // 6</code></pre>
+
+
+
+<p>Here, the code&nbsp;<code>++num;</code>&nbsp;increases the value of&nbsp;<var>num</var>&nbsp;by&nbsp;<strong>1</strong>.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity">
+
+
+
+<h3 class="wp-block-heading">Example 2: Increment and Decrement Operators</h3>
+
+
+
+<pre class="wp-block-code"><code>// Working of increment and decrement operators
+
+#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    int a = 10, b = 100, result_a, result_b;
+
+    // incrementing a by 1 and storing the result in result_a
+    result_a = ++a;
+    cout &lt;&lt; "result_a = " &lt;&lt; result_a &lt;&lt; endl;
+
+
+    // decrementing b by 1 and storing the result in result_b   
+    result_b = --b;
+    cout &lt;&lt; "result_b = " &lt;&lt; result_b &lt;&lt; endl;
+
+    return 0;
+}</code></pre>
+
+
+
+<p><a href="https://www.programiz.com/cpp-programming/online-compiler" target="_blank" rel="noreferrer noopener">Run Code</a></p>
+
+
+
+<p><strong>Output</strong></p>
+
+
+
+<pre class="wp-block-preformatted"><samp>result_a = 11
+result_b = 99</samp></pre>
+
+
+
+<p>In the above program, we have used the&nbsp;<code>++</code>&nbsp;and&nbsp;<code>--</code>&nbsp;operators as&nbsp;<strong>prefixes (++a and &#8211;b)</strong>. However, we can also use these operators as&nbsp;<strong>postfix (a++ and b&#8211;)</strong>.</p>
+
+
+
+<p>To learn more, visit&nbsp;<a href="https://www.programiz.com/article/increment-decrement-operator-difference-prefix-postfix">increment and decrement operators</a>.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity">
+
+
+
+<h2 class="wp-block-heading" id="assignment">2. C++ Assignment Operators</h2>
+
+
+
+<p>In C++, assignment operators are used to assign values to variables. For example,</p>
+
+
+
+<pre class="wp-block-code"><code>// assign 5 to a
+a = 5;</code></pre>
+
+
+
+<p>Here, we have assigned a value of&nbsp;<code>5</code>&nbsp;to the variable&nbsp;<var>a</var>.</p>
+
+
+
+<figure class="wp-block-table"><table><tbody>
+<tr>
+<th>Operator</th>
+<th>Example</th>
+<th>Equivalent to</th>
+</tr>
+<tr>
+<td><code>=</code></td>
+<td><code>a = b;</code></td>
+<td><code>a = b;</code></td>
+</tr>
+<tr>
+<td><code>+=</code></td>
+<td><code>a += b;</code></td>
+<td><code>a = a + b;</code></td>
+</tr>
+<tr>
+<td><code>-=</code></td>
+<td><code>a -= b;</code></td>
+<td><code>a = a - b;</code></td>
+</tr>
+<tr>
+<td><code>*=</code></td>
+<td><code>a *= b;</code></td>
+<td><code>a = a * b;</code></td>
+</tr>
+<tr>
+<td><code>/=</code></td>
+<td><code>a /= b;</code></td>
+<td><code>a = a / b;</code></td>
+</tr>
+<tr>
+<td><code>%=</code></td>
+<td><code>a %= b;</code></td>
+<td><code>a = a % b;</code></td>
+</tr>
+</tbody></table></figure>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity">
+
+
+
+<h3 class="wp-block-heading">Example 3: Assignment Operators</h3>
+
+
+
+<pre class="wp-block-code"><code>#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    int a, b;
+
+    // 2 is assigned to a
+    a = 2;
+
+    // 7 is assigned to b
+    b = 7;
+
+    cout &lt;&lt; "a = " &lt;&lt; a &lt;&lt; endl;
+    cout &lt;&lt; "b = " &lt;&lt; b &lt;&lt; endl;
+    cout &lt;&lt; "\nAfter a += b;" &lt;&lt; endl;
+
+    // assigning the sum of a and b to a
+    a += b;  // a = a +b
+    cout &lt;&lt; "a = " &lt;&lt; a &lt;&lt; endl;
+
+    return 0;
+}</code></pre>
+
+
+
+<p><a href="https://www.programiz.com/cpp-programming/online-compiler" target="_blank" rel="noreferrer noopener">Run Code</a></p>
+
+
+
+<p><strong>Output</strong></p>
+
+
+
+<pre class="wp-block-preformatted"><samp>a = 2
+b = 7
+
+After a += b;
+a = 9</samp></pre>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity">
+
+
+
+<h2 class="wp-block-heading" id="relational">3. C++ Relational Operators</h2>
+
+
+
+<p>A relational operator is used to check the relationship between two operands. For example,</p>
+
+
+
+<pre class="wp-block-code"><code>// checks if a is greater than b
+a &gt; b;</code></pre>
+
+
+
+<p>Here,&nbsp;<code>&gt;</code>&nbsp;is a relational operator. It checks if&nbsp;<var>a</var>&nbsp;is greater than&nbsp;<var>b</var>&nbsp;or not.</p>
+
+
+
+<p>If the relation is&nbsp;<strong>true</strong>, it returns&nbsp;<strong>1</strong>&nbsp;whereas if the relation is&nbsp;<strong>false</strong>, it returns&nbsp;<strong>0</strong>.</p>
+
+
+
+<figure class="wp-block-table"><table><tbody>
+<tr>
+<th>Operator</th>
+<th>Meaning</th>
+<th>Example</th>
+</tr>
+<tr>
+<td><code>==</code></td>
+<td>Is Equal To</td>
+<td>
+<code>3 == 5</code> gives us <strong>false</strong>
+</td>
+</tr>
+<tr>
+<td><code>!=</code></td>
+<td>Not Equal To</td>
+<td>
+<code>3 != 5</code> gives us <strong>true</strong>
+</td>
+</tr>
+<tr>
+<td><code>&gt;</code></td>
+<td>Greater Than</td>
+<td>
+<code>3 &gt; 5</code> gives us <strong>false</strong>
+</td>
+</tr>
+<tr>
+<td><code>&lt;</code></td>
+<td>Less Than</td>
+<td>
+<code>3 &lt; 5</code> gives us <strong>true</strong>
+</td>
+</tr>
+<tr>
+<td><code>&gt;=</code></td>
+<td>Greater Than or Equal To</td>
+<td>
+<code>3 &gt;= 5</code> give us <strong>false</strong>
+</td>
+</tr>
+<tr>
+<td><code>&lt;=</code></td>
+<td>Less Than or Equal To</td>
+<td>
+<code>3 &lt;= 5</code> gives us <strong>true</strong>
+</td>
+</tr>
+</tbody></table></figure>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity">
+
+
+
+<h3 class="wp-block-heading">Example 4: Relational Operators</h3>
+
+
+
+<pre class="wp-block-code"><code>#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    int a, b;
+    a = 3;
+    b = 5;
+    bool result;
+
+    result = (a == b);   // false
+    cout &lt;&lt; "3 == 5 is " &lt;&lt; result &lt;&lt; endl;
+
+    result = (a != b);  // true
+    cout &lt;&lt; "3 != 5 is " &lt;&lt; result &lt;&lt; endl;
+
+    result = a &gt; b;   // false
+    cout &lt;&lt; "3 &gt; 5 is " &lt;&lt; result &lt;&lt; endl;
+
+    result = a &lt; b;   // true
+    cout &lt;&lt; "3 &lt; 5 is " &lt;&lt; result &lt;&lt; endl;
+
+    result = a &gt;= b;  // false
+    cout &lt;&lt; "3 &gt;= 5 is " &lt;&lt; result &lt;&lt; endl;
+
+    result = a &lt;= b;  // true
+    cout &lt;&lt; "3 &lt;= 5 is " &lt;&lt; result &lt;&lt; endl;
+
+    return 0;
+}</code></pre>
+
+
+
+<p><a href="https://www.programiz.com/cpp-programming/online-compiler" target="_blank" rel="noreferrer noopener">Run Code</a></p>
+
+
+
+<p><strong>Output</strong></p>
+
+
+
+<pre class="wp-block-preformatted"><samp>3 == 5 is 0
+3 != 5 is 1
+3 &gt; 5 is 0
+3 &lt; 5 is 1
+3 &gt;= 5 is 0
+3 &lt;= 5 is 1</samp></pre>
+
+
+
+<p><strong>Note</strong>: Relational operators are used in decision-making and loops.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity">
+
+
+
+<h2 class="wp-block-heading" id="logical">4. C++ Logical Operators</h2>
+
+
+
+<p>Logical operators are used to check whether an expression is&nbsp;<strong>true</strong>&nbsp;or&nbsp;<strong>false</strong>. If the expression is&nbsp;<strong>true</strong>, it returns&nbsp;<strong>1</strong>&nbsp;whereas if the expression is&nbsp;<strong>false</strong>, it returns&nbsp;<strong>0</strong>.</p>
+
+
+
+<figure class="wp-block-table"><table><tbody>
+<tr>
+<th>Operator</th>
+<th>Example</th>
+<th>Meaning</th>
+</tr>
+<tr>
+<td><code>&amp;&amp;</code></td>
+<td>expression1 <strong>&amp;&amp;</strong> expression2</td>
+<td>Logical AND.<br>True only if all the operands are true.</td>
+</tr>
+<tr>
+<td><code>||</code></td>
+<td>expression1 <strong>||</strong> expression2</td>
+<td>Logical OR.<br>True if at least one of the operands is true.</td>
+</tr>
+<tr>
+<td><code>!</code></td>
+<td>
+<strong>!</strong>expression</td>
+<td>Logical NOT.<br>True only if the operand is false.</td>
+</tr>
+</tbody></table></figure>
+
+
+
+<p>In C++, logical operators are commonly used in decision making. To further understand the logical operators, let&#8217;s see the following examples,</p>
+
+
+
+<pre class="wp-block-code"><code>Suppose,
+a = 5
+b = 8
+
+Then,
+
+(a &gt; 3) &amp;&amp; (b &gt; 5) evaluates to true
+(a &gt; 3)  &amp;&amp; (b &lt; 5) evaluates to false
+
+(a &gt; 3) || (b &gt; 5) evaluates to true
+(a &gt; 3) || (b &lt; 5) evaluates to true
+(a &lt; 3) || (b &lt; 5) evaluates to false
+
+!(a &lt; 3) evaluates to true
+!(a &gt; 3) evaluates to false</code></pre>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity">
+
+
+
+<h3 class="wp-block-heading">Example 5: Logical Operators</h3>
+
+
+
+<pre class="wp-block-code"><code>#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    bool result;
+
+    result = (3 != 5) &amp;&amp; (3 &lt; 5);     // true
+    cout &lt;&lt; "(3 != 5) &amp;&amp; (3 &lt; 5) is " &lt;&lt; result &lt;&lt; endl;
+
+    result = (3 == 5) &amp;&amp; (3 &lt; 5);    // false
+    cout &lt;&lt; "(3 == 5) &amp;&amp; (3 &lt; 5) is " &lt;&lt; result &lt;&lt; endl;
+
+    result = (3 == 5) &amp;&amp; (3 &gt; 5);    // false
+    cout &lt;&lt; "(3 == 5) &amp;&amp; (3 &gt; 5) is " &lt;&lt; result &lt;&lt; endl;
+
+    result = (3 != 5) || (3 &lt; 5);    // true
+    cout &lt;&lt; "(3 != 5) || (3 &lt; 5) is " &lt;&lt; result &lt;&lt; endl;
+
+    result = (3 != 5) || (3 &gt; 5);    // true
+    cout &lt;&lt; "(3 != 5) || (3 &gt; 5) is " &lt;&lt; result &lt;&lt; endl;
+
+    result = (3 == 5) || (3 &gt; 5);    // false
+    cout &lt;&lt; "(3 == 5) || (3 &gt; 5) is " &lt;&lt; result &lt;&lt; endl;
+
+    result = !(5 == 2);    // true
+    cout &lt;&lt; "!(5 == 2) is " &lt;&lt; result &lt;&lt; endl;
+
+    result = !(5 == 5);    // false
+    cout &lt;&lt; "!(5 == 5) is " &lt;&lt; result &lt;&lt; endl;
+
+    return 0;
+}</code></pre>
+
+
+
+<p><a href="https://www.programiz.com/cpp-programming/online-compiler" target="_blank" rel="noreferrer noopener">Run Code</a></p>
+
+
+
+<p><strong>Output</strong></p>
+
+
+
+<pre class="wp-block-preformatted"><samp>(3 != 5) &amp;&amp; (3 &lt; 5) is 1
+(3 == 5) &amp;&amp; (3 &lt; 5) is 0
+(3 == 5) &amp;&amp; (3 &gt; 5) is 0
+(3 != 5) || (3 &lt; 5) is 1
+(3 != 5) || (3 &gt; 5) is 1
+(3 == 5) || (3 &gt; 5) is 0
+!(5 == 2) is 1
+!(5 == 5) is 0</samp></pre>
+
+
+
+<p><strong>Explanation of logical operator program</strong></p>
+
+
+
+<ul>
+<li>
+<code>(3 != 5) &amp;&amp; (3 &lt; 5)</code>&nbsp;evaluates to&nbsp;<strong>1</strong>&nbsp;because both operands&nbsp;<code>(3 != 5)</code>&nbsp;and&nbsp;<code>(3 &lt; 5)</code>&nbsp;are&nbsp;<strong>1</strong>&nbsp;(true).</li>
+
+
+
+<li>
+<code>(3 == 5) &amp;&amp; (3 &lt; 5)</code>&nbsp;evaluates to&nbsp;<strong>0</strong>&nbsp;because the operand&nbsp;<code>(3 == 5)</code>&nbsp;is&nbsp;<strong>0</strong>&nbsp;(false).</li>
+
+
+
+<li>
+<code>(3 == 5) &amp;&amp; (3 &gt; 5)</code>&nbsp;evaluates to&nbsp;<strong>0</strong>&nbsp;because both operands&nbsp;<code>(3 == 5)</code>&nbsp;and&nbsp;<code>(3 &gt; 5)</code>&nbsp;are&nbsp;<strong>0</strong>&nbsp;(false).</li>
+
+
+
+<li>
+<code>(3 != 5) || (3 &lt; 5)</code>&nbsp;evaluates to&nbsp;<strong>1</strong>&nbsp;because both operands&nbsp;<code>(3 != 5)</code>&nbsp;and&nbsp;<code>(3 &lt; 5)</code>&nbsp;are&nbsp;<strong>1</strong>&nbsp;(true).</li>
+
+
+
+<li>
+<code>(3 != 5) || (3 &gt; 5)</code>&nbsp;evaluates to&nbsp;<strong>1</strong>&nbsp;because the operand&nbsp;<code>(3 != 5)</code>&nbsp;is&nbsp;<strong>1</strong>&nbsp;(true).</li>
+
+
+
+<li>
+<code>(3 == 5) || (3 &gt; 5)</code>&nbsp;evaluates to&nbsp;<strong>0</strong>&nbsp;because both operands&nbsp;<code>(3 == 5)</code>&nbsp;and&nbsp;<code>(3 &gt; 5)</code>&nbsp;are&nbsp;<strong>0</strong>&nbsp;(false).</li>
+
+
+
+<li>
+<code>!(5 == 2)</code>&nbsp;evaluates to&nbsp;<strong>1</strong>&nbsp;because the operand&nbsp;<code>(5 == 2)</code>&nbsp;is&nbsp;<strong>0</strong>&nbsp;(false).</li>
+
+
+
+<li>
+<code>!(5 == 5)</code>&nbsp;evaluates to&nbsp;<strong>0</strong>&nbsp;because the operand&nbsp;<code>(5 == 5)</code>&nbsp;is&nbsp;<strong>1</strong>&nbsp;(true).</li>
+</ul>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity">
+
+
+
+<h2 class="wp-block-heading" id="bitwise">5. C++ Bitwise Operators</h2>
+
+
+
+<p>In C++, bitwise operators are used to perform operations on individual bits. They can only be used alongside&nbsp;<code>char</code>&nbsp;and&nbsp;<code>int</code>&nbsp;data types.</p>
+
+
+
+<figure class="wp-block-table"><table><tbody>
+<tr>
+<th>Operator</th>
+<th>Description</th>
+</tr>
+<tr>
+<td><code>&amp;</code></td>
+<td>Binary AND</td>
+</tr>
+<tr>
+<td><code>|</code></td>
+<td>Binary OR</td>
+</tr>
+<tr>
+<td><code>^</code></td>
+<td>Binary XOR</td>
+</tr>
+<tr>
+<td><code>~</code></td>
+<td>Binary One&#8217;s Complement</td>
+</tr>
+<tr>
+<td><code>&lt;&lt;</code></td>
+<td>Binary Shift Left</td>
+</tr>
+<tr>
+<td><code>&gt;&gt;</code></td>
+<td>Binary Shift Right</td>
+</tr>
+</tbody></table></figure>
+
+
+
+<p>To learn more, visit&nbsp;<a href="https://www.programiz.com/cpp-programming/bitwise-operators">C++ bitwise operators</a>.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity">
+
+
+
+<h2 class="wp-block-heading" id="other-operators">6. Other C++ Operators</h2>
+
+
+
+<p>Here&#8217;s a list of some other common operators available in C++. We will learn about them in later tutorials.</p>
+
+
+
+<figure class="wp-block-table"><table><tbody>
+<tr>
+<th>Operator</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+<tr>
+<td><code>sizeof</code></td>
+<td>returns the size of data type</td>
+<td><code>sizeof(int); // 4</code></td>
+</tr>
+<tr>
+<td><code>?:</code></td>
+<td>returns value based on the condition</td>
+<td><code>string result = (5 &gt; 0) ? "even" : "odd"; // "even"</code></td>
+</tr>
+<tr>
+<td><code>&amp;</code></td>
+<td>represents memory address of the operand</td>
+<td><code>&amp;num; // address of num</code></td>
+</tr>
+<tr>
+<td><code>.</code></td>
+<td>accesses members of struct variables or class objects</td>
+<td><code>s1.marks = 92;</code></td>
+</tr>
+<tr>
+<td><code>-&gt;</code></td>
+<td>used with pointers to access the class or struct variables</td>
+<td><code>ptr-&gt;marks = 92;</code></td>
+</tr>
+<tr>
+<td><code>&lt;&lt;</code></td>
+<td>prints the output value</td>
+<td><code>cout &lt;&lt; 5;</code></td>
+</tr>
+<tr>
+<td><code>&gt;&gt;</code></td>
+<td>gets the input value</td>
+<td><code>cin &gt;&gt; num;</code></td>
+</tr>
+</tbody></table></figure>
 </div>
 
 
@@ -245,7 +937,7 @@ Average = 3.95</samp></pre>
 <div class="wp-block-columns is-layout-flex wp-container-11">
 <div class="wp-block-column is-layout-flow">
 <div class="post-navigation-link-previous is-style-hovershadow wp-block-post-navigation-link">
-<span class="post-navigation-link__label">«</span> <a href="https://harriscr7.github.io/imharris/c-return-by-reference/" rel="prev">C++ Return by Reference</a>
+<span class="post-navigation-link__label">«</span> <a href="https://harriscr7.github.io/imharris/c-comments/" rel="prev">C++ Comments</a>
 </div>
 <style scoped>.wp-block-post-navigation-link.is-style-hovershadow:before{position: absolute;top: 0;right: 0;left: 0;bottom: 0;transition: box-shadow 0.5s var(--greenshift-transition);content: "";border-radius: 5px;border: 1px solid var(--wp--preset--color--lightborder);}.wp-block-post-navigation-link.is-style-hovershadow:hover:before{box-shadow: 0 3px 40px rgb(188 207 219 / 35%);}.wp-block-post-navigation-link.is-style-hovershadow:empty:before{display:none}.wp-block-post-navigation-link.is-style-hovershadow{padding:20px}.wp-block-post-navigation-link.is-style-hovershadow a{text-decoration:none}</style>
 </div>
@@ -258,7 +950,7 @@ Average = 3.95</samp></pre>
 
 <div class="wp-block-column is-layout-flow">
 <div class="post-navigation-link-next has-text-align-right is-style-hovershadow wp-block-post-navigation-link">
-<span class="post-navigation-link__label">»</span> <a href="https://harriscr7.github.io/imharris/using-constructos/" rel="next">C++ Using Constructos</a>
+<span class="post-navigation-link__label">»</span> <a href="https://harriscr7.github.io/imharris/c-type-conversion/" rel="next">C++ Type Conversion</a>
 </div>
 <style scoped>.wp-block-post-navigation-link.is-style-hovershadow:before{position: absolute;top: 0;right: 0;left: 0;bottom: 0;transition: box-shadow 0.5s var(--greenshift-transition);content: "";border-radius: 5px;border: 1px solid var(--wp--preset--color--lightborder);}.wp-block-post-navigation-link.is-style-hovershadow:hover:before{box-shadow: 0 3px 40px rgb(188 207 219 / 35%);}.wp-block-post-navigation-link.is-style-hovershadow:empty:before{display:none}.wp-block-post-navigation-link.is-style-hovershadow{padding:20px}.wp-block-post-navigation-link.is-style-hovershadow a{text-decoration:none}</style>
 </div>

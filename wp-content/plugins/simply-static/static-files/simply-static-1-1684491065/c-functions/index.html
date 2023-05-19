@@ -4,10 +4,10 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="max-image-preview:large">
-<title>C++ Goto Statement &#8211; imharris</title>
+<title>C++ Functions &#8211; imharris</title>
 <link rel="alternate" type="application/rss+xml" title="imharris &raquo; Feed" href="https://harriscr7.github.io/imharris/feed/">
 <link rel="alternate" type="application/rss+xml" title="imharris &raquo; Comments Feed" href="https://harriscr7.github.io/imharris/comments/feed/">
-<link rel="alternate" type="application/rss+xml" title="imharris &raquo; C++ Goto Statement Comments Feed" href="https://harriscr7.github.io/imharris/c-goto-statement/feed/">
+<link rel="alternate" type="application/rss+xml" title="imharris &raquo; C++ Functions Comments Feed" href="https://harriscr7.github.io/imharris/c-functions/feed/">
 <script>
 window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/harriscr7.github.io\/imharris\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.2"}};
 /*! This file is auto-generated */
@@ -44,17 +44,22 @@ img.emoji {
 <style id="wp-block-post-featured-image-inline-css">.wp-block-post-featured-image{margin-left:0;margin-right:0}.wp-block-post-featured-image a{display:block}.wp-block-post-featured-image img{box-sizing:border-box;height:auto;max-width:100%;vertical-align:bottom;width:100%}.wp-block-post-featured-image.alignfull img,.wp-block-post-featured-image.alignwide img{width:100%}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim{background-color:#000;inset:0;position:absolute}.wp-block-post-featured-image{position:relative}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-gradient{background-color:transparent}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-0{opacity:0}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-10{opacity:.1}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-20{opacity:.2}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-30{opacity:.3}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-40{opacity:.4}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-50{opacity:.5}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-60{opacity:.6}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-70{opacity:.7}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-80{opacity:.8}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-90{opacity:.9}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-100{opacity:1}</style>
 <style id="wp-block-paragraph-inline-css">.is-small-text{font-size:.875em}.is-regular-text{font-size:1em}.is-large-text{font-size:2.25em}.is-larger-text{font-size:3em}.has-drop-cap:not(:focus):first-letter{float:left;font-size:8.4em;font-style:normal;font-weight:100;line-height:.68;margin:.05em .1em 0 0;text-transform:uppercase}body.rtl .has-drop-cap:not(:focus):first-letter{float:none;margin-left:.1em}p.has-drop-cap.has-background{overflow:hidden}p.has-background{padding:1.25em 2.375em}:where(p.has-text-color:not(.has-link-color)) a{color:inherit}
 p{margin-top: 0px;margin-bottom: var(--wp--custom--spacing--blockbottom);}</style>
+<style id="wp-block-list-inline-css">ol,ul{box-sizing:border-box}ol.has-background,ul.has-background{padding:1.25em 2.375em}</style>
+<style id="wp-block-separator-inline-css">@charset "UTF-8";.wp-block-separator{border:1px solid;border-left:none;border-right:none}.wp-block-separator.is-style-dots{background:none!important;border:none;height:auto;line-height:1;text-align:center}.wp-block-separator.is-style-dots:before{color:currentColor;content:"···";font-family:serif;font-size:1.5em;letter-spacing:2em;padding-left:2em}
+.wp-block-separator.has-css-opacity{opacity:.4}.wp-block-separator{border:none;border-bottom:2px solid;margin-left:auto;margin-right:auto}.wp-block-separator.has-alpha-channel-opacity{opacity:1}.wp-block-separator:not(.is-style-wide):not(.is-style-dots){width:100px}.wp-block-separator.has-background:not(.is-style-dots){border-bottom:none;height:1px}.wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots){height:2px}
+.wp-block-separator{color: var(--wp--preset--color--lightborder);font-size: var(--wp--preset--font-size--large);margin-top: var(--wp--custom--spacing--blockbottom);margin-bottom: var(--wp--custom--spacing--blockbottom);}</style>
+<style id="greenshift_core_separator-inline-css">.wp-block-separator{opacity:1}.wp-block-separator.has-background:not(.is-style-dots),.wp-block-separator:not(.is-style-dots){border-bottom:1px solid currentColor;height:1px}.wp-block-separator.is-style-dots:before{font-family:inherit;font-size:var(--wp--preset--font-size--large);letter-spacing:10px;padding-left:10px}</style>
 <style id="wp-block-heading-inline-css">h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-background,h6.has-background{padding:1.25em 2.375em}
 .wp-block-heading{font-family: var(--wp--preset--font-family--primary);}</style>
-<style id="wp-block-preformatted-inline-css">.wp-block-preformatted{white-space:pre-wrap}.wp-block-preformatted.has-background{padding:1.25em 2.375em}
-.wp-block-preformatted{background-color: var(--wp--custom--color--black);border-radius: 0;border-color: var(--wp--custom--color--black);color: var(--wp--custom--color--white);font-family: var(--wp--preset--font-family--monospace);font-size: var(--wp--preset--font-size--small);margin-bottom: var(--wp--custom--spacing--blockbottom);padding-top: 25px;padding-right: 30px;padding-bottom: 25px;padding-left: 30px;}</style>
+<style id="wp-block-code-inline-css">.wp-block-code{box-sizing:border-box}.wp-block-code code{display:block;font-family:inherit;overflow-wrap:break-word;white-space:pre-wrap}
+.wp-block-code{border:1px solid #ccc;border-radius:4px;font-family:Menlo,Consolas,monaco,monospace;padding:.8em 1em}
+.wp-block-code{background-color: var(--wp--custom--color--black);border-radius: 0;border-color: var(--wp--custom--color--black);color: var(--wp--custom--color--white);font-family: var(--wp--preset--font-family--monospace);font-size: var(--wp--preset--font-size--small);margin-bottom: var(--wp--custom--spacing--blockbottom);padding-top: 25px;padding-right: 30px;padding-bottom: 25px;padding-left: 30px;}</style>
 <style id="greenshift_core_code-inline-css">.wp-block-code code, .wp-block-preformatted{overflow-wrap:normal;overflow-x:auto;white-space:pre}code::selection{background: #777}</style>
 <style id="wp-block-image-inline-css">.wp-block-image img{height:auto;max-width:100%;vertical-align:bottom}.wp-block-image img,.wp-block-image.has-custom-border img{box-sizing:border-box}.wp-block-image.aligncenter{text-align:center}.wp-block-image.alignfull img,.wp-block-image.alignwide img{height:auto;width:100%}.wp-block-image .aligncenter,.wp-block-image .alignleft,.wp-block-image .alignright,.wp-block-image.aligncenter,.wp-block-image.alignleft,.wp-block-image.alignright{display:table}.wp-block-image .aligncenter>figcaption,.wp-block-image .alignleft>figcaption,.wp-block-image .alignright>figcaption,.wp-block-image.aligncenter>figcaption,.wp-block-image.alignleft>figcaption,.wp-block-image.alignright>figcaption{caption-side:bottom;display:table-caption}.wp-block-image .alignleft{float:left;margin:.5em 1em .5em 0}.wp-block-image .alignright{float:right;margin:.5em 0 .5em 1em}.wp-block-image .aligncenter{margin-left:auto;margin-right:auto}.wp-block-image figcaption{margin-bottom:1em;margin-top:.5em}.wp-block-image .is-style-rounded img,.wp-block-image.is-style-circle-mask img,.wp-block-image.is-style-rounded img{border-radius:9999px}@supports ((-webkit-mask-image:none) or (mask-image:none)) or (-webkit-mask-image:none){.wp-block-image.is-style-circle-mask img{border-radius:0;-webkit-mask-image:url('data:image/svg+xml;utf8,<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="50"/></svg>');mask-image:url('data:image/svg+xml;utf8,<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="50"/></svg>');mask-mode:alpha;-webkit-mask-position:center;mask-position:center;-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;-webkit-mask-size:contain;mask-size:contain}}.wp-block-image :where(.has-border-color){border-style:solid}.wp-block-image :where([style*=border-top-color]){border-top-style:solid}.wp-block-image :where([style*=border-right-color]){border-right-style:solid}.wp-block-image :where([style*=border-bottom-color]){border-bottom-style:solid}.wp-block-image :where([style*=border-left-color]){border-left-style:solid}.wp-block-image :where([style*=border-width]){border-style:solid}.wp-block-image :where([style*=border-top-width]){border-top-style:solid}.wp-block-image :where([style*=border-right-width]){border-right-style:solid}.wp-block-image :where([style*=border-bottom-width]){border-bottom-style:solid}.wp-block-image :where([style*=border-left-width]){border-left-style:solid}.wp-block-image figure{margin:0}
 .wp-block-image figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-image figcaption{color:hsla(0,0%,100%,.65)}.wp-block-image{margin:0 0 1em}
 .wp-block-image{margin-top: var( --wp--style--block-gap );margin-bottom: var(--wp--custom--spacing--blockbottom);}</style>
-<style id="wp-block-code-inline-css">.wp-block-code{box-sizing:border-box}.wp-block-code code{display:block;font-family:inherit;overflow-wrap:break-word;white-space:pre-wrap}
-.wp-block-code{border:1px solid #ccc;border-radius:4px;font-family:Menlo,Consolas,monaco,monospace;padding:.8em 1em}
-.wp-block-code{background-color: var(--wp--custom--color--black);border-radius: 0;border-color: var(--wp--custom--color--black);color: var(--wp--custom--color--white);font-family: var(--wp--preset--font-family--monospace);font-size: var(--wp--preset--font-size--small);margin-bottom: var(--wp--custom--spacing--blockbottom);padding-top: 25px;padding-right: 30px;padding-bottom: 25px;padding-left: 30px;}</style>
+<style id="wp-block-preformatted-inline-css">.wp-block-preformatted{white-space:pre-wrap}.wp-block-preformatted.has-background{padding:1.25em 2.375em}
+.wp-block-preformatted{background-color: var(--wp--custom--color--black);border-radius: 0;border-color: var(--wp--custom--color--black);color: var(--wp--custom--color--white);font-family: var(--wp--preset--font-family--monospace);font-size: var(--wp--preset--font-size--small);margin-bottom: var(--wp--custom--spacing--blockbottom);padding-top: 25px;padding-right: 30px;padding-bottom: 25px;padding-left: 30px;}</style>
 <style id="wp-block-post-navigation-link-inline-css">.wp-block-post-navigation-link .wp-block-post-navigation-link__arrow-previous{display:inline-block;margin-right:1ch}.wp-block-post-navigation-link .wp-block-post-navigation-link__arrow-previous:not(.is-arrow-chevron){transform:scaleX(1)}.wp-block-post-navigation-link .wp-block-post-navigation-link__arrow-next{display:inline-block;margin-left:1ch}.wp-block-post-navigation-link .wp-block-post-navigation-link__arrow-next:not(.is-arrow-chevron){transform:scaleX(1)}</style>
 <style id="greenshift_core_postnavigation-inline-css">.wp-block-post-navigation-link{display:flex;gap:15px;position:relative; z-index:0}.post-navigation-link__label{font-size:40px;color:var(--wp--preset--color--lightborder);transition:transform .5s var(--greenshift-transition);line-height:25px}.wp-block-post-navigation-link a{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;position:relative}.wp-block-post-navigation-link:hover .post-navigation-link__label{transform:translateX(-5px)}.wp-block-post-navigation-link.has-text-align-right{justify-content:flex-end}.wp-block-post-navigation-link.has-text-align-right .post-navigation-link__label{order:2}</style>
 <style id="wp-block-columns-inline-css">.wp-block-columns{align-items:normal!important;box-sizing:border-box;display:flex;flex-wrap:wrap!important;margin-bottom:1.75em}@media (min-width:782px){.wp-block-columns{flex-wrap:nowrap!important}}.wp-block-columns.are-vertically-aligned-top{align-items:flex-start}.wp-block-columns.are-vertically-aligned-center{align-items:center}.wp-block-columns.are-vertically-aligned-bottom{align-items:flex-end}@media (max-width:781px){.wp-block-columns:not(.is-not-stacked-on-mobile)>.wp-block-column{flex-basis:100%!important}}@media (min-width:782px){.wp-block-columns:not(.is-not-stacked-on-mobile)>.wp-block-column{flex-basis:0;flex-grow:1}.wp-block-columns:not(.is-not-stacked-on-mobile)>.wp-block-column[style*=flex-basis]{flex-grow:0}}.wp-block-columns.is-not-stacked-on-mobile{flex-wrap:nowrap!important}.wp-block-columns.is-not-stacked-on-mobile>.wp-block-column{flex-basis:0;flex-grow:1}.wp-block-columns.is-not-stacked-on-mobile>.wp-block-column[style*=flex-basis]{flex-grow:0}:where(.wp-block-columns.has-background){padding:1.25em 2.375em}.wp-block-column{flex-grow:1;min-width:0;overflow-wrap:break-word;word-break:break-word}.wp-block-column.is-vertically-aligned-top{align-self:flex-start}.wp-block-column.is-vertically-aligned-center{align-self:center}.wp-block-column.is-vertically-aligned-bottom{align-self:flex-end}.wp-block-column.is-vertically-aligned-bottom,.wp-block-column.is-vertically-aligned-center,.wp-block-column.is-vertically-aligned-top{width:100%}
@@ -72,21 +77,21 @@ p{margin-top: 0px;margin-bottom: var(--wp--custom--spacing--blockbottom);}</styl
 <script src="https://harriscr7.github.io/imharris/wp-includes/blocks/navigation/view.min.js?ver=c24330f635f5cb9d5e0e" id="wp-block-navigation-view-js"></script>
 <script src="https://harriscr7.github.io/imharris/wp-includes/blocks/navigation/view-modal.min.js?ver=f51363b18f0497ec84da" id="wp-block-navigation-view-2-js"></script>
 <link rel="https://api.w.org/" href="https://harriscr7.github.io/imharris/wp-json/">
-<link rel="alternate" type="application/json" href="https://harriscr7.github.io/imharris/wp-json/wp/v2/posts/219">
+<link rel="alternate" type="application/json" href="https://harriscr7.github.io/imharris/wp-json/wp/v2/posts/205">
 <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://harriscr7.github.io/imharris/xmlrpc.php?rsd">
 <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://harriscr7.github.io/imharris/wp-includes/wlwmanifest.xml">
 <meta name="generator" content="WordPress 6.2">
-<link rel="canonical" href="https://harriscr7.github.io/imharris/c-goto-statement/">
-<link rel="shortlink" href="https://harriscr7.github.io/imharris/?p=219">
-<link rel="alternate" type="application/json+oembed" href="https://harriscr7.github.io/imharris/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fharriscr7.github.io%2Fimharris%2Fc-goto-statement%2F">
-<link rel="alternate" type="text/xml+oembed" href="https://harriscr7.github.io/imharris/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fharriscr7.github.io%2Fimharris%2Fc-goto-statement%2F#038;format=xml">
+<link rel="canonical" href="https://harriscr7.github.io/imharris/c-functions/">
+<link rel="shortlink" href="https://harriscr7.github.io/imharris/?p=205">
+<link rel="alternate" type="application/json+oembed" href="https://harriscr7.github.io/imharris/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fharriscr7.github.io%2Fimharris%2Fc-functions%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://harriscr7.github.io/imharris/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fharriscr7.github.io%2Fimharris%2Fc-functions%2F#038;format=xml">
 <link rel="icon" href="https://harriscr7.github.io/imharris/wp-content/uploads/2023/05/image_2023-05-14_210105897.png" sizes="32x32">
 <link rel="icon" href="https://harriscr7.github.io/imharris/wp-content/uploads/2023/05/image_2023-05-14_210105897.png" sizes="192x192">
 <link rel="apple-touch-icon" href="https://harriscr7.github.io/imharris/wp-content/uploads/2023/05/image_2023-05-14_210105897.png">
 <meta name="msapplication-TileImage" content="https://harriscr7.github.io/imharris/wp-content/uploads/2023/05/image_2023-05-14_210105897.png">
 </head>
 
-<body class="post-template-default single single-post postid-219 single-format-standard wp-custom-logo wp-embed-responsive gspbody gspb-bodyfront">
+<body class="post-template-default single single-post postid-205 single-format-standard wp-custom-logo wp-embed-responsive gspbody gspb-bodyfront">
 <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-dark-grayscale"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0 0.49803921568627"></fefuncr><fefuncg type="table" tablevalues="0 0.49803921568627"></fefuncg><fefuncb type="table" tablevalues="0 0.49803921568627"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-grayscale"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0 1"></fefuncr><fefuncg type="table" tablevalues="0 1"></fefuncg><fefuncb type="table" tablevalues="0 1"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-purple-yellow"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0.54901960784314 0.98823529411765"></fefuncr><fefuncg type="table" tablevalues="0 1"></fefuncg><fefuncb type="table" tablevalues="0.71764705882353 0.25490196078431"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-blue-red"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0 1"></fefuncr><fefuncg type="table" tablevalues="0 0.27843137254902"></fefuncg><fefuncb type="table" tablevalues="0.5921568627451 0.27843137254902"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-midnight"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0 0"></fefuncr><fefuncg type="table" tablevalues="0 0.64705882352941"></fefuncg><fefuncb type="table" tablevalues="0 1"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-magenta-yellow"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0.78039215686275 1"></fefuncr><fefuncg type="table" tablevalues="0 0.94901960784314"></fefuncg><fefuncb type="table" tablevalues="0.35294117647059 0.47058823529412"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-purple-green"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0.65098039215686 0.40392156862745"></fefuncr><fefuncg type="table" tablevalues="0 1"></fefuncg><fefuncb type="table" tablevalues="0.44705882352941 0.4"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-blue-orange"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0.098039215686275 1"></fefuncr><fefuncg type="table" tablevalues="0 0.66274509803922"></fefuncg><fefuncb type="table" tablevalues="0.84705882352941 0.41960784313725"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg>
 <div class="wp-site-blocks">
 <header class="site-header wp-block-template-part">
@@ -129,7 +134,7 @@ p{margin-top: 0px;margin-bottom: var(--wp--custom--spacing--blockbottom);}</styl
 
 <div class="wp-block-group site-title-area has-global-padding is-layout-constrained" style="margin-top:0;margin-bottom:0"><div class="alignwide site-title-area wp-block-template-part">
 <div class="wp-block-group has-basecolor-color has-contrastcolor-background-color has-text-color has-background has-global-padding is-layout-constrained" style="padding-top:40px">
-<h1 class="wp-block-post-title has-max-huge-font-size">C++ Goto Statement</h1>
+<h1 class="wp-block-post-title has-max-huge-font-size">C++ Functions</h1>
 
 </div>
 </div></div>
@@ -137,73 +142,186 @@ p{margin-top: 0px;margin-bottom: var(--wp--custom--spacing--blockbottom);}</styl
 
 
 <main class="wp-block-group site-content has-basecolor-color has-contrastcolor-background-color has-text-color has-background is-layout-flow" style="margin-top:0;margin-bottom:0;padding-top:50px;padding-right:0;padding-bottom:50px;padding-left:0"><div class="entry-content wp-block-post-content has-global-padding is-layout-constrained">
-<p>In this article, you&#8217;ll learn about goto statment, how it works and why should it be avoided.</p>
+<p>In this tutorial, we will learn about the C++ function and function expressions with the help of examples.</p>
 
 
 
-<p>In C++ programming, the goto statement is used for altering the normal sequence of program execution by transferring control to some other part of the program.</p>
+<p id="introduction">A function is a block of code that performs a specific task.</p>
 
 
 
-<h2 class="wp-block-heading" id="syntax-of-goto-statement">Syntax of goto Statement</h2>
+<p>Suppose we need to create a program to create a circle and color it. We can create two functions to solve this problem:</p>
 
 
 
-<pre class="wp-block-preformatted">goto label;
-... .. ...
-... .. ...
-... .. ...
-label: 
-statement;
-... .. ...</pre>
+<ul>
+<li>a function to draw the circle</li>
 
 
 
-<p>In the syntax above,&nbsp;<var>label</var>&nbsp;is an identifier. When&nbsp;<code>goto label;</code>&nbsp;is encountered, the control of program jumps to&nbsp;<code>label:</code>&nbsp;and executes the code below it.</p>
+<li>a function to color the circle</li>
+</ul>
 
 
 
-<figure class="wp-block-image"><img decoding="async" src="https://cdn.programiz.com/sites/tutorial2program/files/cpp-goto-working.png" alt="Working of goto statement in C++ programming"><figcaption class="wp-element-caption">Working of goto in C++</figcaption></figure>
+<p>Dividing a complex problem into smaller chunks makes our program easy to understand and reusable.</p>
 
 
 
-<h3 class="wp-block-heading" id="example-goto-statement">Example: goto Statement</h3>
+<p>There are two types of function:</p>
 
 
 
-<pre class="wp-block-code"><code>// This program calculates the average of numbers entered by the user.
-// If the user enters a negative number, it ignores the number and 
-// calculates the average number entered before it.
+<ol>
+<li>
+<strong>Standard Library Functions:</strong>&nbsp;Predefined in C++</li>
 
-# include &lt;iostream&gt;
+
+
+<li>
+<strong>User-defined Function:</strong>&nbsp;Created by users</li>
+</ol>
+
+
+
+<p>In this tutorial, we will focus mostly on user-defined functions.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity">
+
+
+
+<h2 class="wp-block-heading" id="user-defined">C++ User-defined Function</h2>
+
+
+
+<p>C++ allows the programmer to define their own function.</p>
+
+
+
+<p>A user-defined function groups code to perform a specific task and that group of code is given a name (identifier).</p>
+
+
+
+<p>When the function is invoked from any part of the program, it all executes the codes defined in the body of the function.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity">
+
+
+
+<h3 class="wp-block-heading" id="declare">C++ Function Declaration</h3>
+
+
+
+<p>The syntax to declare a function is:</p>
+
+
+
+<pre class="wp-block-code"><code>returnType functionName (parameter1, parameter2,...) {
+    // function body   
+}</code></pre>
+
+
+
+<p>Here&#8217;s an example of a function declaration.<br>&nbsp;</p>
+
+
+
+<pre class="wp-block-code"><code>// function declaration
+void greet() {
+    cout &lt;&lt; "Hello World";
+}</code></pre>
+
+
+
+<p>Here,</p>
+
+
+
+<ul>
+<li>the name of the function is&nbsp;<code>greet()</code>
+</li>
+
+
+
+<li>the return type of the function is&nbsp;<code>void</code>
+</li>
+
+
+
+<li>the empty parentheses mean it doesn&#8217;t have any parameters</li>
+
+
+
+<li>the function body is written inside&nbsp;<code>{}</code>
+</li>
+</ul>
+
+
+
+<p><strong>Note:</strong>&nbsp;We will learn about&nbsp;<code>returnType</code>&nbsp;and&nbsp;<code>parameters</code>&nbsp;later in this tutorial.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity">
+
+
+
+<h3 class="wp-block-heading" id="call">Calling a Function</h3>
+
+
+
+<p>In the above program, we have declared a function named&nbsp;<code>greet()</code>. To use the&nbsp;<code>greet()</code>&nbsp;function, we need to call it.</p>
+
+
+
+<p>Here&#8217;s how we can call the above&nbsp;<code>greet()</code>&nbsp;function.</p>
+
+
+
+<pre class="wp-block-code"><code>int main() {
+     
+    // calling a function   
+    greet(); 
+
+}</code></pre>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://cdn.programiz.com/sites/tutorial2program/files/cpp-function-call.png" alt="Working of C++ function" title="Working of C++ function"><figcaption class="wp-element-caption">How Function works in C++</figcaption></figure>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity">
+
+
+
+<h3 class="wp-block-heading" id="example1">Example 1: Display a Text</h3>
+
+
+
+<pre class="wp-block-code"><code>#include &lt;iostream&gt;
 using namespace std;
 
-int main()
-{
-    float num, average, sum = 0.0;
-    int i, n;
+// declaring a function
+void greet() {
+    cout &lt;&lt; "Hello there!";
+}
 
-    cout &lt;&lt; "Maximum number of inputs: ";
-    cin &gt;&gt; n;
+int main() {
 
-    for(i = 1; i &lt;= n; ++i)
-    {
-        cout &lt;&lt; "Enter n" &lt;&lt; i &lt;&lt; ": ";
-        cin &gt;&gt; num;
-        
-        if(num &lt; 0.0)
-        {
-           // Control of the program move to jump:
-            goto jump;
-        } 
-        sum += num;
-    }
-    
-jump:
-    average = sum / (i - 1);
-    cout &lt;&lt; "\nAverage = " &lt;&lt; average;
+    // calling the function
+    greet();
+
     return 0;
 }</code></pre>
+
+
+
+<p><a href="https://www.programiz.com/cpp-programming/online-compiler" target="_blank" rel="noreferrer noopener">Run Code</a></p>
 
 
 
@@ -211,32 +329,434 @@ jump:
 
 
 
-<pre class="wp-block-preformatted"><samp>Maximum number of inputs: 10
-Enter n1: 2.3
-Enter n2: 5.6
-Enter n3: -5.6
-
-Average = 3.95</samp></pre>
+<pre class="wp-block-preformatted"><samp>Hello there!</samp></pre>
 
 
 
-<p>You can write any C++ program without the use of&nbsp;<code>goto</code>&nbsp;statement and is generally considered a good idea not to use them.</p>
+<hr class="wp-block-separator has-alpha-channel-opacity">
 
 
 
-<h3 class="wp-block-heading" id="reason-to-avoid-goto-statement">Reason to Avoid goto Statement</h3>
+<h3 class="wp-block-heading" id="function-parameters">Function Parameters</h3>
 
 
 
-<p>The goto statement gives the power to jump to any part of a program but, makes the logic of the program complex and tangled.</p>
+<p>As mentioned above, a function can be declared with parameters (arguments). A parameter is a value that is passed when declaring a function.</p>
 
 
 
-<p>In modern programming, the goto statement is considered a harmful construct and a bad programming practice.</p>
+<p>For example, let us consider the function below:</p>
 
 
 
-<p>The goto statement can be replaced in most of C++ program with the use of break and continue statements.</p>
+<pre class="wp-block-code"><code>void printNum(int num) {
+    cout &lt;&lt; num;
+}</code></pre>
+
+
+
+<p>Here, the&nbsp;<code>int</code>&nbsp;variable&nbsp;<var>num</var>&nbsp;is the function parameter.</p>
+
+
+
+<p>We pass a value to the function parameter while calling the function.</p>
+
+
+
+<pre class="wp-block-code"><code>int main() {
+    int n = 7;
+    
+    // calling the function
+    // n is passed to the function as argument
+    printNum(n);
+    
+    return 0;
+}</code></pre>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity">
+
+
+
+<h3 class="wp-block-heading" id="example-2-function-with-parameters">Example 2: Function with Parameters</h3>
+
+
+
+<pre class="wp-block-code"><code>// program to print a text
+
+#include &lt;iostream&gt;
+using namespace std;
+
+// display a number
+void displayNum(int n1, float n2) {
+    cout &lt;&lt; "The int number is " &lt;&lt; n1;
+    cout &lt;&lt; "The double number is " &lt;&lt; n2;
+}
+
+int main() {
+     
+     int num1 = 5;
+     double num2 = 5.5;
+
+    // calling the function
+    displayNum(num1, num2);
+
+    return 0;
+}</code></pre>
+
+
+
+<p><a href="https://www.programiz.com/cpp-programming/online-compiler" target="_blank" rel="noreferrer noopener">Run Code</a></p>
+
+
+
+<p><strong>Output</strong></p>
+
+
+
+<pre class="wp-block-preformatted"><samp>The int number is 5
+The double number is 5.5</samp></pre>
+
+
+
+<p>In the above program, we have used a function that has one&nbsp;<code>int</code>&nbsp;parameter and one&nbsp;<code>double</code>&nbsp;parameter.</p>
+
+
+
+<p>We then pass&nbsp;<var>num1</var>&nbsp;and&nbsp;<var>num2</var>&nbsp;as arguments. These values are stored by the function parameters&nbsp;<var>n1</var>&nbsp;and&nbsp;<var>n2</var>&nbsp;respectively.</p>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://cdn.programiz.com/sites/tutorial2program/files/cpp-function-parameters.png" alt="C++ function with parameters" title="C++ function with parameters"><figcaption class="wp-element-caption">C++ function with parameters</figcaption></figure>
+
+
+
+<p><strong>Note:</strong>&nbsp;The type of the arguments passed while calling the function must match with the corresponding parameters defined in the function declaration.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity">
+
+
+
+<h3 class="wp-block-heading" id="return">Return Statement</h3>
+
+
+
+<p>In the above programs, we have used void in the function declaration. For example,</p>
+
+
+
+<pre class="wp-block-code"><code>void displayNumber() {
+    // code
+}</code></pre>
+
+
+
+<p>This means the function is not returning any value.</p>
+
+
+
+<p>It&#8217;s also possible to return a value from a function. For this, we need to specify the&nbsp;<code>returnType</code>&nbsp;of the function during function declaration.</p>
+
+
+
+<p>Then, the&nbsp;<code>return</code>&nbsp;statement can be used to return a value from a function.</p>
+
+
+
+<p>For example,</p>
+
+
+
+<pre class="wp-block-code"><code>int add (int a, int b) {
+   return (a + b);
+}</code></pre>
+
+
+
+<p>Here, we have the data type&nbsp;<code>int</code>&nbsp;instead of&nbsp;<code>void</code>. This means that the function returns an&nbsp;<code>int</code>&nbsp;value.</p>
+
+
+
+<p>The code&nbsp;<code>return (a + b);</code>&nbsp;returns the sum of the two parameters as the function value.</p>
+
+
+
+<p>The&nbsp;<code>return</code>&nbsp;statement denotes that the function has ended. Any code after&nbsp;<code>return</code>&nbsp;inside the function is not executed.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity">
+
+
+
+<h3 class="wp-block-heading" id="example-3-add-two-numbers">Example 3: Add Two Numbers</h3>
+
+
+
+<pre class="wp-block-code"><code>// program to add two numbers using a function
+
+#include &lt;iostream&gt;
+
+using namespace std;
+
+// declaring a function
+int add(int a, int b) {
+    return (a + b);
+}
+
+int main() {
+
+    int sum;
+    
+    // calling the function and storing
+    // the returned value in sum
+    sum = add(100, 78);
+
+    cout &lt;&lt; "100 + 78 = " &lt;&lt; sum &lt;&lt; endl;
+
+    return 0;
+}</code></pre>
+
+
+
+<p><a href="https://www.programiz.com/cpp-programming/online-compiler" target="_blank" rel="noreferrer noopener">Run Code</a></p>
+
+
+
+<p><strong>Output</strong></p>
+
+
+
+<pre class="wp-block-preformatted"><samp>100 + 78 = 178</samp></pre>
+
+
+
+<p>In the above program, the&nbsp;<code>add()</code>&nbsp;function is used to find the sum of two numbers.</p>
+
+
+
+<p>We pass two&nbsp;<code>int</code>&nbsp;literals&nbsp;<code>100</code>&nbsp;and&nbsp;<code>78</code>&nbsp;while calling the function.</p>
+
+
+
+<p>We store the returned value of the function in the variable&nbsp;<var>sum</var>, and then we print it.</p>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://cdn.programiz.com/sites/tutorial2program/files/cpp-function-return-statement.png" alt="Working of C++ Function with return statement " title="Working of C++ Function with return statement"><figcaption class="wp-element-caption">Working of C++ Function with return statement</figcaption></figure>
+
+
+
+<p>Notice that&nbsp;<var>sum</var>&nbsp;is a variable of&nbsp;<code>int</code>&nbsp;type. This is because the return value of&nbsp;<code>add()</code>&nbsp;is of&nbsp;<code>int</code>&nbsp;type.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity">
+
+
+
+<h3 class="wp-block-heading" id="function-prototype">Function Prototype</h3>
+
+
+
+<p>In C++, the code of function declaration should be before the function call. However, if we want to define a function after the function call, we need to use the function prototype. For example,</p>
+
+
+
+<pre class="wp-block-code"><code>// function prototype
+void add(int, int);
+
+int main() {
+    // calling the function before declaration.
+    add(5, 3);
+    return 0;
+}
+
+// function definition
+void add(int a, int b) {
+    cout &lt;&lt; (a + b);
+}</code></pre>
+
+
+
+<p>In the above code, the function prototype is:</p>
+
+
+
+<pre class="wp-block-code"><code>void add(int, int);</code></pre>
+
+
+
+<p>This provides the compiler with information about the function name and its parameters. That&#8217;s why we can use the code to call a function before the function has been defined.</p>
+
+
+
+<p>The syntax of a function prototype is:</p>
+
+
+
+<pre class="wp-block-code"><code>returnType functionName(dataType1, dataType2, ...);</code></pre>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity">
+
+
+
+<h3 class="wp-block-heading" id="example-4-c-function-prototype">Example 4: C++ Function Prototype</h3>
+
+
+
+<pre class="wp-block-code"><code>// using function definition after main() function
+// function prototype is declared before main()
+
+#include &lt;iostream&gt;
+
+using namespace std;
+
+// function prototype
+int add(int, int);
+
+int main() {
+    int sum;
+
+    // calling the function and storing
+    // the returned value in sum
+    sum = add(100, 78);
+
+    cout &lt;&lt; "100 + 78 = " &lt;&lt; sum &lt;&lt; endl;
+
+    return 0;
+}
+
+// function definition
+int add(int a, int b) {
+    return (a + b);
+}</code></pre>
+
+
+
+<p><a href="https://www.programiz.com/cpp-programming/online-compiler" target="_blank" rel="noreferrer noopener">Run Code</a></p>
+
+
+
+<p><strong>Output</strong></p>
+
+
+
+<pre class="wp-block-preformatted"><samp>100 + 78 = 178</samp></pre>
+
+
+
+<p>The above program is nearly identical to&nbsp;<strong>Example 3</strong>. The only difference is that here, the function is defined&nbsp;<strong>after</strong>&nbsp;the function call.</p>
+
+
+
+<p>That&#8217;s why we have used a function prototype in this example.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity">
+
+
+
+<h3 class="wp-block-heading" id="benefits">Benefits of Using User-Defined Functions</h3>
+
+
+
+<ul>
+<li>Functions make the code reusable. We can declare them once and use them multiple times.</li>
+
+
+
+<li>Functions make the program easier as each small task is divided into a function.</li>
+
+
+
+<li>Functions increase readability.</li>
+</ul>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity">
+
+
+
+<h2 class="wp-block-heading" id="library-functions">C++ Library Functions</h2>
+
+
+
+<p>Library functions are the built-in functions in C++ programming.</p>
+
+
+
+<p>Programmers can use library functions by invoking the functions directly; they don&#8217;t need to write the functions themselves.</p>
+
+
+
+<p>Some common library functions in C++ are&nbsp;<code>sqrt()</code>,&nbsp;<code>abs()</code>,&nbsp;<code>isdigit()</code>, etc.</p>
+
+
+
+<p>In order to use library functions, we usually need to include the header file in which these library functions are defined.</p>
+
+
+
+<p>For instance, in order to use mathematical functions such as&nbsp;<code>sqrt()</code>&nbsp;and&nbsp;<code>abs()</code>, we need to include the header file&nbsp;<code>cmath</code>.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity">
+
+
+
+<h3 class="wp-block-heading" id="example-5-c-program-to-find-the-square-root-of-a-number">Example 5: C++ Program to Find the Square Root of a Number</h3>
+
+
+
+<pre class="wp-block-code"><code>#include &lt;iostream&gt;
+#include &lt;cmath&gt;
+using namespace std;
+
+int main() {
+    double number, squareRoot;
+    
+    number = 25.0;
+
+    // sqrt() is a library function to calculate the square root
+    squareRoot = sqrt(number);
+
+    cout &lt;&lt; "Square root of " &lt;&lt; number &lt;&lt; " = " &lt;&lt; squareRoot;
+
+    return 0;
+}</code></pre>
+
+
+
+<p><a href="https://www.programiz.com/cpp-programming/online-compiler" target="_blank" rel="noreferrer noopener">Run Code</a></p>
+
+
+
+<p><strong>Output</strong></p>
+
+
+
+<pre class="wp-block-preformatted"><samp>Square root of 25 = 5</samp></pre>
+
+
+
+<p>In this program, the&nbsp;<code>sqrt()</code>&nbsp;library function is used to calculate the square root of a number.</p>
+
+
+
+<p>The function declaration of&nbsp;<code>sqrt()</code>&nbsp;is defined in the&nbsp;<code>cmath</code>&nbsp;header file. That&#8217;s why we need to use the code&nbsp;<code>#include &lt;cmath&gt;</code>&nbsp;to use the&nbsp;<code>sqrt()</code>&nbsp;function.</p>
+
+
+
+<p>To learn more, visit C++ Standard Library functions.</p>
 </div>
 
 
@@ -245,7 +765,7 @@ Average = 3.95</samp></pre>
 <div class="wp-block-columns is-layout-flex wp-container-11">
 <div class="wp-block-column is-layout-flow">
 <div class="post-navigation-link-previous is-style-hovershadow wp-block-post-navigation-link">
-<span class="post-navigation-link__label">«</span> <a href="https://harriscr7.github.io/imharris/c-return-by-reference/" rel="prev">C++ Return by Reference</a>
+<span class="post-navigation-link__label">«</span> <a href="https://harriscr7.github.io/imharris/c-continue-statement/" rel="prev">C++ Continue Statement</a>
 </div>
 <style scoped>.wp-block-post-navigation-link.is-style-hovershadow:before{position: absolute;top: 0;right: 0;left: 0;bottom: 0;transition: box-shadow 0.5s var(--greenshift-transition);content: "";border-radius: 5px;border: 1px solid var(--wp--preset--color--lightborder);}.wp-block-post-navigation-link.is-style-hovershadow:hover:before{box-shadow: 0 3px 40px rgb(188 207 219 / 35%);}.wp-block-post-navigation-link.is-style-hovershadow:empty:before{display:none}.wp-block-post-navigation-link.is-style-hovershadow{padding:20px}.wp-block-post-navigation-link.is-style-hovershadow a{text-decoration:none}</style>
 </div>
@@ -258,7 +778,7 @@ Average = 3.95</samp></pre>
 
 <div class="wp-block-column is-layout-flow">
 <div class="post-navigation-link-next has-text-align-right is-style-hovershadow wp-block-post-navigation-link">
-<span class="post-navigation-link__label">»</span> <a href="https://harriscr7.github.io/imharris/using-constructos/" rel="next">C++ Using Constructos</a>
+<span class="post-navigation-link__label">»</span> <a href="https://harriscr7.github.io/imharris/c-user-defined-function-types/" rel="next">C++ User-defined Function Types</a>
 </div>
 <style scoped>.wp-block-post-navigation-link.is-style-hovershadow:before{position: absolute;top: 0;right: 0;left: 0;bottom: 0;transition: box-shadow 0.5s var(--greenshift-transition);content: "";border-radius: 5px;border: 1px solid var(--wp--preset--color--lightborder);}.wp-block-post-navigation-link.is-style-hovershadow:hover:before{box-shadow: 0 3px 40px rgb(188 207 219 / 35%);}.wp-block-post-navigation-link.is-style-hovershadow:empty:before{display:none}.wp-block-post-navigation-link.is-style-hovershadow{padding:20px}.wp-block-post-navigation-link.is-style-hovershadow a{text-decoration:none}</style>
 </div>

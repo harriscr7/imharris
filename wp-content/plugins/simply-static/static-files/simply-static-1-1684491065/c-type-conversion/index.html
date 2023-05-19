@@ -4,10 +4,9 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="max-image-preview:large">
-<title>C++ Goto Statement &#8211; imharris</title>
+<title>C++ Type Conversion &#8211; imharris</title>
 <link rel="alternate" type="application/rss+xml" title="imharris &raquo; Feed" href="https://harriscr7.github.io/imharris/feed/">
 <link rel="alternate" type="application/rss+xml" title="imharris &raquo; Comments Feed" href="https://harriscr7.github.io/imharris/comments/feed/">
-<link rel="alternate" type="application/rss+xml" title="imharris &raquo; C++ Goto Statement Comments Feed" href="https://harriscr7.github.io/imharris/c-goto-statement/feed/">
 <script>
 window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/harriscr7.github.io\/imharris\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.2"}};
 /*! This file is auto-generated */
@@ -44,17 +43,22 @@ img.emoji {
 <style id="wp-block-post-featured-image-inline-css">.wp-block-post-featured-image{margin-left:0;margin-right:0}.wp-block-post-featured-image a{display:block}.wp-block-post-featured-image img{box-sizing:border-box;height:auto;max-width:100%;vertical-align:bottom;width:100%}.wp-block-post-featured-image.alignfull img,.wp-block-post-featured-image.alignwide img{width:100%}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim{background-color:#000;inset:0;position:absolute}.wp-block-post-featured-image{position:relative}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-gradient{background-color:transparent}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-0{opacity:0}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-10{opacity:.1}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-20{opacity:.2}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-30{opacity:.3}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-40{opacity:.4}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-50{opacity:.5}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-60{opacity:.6}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-70{opacity:.7}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-80{opacity:.8}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-90{opacity:.9}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-100{opacity:1}</style>
 <style id="wp-block-paragraph-inline-css">.is-small-text{font-size:.875em}.is-regular-text{font-size:1em}.is-large-text{font-size:2.25em}.is-larger-text{font-size:3em}.has-drop-cap:not(:focus):first-letter{float:left;font-size:8.4em;font-style:normal;font-weight:100;line-height:.68;margin:.05em .1em 0 0;text-transform:uppercase}body.rtl .has-drop-cap:not(:focus):first-letter{float:none;margin-left:.1em}p.has-drop-cap.has-background{overflow:hidden}p.has-background{padding:1.25em 2.375em}:where(p.has-text-color:not(.has-link-color)) a{color:inherit}
 p{margin-top: 0px;margin-bottom: var(--wp--custom--spacing--blockbottom);}</style>
+<style id="wp-block-list-inline-css">ol,ul{box-sizing:border-box}ol.has-background,ul.has-background{padding:1.25em 2.375em}</style>
+<style id="wp-block-separator-inline-css">@charset "UTF-8";.wp-block-separator{border:1px solid;border-left:none;border-right:none}.wp-block-separator.is-style-dots{background:none!important;border:none;height:auto;line-height:1;text-align:center}.wp-block-separator.is-style-dots:before{color:currentColor;content:"···";font-family:serif;font-size:1.5em;letter-spacing:2em;padding-left:2em}
+.wp-block-separator.has-css-opacity{opacity:.4}.wp-block-separator{border:none;border-bottom:2px solid;margin-left:auto;margin-right:auto}.wp-block-separator.has-alpha-channel-opacity{opacity:1}.wp-block-separator:not(.is-style-wide):not(.is-style-dots){width:100px}.wp-block-separator.has-background:not(.is-style-dots){border-bottom:none;height:1px}.wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots){height:2px}
+.wp-block-separator{color: var(--wp--preset--color--lightborder);font-size: var(--wp--preset--font-size--large);margin-top: var(--wp--custom--spacing--blockbottom);margin-bottom: var(--wp--custom--spacing--blockbottom);}</style>
+<style id="greenshift_core_separator-inline-css">.wp-block-separator{opacity:1}.wp-block-separator.has-background:not(.is-style-dots),.wp-block-separator:not(.is-style-dots){border-bottom:1px solid currentColor;height:1px}.wp-block-separator.is-style-dots:before{font-family:inherit;font-size:var(--wp--preset--font-size--large);letter-spacing:10px;padding-left:10px}</style>
 <style id="wp-block-heading-inline-css">h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-background,h6.has-background{padding:1.25em 2.375em}
 .wp-block-heading{font-family: var(--wp--preset--font-family--primary);}</style>
-<style id="wp-block-preformatted-inline-css">.wp-block-preformatted{white-space:pre-wrap}.wp-block-preformatted.has-background{padding:1.25em 2.375em}
-.wp-block-preformatted{background-color: var(--wp--custom--color--black);border-radius: 0;border-color: var(--wp--custom--color--black);color: var(--wp--custom--color--white);font-family: var(--wp--preset--font-family--monospace);font-size: var(--wp--preset--font-size--small);margin-bottom: var(--wp--custom--spacing--blockbottom);padding-top: 25px;padding-right: 30px;padding-bottom: 25px;padding-left: 30px;}</style>
-<style id="greenshift_core_code-inline-css">.wp-block-code code, .wp-block-preformatted{overflow-wrap:normal;overflow-x:auto;white-space:pre}code::selection{background: #777}</style>
-<style id="wp-block-image-inline-css">.wp-block-image img{height:auto;max-width:100%;vertical-align:bottom}.wp-block-image img,.wp-block-image.has-custom-border img{box-sizing:border-box}.wp-block-image.aligncenter{text-align:center}.wp-block-image.alignfull img,.wp-block-image.alignwide img{height:auto;width:100%}.wp-block-image .aligncenter,.wp-block-image .alignleft,.wp-block-image .alignright,.wp-block-image.aligncenter,.wp-block-image.alignleft,.wp-block-image.alignright{display:table}.wp-block-image .aligncenter>figcaption,.wp-block-image .alignleft>figcaption,.wp-block-image .alignright>figcaption,.wp-block-image.aligncenter>figcaption,.wp-block-image.alignleft>figcaption,.wp-block-image.alignright>figcaption{caption-side:bottom;display:table-caption}.wp-block-image .alignleft{float:left;margin:.5em 1em .5em 0}.wp-block-image .alignright{float:right;margin:.5em 0 .5em 1em}.wp-block-image .aligncenter{margin-left:auto;margin-right:auto}.wp-block-image figcaption{margin-bottom:1em;margin-top:.5em}.wp-block-image .is-style-rounded img,.wp-block-image.is-style-circle-mask img,.wp-block-image.is-style-rounded img{border-radius:9999px}@supports ((-webkit-mask-image:none) or (mask-image:none)) or (-webkit-mask-image:none){.wp-block-image.is-style-circle-mask img{border-radius:0;-webkit-mask-image:url('data:image/svg+xml;utf8,<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="50"/></svg>');mask-image:url('data:image/svg+xml;utf8,<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="50"/></svg>');mask-mode:alpha;-webkit-mask-position:center;mask-position:center;-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;-webkit-mask-size:contain;mask-size:contain}}.wp-block-image :where(.has-border-color){border-style:solid}.wp-block-image :where([style*=border-top-color]){border-top-style:solid}.wp-block-image :where([style*=border-right-color]){border-right-style:solid}.wp-block-image :where([style*=border-bottom-color]){border-bottom-style:solid}.wp-block-image :where([style*=border-left-color]){border-left-style:solid}.wp-block-image :where([style*=border-width]){border-style:solid}.wp-block-image :where([style*=border-top-width]){border-top-style:solid}.wp-block-image :where([style*=border-right-width]){border-right-style:solid}.wp-block-image :where([style*=border-bottom-width]){border-bottom-style:solid}.wp-block-image :where([style*=border-left-width]){border-left-style:solid}.wp-block-image figure{margin:0}
-.wp-block-image figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-image figcaption{color:hsla(0,0%,100%,.65)}.wp-block-image{margin:0 0 1em}
-.wp-block-image{margin-top: var( --wp--style--block-gap );margin-bottom: var(--wp--custom--spacing--blockbottom);}</style>
 <style id="wp-block-code-inline-css">.wp-block-code{box-sizing:border-box}.wp-block-code code{display:block;font-family:inherit;overflow-wrap:break-word;white-space:pre-wrap}
 .wp-block-code{border:1px solid #ccc;border-radius:4px;font-family:Menlo,Consolas,monaco,monospace;padding:.8em 1em}
 .wp-block-code{background-color: var(--wp--custom--color--black);border-radius: 0;border-color: var(--wp--custom--color--black);color: var(--wp--custom--color--white);font-family: var(--wp--preset--font-family--monospace);font-size: var(--wp--preset--font-size--small);margin-bottom: var(--wp--custom--spacing--blockbottom);padding-top: 25px;padding-right: 30px;padding-bottom: 25px;padding-left: 30px;}</style>
+<style id="greenshift_core_code-inline-css">.wp-block-code code, .wp-block-preformatted{overflow-wrap:normal;overflow-x:auto;white-space:pre}code::selection{background: #777}</style>
+<style id="wp-block-preformatted-inline-css">.wp-block-preformatted{white-space:pre-wrap}.wp-block-preformatted.has-background{padding:1.25em 2.375em}
+.wp-block-preformatted{background-color: var(--wp--custom--color--black);border-radius: 0;border-color: var(--wp--custom--color--black);color: var(--wp--custom--color--white);font-family: var(--wp--preset--font-family--monospace);font-size: var(--wp--preset--font-size--small);margin-bottom: var(--wp--custom--spacing--blockbottom);padding-top: 25px;padding-right: 30px;padding-bottom: 25px;padding-left: 30px;}</style>
+<style id="wp-block-image-inline-css">.wp-block-image img{height:auto;max-width:100%;vertical-align:bottom}.wp-block-image img,.wp-block-image.has-custom-border img{box-sizing:border-box}.wp-block-image.aligncenter{text-align:center}.wp-block-image.alignfull img,.wp-block-image.alignwide img{height:auto;width:100%}.wp-block-image .aligncenter,.wp-block-image .alignleft,.wp-block-image .alignright,.wp-block-image.aligncenter,.wp-block-image.alignleft,.wp-block-image.alignright{display:table}.wp-block-image .aligncenter>figcaption,.wp-block-image .alignleft>figcaption,.wp-block-image .alignright>figcaption,.wp-block-image.aligncenter>figcaption,.wp-block-image.alignleft>figcaption,.wp-block-image.alignright>figcaption{caption-side:bottom;display:table-caption}.wp-block-image .alignleft{float:left;margin:.5em 1em .5em 0}.wp-block-image .alignright{float:right;margin:.5em 0 .5em 1em}.wp-block-image .aligncenter{margin-left:auto;margin-right:auto}.wp-block-image figcaption{margin-bottom:1em;margin-top:.5em}.wp-block-image .is-style-rounded img,.wp-block-image.is-style-circle-mask img,.wp-block-image.is-style-rounded img{border-radius:9999px}@supports ((-webkit-mask-image:none) or (mask-image:none)) or (-webkit-mask-image:none){.wp-block-image.is-style-circle-mask img{border-radius:0;-webkit-mask-image:url('data:image/svg+xml;utf8,<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="50"/></svg>');mask-image:url('data:image/svg+xml;utf8,<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="50"/></svg>');mask-mode:alpha;-webkit-mask-position:center;mask-position:center;-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;-webkit-mask-size:contain;mask-size:contain}}.wp-block-image :where(.has-border-color){border-style:solid}.wp-block-image :where([style*=border-top-color]){border-top-style:solid}.wp-block-image :where([style*=border-right-color]){border-right-style:solid}.wp-block-image :where([style*=border-bottom-color]){border-bottom-style:solid}.wp-block-image :where([style*=border-left-color]){border-left-style:solid}.wp-block-image :where([style*=border-width]){border-style:solid}.wp-block-image :where([style*=border-top-width]){border-top-style:solid}.wp-block-image :where([style*=border-right-width]){border-right-style:solid}.wp-block-image :where([style*=border-bottom-width]){border-bottom-style:solid}.wp-block-image :where([style*=border-left-width]){border-left-style:solid}.wp-block-image figure{margin:0}
+.wp-block-image figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-image figcaption{color:hsla(0,0%,100%,.65)}.wp-block-image{margin:0 0 1em}
+.wp-block-image{margin-top: var( --wp--style--block-gap );margin-bottom: var(--wp--custom--spacing--blockbottom);}</style>
 <style id="wp-block-post-navigation-link-inline-css">.wp-block-post-navigation-link .wp-block-post-navigation-link__arrow-previous{display:inline-block;margin-right:1ch}.wp-block-post-navigation-link .wp-block-post-navigation-link__arrow-previous:not(.is-arrow-chevron){transform:scaleX(1)}.wp-block-post-navigation-link .wp-block-post-navigation-link__arrow-next{display:inline-block;margin-left:1ch}.wp-block-post-navigation-link .wp-block-post-navigation-link__arrow-next:not(.is-arrow-chevron){transform:scaleX(1)}</style>
 <style id="greenshift_core_postnavigation-inline-css">.wp-block-post-navigation-link{display:flex;gap:15px;position:relative; z-index:0}.post-navigation-link__label{font-size:40px;color:var(--wp--preset--color--lightborder);transition:transform .5s var(--greenshift-transition);line-height:25px}.wp-block-post-navigation-link a{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;position:relative}.wp-block-post-navigation-link:hover .post-navigation-link__label{transform:translateX(-5px)}.wp-block-post-navigation-link.has-text-align-right{justify-content:flex-end}.wp-block-post-navigation-link.has-text-align-right .post-navigation-link__label{order:2}</style>
 <style id="wp-block-columns-inline-css">.wp-block-columns{align-items:normal!important;box-sizing:border-box;display:flex;flex-wrap:wrap!important;margin-bottom:1.75em}@media (min-width:782px){.wp-block-columns{flex-wrap:nowrap!important}}.wp-block-columns.are-vertically-aligned-top{align-items:flex-start}.wp-block-columns.are-vertically-aligned-center{align-items:center}.wp-block-columns.are-vertically-aligned-bottom{align-items:flex-end}@media (max-width:781px){.wp-block-columns:not(.is-not-stacked-on-mobile)>.wp-block-column{flex-basis:100%!important}}@media (min-width:782px){.wp-block-columns:not(.is-not-stacked-on-mobile)>.wp-block-column{flex-basis:0;flex-grow:1}.wp-block-columns:not(.is-not-stacked-on-mobile)>.wp-block-column[style*=flex-basis]{flex-grow:0}}.wp-block-columns.is-not-stacked-on-mobile{flex-wrap:nowrap!important}.wp-block-columns.is-not-stacked-on-mobile>.wp-block-column{flex-basis:0;flex-grow:1}.wp-block-columns.is-not-stacked-on-mobile>.wp-block-column[style*=flex-basis]{flex-grow:0}:where(.wp-block-columns.has-background){padding:1.25em 2.375em}.wp-block-column{flex-grow:1;min-width:0;overflow-wrap:break-word;word-break:break-word}.wp-block-column.is-vertically-aligned-top{align-self:flex-start}.wp-block-column.is-vertically-aligned-center{align-self:center}.wp-block-column.is-vertically-aligned-bottom{align-self:flex-end}.wp-block-column.is-vertically-aligned-bottom,.wp-block-column.is-vertically-aligned-center,.wp-block-column.is-vertically-aligned-top{width:100%}
@@ -72,21 +76,21 @@ p{margin-top: 0px;margin-bottom: var(--wp--custom--spacing--blockbottom);}</styl
 <script src="https://harriscr7.github.io/imharris/wp-includes/blocks/navigation/view.min.js?ver=c24330f635f5cb9d5e0e" id="wp-block-navigation-view-js"></script>
 <script src="https://harriscr7.github.io/imharris/wp-includes/blocks/navigation/view-modal.min.js?ver=f51363b18f0497ec84da" id="wp-block-navigation-view-2-js"></script>
 <link rel="https://api.w.org/" href="https://harriscr7.github.io/imharris/wp-json/">
-<link rel="alternate" type="application/json" href="https://harriscr7.github.io/imharris/wp-json/wp/v2/posts/219">
+<link rel="alternate" type="application/json" href="https://harriscr7.github.io/imharris/wp-json/wp/v2/posts/43">
 <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://harriscr7.github.io/imharris/xmlrpc.php?rsd">
 <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://harriscr7.github.io/imharris/wp-includes/wlwmanifest.xml">
 <meta name="generator" content="WordPress 6.2">
-<link rel="canonical" href="https://harriscr7.github.io/imharris/c-goto-statement/">
-<link rel="shortlink" href="https://harriscr7.github.io/imharris/?p=219">
-<link rel="alternate" type="application/json+oembed" href="https://harriscr7.github.io/imharris/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fharriscr7.github.io%2Fimharris%2Fc-goto-statement%2F">
-<link rel="alternate" type="text/xml+oembed" href="https://harriscr7.github.io/imharris/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fharriscr7.github.io%2Fimharris%2Fc-goto-statement%2F#038;format=xml">
+<link rel="canonical" href="https://harriscr7.github.io/imharris/c-type-conversion/">
+<link rel="shortlink" href="https://harriscr7.github.io/imharris/?p=43">
+<link rel="alternate" type="application/json+oembed" href="https://harriscr7.github.io/imharris/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fharriscr7.github.io%2Fimharris%2Fc-type-conversion%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://harriscr7.github.io/imharris/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fharriscr7.github.io%2Fimharris%2Fc-type-conversion%2F#038;format=xml">
 <link rel="icon" href="https://harriscr7.github.io/imharris/wp-content/uploads/2023/05/image_2023-05-14_210105897.png" sizes="32x32">
 <link rel="icon" href="https://harriscr7.github.io/imharris/wp-content/uploads/2023/05/image_2023-05-14_210105897.png" sizes="192x192">
 <link rel="apple-touch-icon" href="https://harriscr7.github.io/imharris/wp-content/uploads/2023/05/image_2023-05-14_210105897.png">
 <meta name="msapplication-TileImage" content="https://harriscr7.github.io/imharris/wp-content/uploads/2023/05/image_2023-05-14_210105897.png">
 </head>
 
-<body class="post-template-default single single-post postid-219 single-format-standard wp-custom-logo wp-embed-responsive gspbody gspb-bodyfront">
+<body class="post-template-default single single-post postid-43 single-format-standard wp-custom-logo wp-embed-responsive gspbody gspb-bodyfront">
 <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-dark-grayscale"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0 0.49803921568627"></fefuncr><fefuncg type="table" tablevalues="0 0.49803921568627"></fefuncg><fefuncb type="table" tablevalues="0 0.49803921568627"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-grayscale"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0 1"></fefuncr><fefuncg type="table" tablevalues="0 1"></fefuncg><fefuncb type="table" tablevalues="0 1"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-purple-yellow"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0.54901960784314 0.98823529411765"></fefuncr><fefuncg type="table" tablevalues="0 1"></fefuncg><fefuncb type="table" tablevalues="0.71764705882353 0.25490196078431"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-blue-red"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0 1"></fefuncr><fefuncg type="table" tablevalues="0 0.27843137254902"></fefuncg><fefuncb type="table" tablevalues="0.5921568627451 0.27843137254902"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-midnight"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0 0"></fefuncr><fefuncg type="table" tablevalues="0 0.64705882352941"></fefuncg><fefuncb type="table" tablevalues="0 1"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-magenta-yellow"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0.78039215686275 1"></fefuncr><fefuncg type="table" tablevalues="0 0.94901960784314"></fefuncg><fefuncb type="table" tablevalues="0.35294117647059 0.47058823529412"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-purple-green"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0.65098039215686 0.40392156862745"></fefuncr><fefuncg type="table" tablevalues="0 1"></fefuncg><fefuncb type="table" tablevalues="0.44705882352941 0.4"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-blue-orange"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0.098039215686275 1"></fefuncr><fefuncg type="table" tablevalues="0 0.66274509803922"></fefuncg><fefuncb type="table" tablevalues="0.84705882352941 0.41960784313725"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg>
 <div class="wp-site-blocks">
 <header class="site-header wp-block-template-part">
@@ -129,7 +133,7 @@ p{margin-top: 0px;margin-bottom: var(--wp--custom--spacing--blockbottom);}</styl
 
 <div class="wp-block-group site-title-area has-global-padding is-layout-constrained" style="margin-top:0;margin-bottom:0"><div class="alignwide site-title-area wp-block-template-part">
 <div class="wp-block-group has-basecolor-color has-contrastcolor-background-color has-text-color has-background has-global-padding is-layout-constrained" style="padding-top:40px">
-<h1 class="wp-block-post-title has-max-huge-font-size">C++ Goto Statement</h1>
+<h1 class="wp-block-post-title has-max-huge-font-size">C++ Type Conversion</h1>
 
 </div>
 </div></div>
@@ -137,73 +141,77 @@ p{margin-top: 0px;margin-bottom: var(--wp--custom--spacing--blockbottom);}</styl
 
 
 <main class="wp-block-group site-content has-basecolor-color has-contrastcolor-background-color has-text-color has-background is-layout-flow" style="margin-top:0;margin-bottom:0;padding-top:50px;padding-right:0;padding-bottom:50px;padding-left:0"><div class="entry-content wp-block-post-content has-global-padding is-layout-constrained">
-<p>In this article, you&#8217;ll learn about goto statment, how it works and why should it be avoided.</p>
+<p>In this tutorial, we will learn about the basics of C++ type conversion with the help of examples.</p>
 
 
 
-<p>In C++ programming, the goto statement is used for altering the normal sequence of program execution by transferring control to some other part of the program.</p>
+<p id="introduction">C++ allows us to convert data of one type to that of another. This is known as type conversion.</p>
 
 
 
-<h2 class="wp-block-heading" id="syntax-of-goto-statement">Syntax of goto Statement</h2>
+<p>There are two types of type conversion in C++.</p>
 
 
 
-<pre class="wp-block-preformatted">goto label;
-... .. ...
-... .. ...
-... .. ...
-label: 
-statement;
-... .. ...</pre>
+<ol>
+<li>Implicit Conversion</li>
 
 
 
-<p>In the syntax above,&nbsp;<var>label</var>&nbsp;is an identifier. When&nbsp;<code>goto label;</code>&nbsp;is encountered, the control of program jumps to&nbsp;<code>label:</code>&nbsp;and executes the code below it.</p>
+<li>Explicit Conversion (also known as Type Casting)</li>
+</ol>
 
 
 
-<figure class="wp-block-image"><img decoding="async" src="https://cdn.programiz.com/sites/tutorial2program/files/cpp-goto-working.png" alt="Working of goto statement in C++ programming"><figcaption class="wp-element-caption">Working of goto in C++</figcaption></figure>
+<hr class="wp-block-separator has-alpha-channel-opacity">
 
 
 
-<h3 class="wp-block-heading" id="example-goto-statement">Example: goto Statement</h3>
+<h2 class="wp-block-heading" id="implicit">Implicit Type Conversion</h2>
 
 
 
-<pre class="wp-block-code"><code>// This program calculates the average of numbers entered by the user.
-// If the user enters a negative number, it ignores the number and 
-// calculates the average number entered before it.
+<p>The type conversion that is done automatically done by the compiler is known as implicit type conversion. This type of conversion is also known as automatic conversion.</p>
 
-# include &lt;iostream&gt;
+
+
+<p>Let us look at two examples of implicit type conversion.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity">
+
+
+
+<h3 class="wp-block-heading" id="example1">Example 1: Conversion From int to double</h3>
+
+
+
+<pre class="wp-block-code"><code>// Working of implicit type-conversion
+
+#include &lt;iostream&gt;
 using namespace std;
 
-int main()
-{
-    float num, average, sum = 0.0;
-    int i, n;
+int main() {
+   // assigning an int value to num_int
+   int num_int = 9;
 
-    cout &lt;&lt; "Maximum number of inputs: ";
-    cin &gt;&gt; n;
+   // declaring a double type variable
+   double num_double;
+ 
+   // implicit conversion
+   // assigning int value to a double variable
+   num_double = num_int;
 
-    for(i = 1; i &lt;= n; ++i)
-    {
-        cout &lt;&lt; "Enter n" &lt;&lt; i &lt;&lt; ": ";
-        cin &gt;&gt; num;
-        
-        if(num &lt; 0.0)
-        {
-           // Control of the program move to jump:
-            goto jump;
-        } 
-        sum += num;
-    }
-    
-jump:
-    average = sum / (i - 1);
-    cout &lt;&lt; "\nAverage = " &lt;&lt; average;
-    return 0;
+   cout &lt;&lt; "num_int = " &lt;&lt; num_int &lt;&lt; endl;
+   cout &lt;&lt; "num_double = " &lt;&lt; num_double &lt;&lt; endl;
+
+   return 0;
 }</code></pre>
+
+
+
+<p><a href="https://www.programiz.com/cpp-programming/online-compiler" target="_blank" rel="noreferrer noopener">Run Code</a></p>
 
 
 
@@ -211,32 +219,243 @@ jump:
 
 
 
-<pre class="wp-block-preformatted"><samp>Maximum number of inputs: 10
-Enter n1: 2.3
-Enter n2: 5.6
-Enter n3: -5.6
-
-Average = 3.95</samp></pre>
+<pre class="wp-block-preformatted"><samp>num_int = 9
+num_double = 9</samp></pre>
 
 
 
-<p>You can write any C++ program without the use of&nbsp;<code>goto</code>&nbsp;statement and is generally considered a good idea not to use them.</p>
+<p>In the program, we have assigned an&nbsp;<code>int</code>&nbsp;data to a&nbsp;<code>double</code>&nbsp;variable.</p>
 
 
 
-<h3 class="wp-block-heading" id="reason-to-avoid-goto-statement">Reason to Avoid goto Statement</h3>
+<pre class="wp-block-code"><code>num_double = num_int;</code></pre>
 
 
 
-<p>The goto statement gives the power to jump to any part of a program but, makes the logic of the program complex and tangled.</p>
+<p>Here, the&nbsp;<code>int</code>&nbsp;value is automatically converted to&nbsp;<code>double</code>&nbsp;by the compiler before it is assigned to the&nbsp;<var>num_double</var>&nbsp;variable. This is an example of implicit type conversion.</p>
 
 
 
-<p>In modern programming, the goto statement is considered a harmful construct and a bad programming practice.</p>
+<hr class="wp-block-separator has-alpha-channel-opacity">
 
 
 
-<p>The goto statement can be replaced in most of C++ program with the use of break and continue statements.</p>
+<h3 class="wp-block-heading" id="example2">Example 2: Automatic Conversion from double to int</h3>
+
+
+
+<pre class="wp-block-code"><code>//Working of Implicit type-conversion
+
+#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+
+   int num_int;
+   double num_double = 9.99;
+
+   // implicit conversion
+   // assigning a double value to an int variable
+   num_int = num_double;
+
+   cout &lt;&lt; "num_int = " &lt;&lt; num_int &lt;&lt; endl;
+   cout &lt;&lt; "num_double = " &lt;&lt; num_double &lt;&lt; endl;
+
+   return 0;
+}</code></pre>
+
+
+
+<p><a href="https://www.programiz.com/cpp-programming/online-compiler" target="_blank" rel="noreferrer noopener">Run Code</a></p>
+
+
+
+<p><strong>Output</strong></p>
+
+
+
+<pre class="wp-block-preformatted"><samp>num_int = 9
+num_double = 9.99</samp></pre>
+
+
+
+<p>In the program, we have assigned a&nbsp;<code>double</code>&nbsp;data to an&nbsp;<code>int</code>&nbsp;variable.</p>
+
+
+
+<pre class="wp-block-code"><code>num_int = num_double;</code></pre>
+
+
+
+<p>Here, the&nbsp;<code>double</code>&nbsp;value is automatically converted to&nbsp;<code>int</code>&nbsp;by the compiler before it is assigned to the&nbsp;<var>num_int</var>&nbsp;variable. This is also an example of implicit type conversion.</p>
+
+
+
+<p><strong>Note:</strong>&nbsp;Since&nbsp;<code>int</code>&nbsp;cannot have a decimal part, the digits after the decimal point are&nbsp;truncated in the above example.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity">
+
+
+
+<h3 class="wp-block-heading" id="data-loss">Data Loss During Conversion (Narrowing Conversion)</h3>
+
+
+
+<p>As we have seen from the above example, conversion from one data type to another is prone to data loss. This happens when data of a larger type is converted to data of a smaller type.</p>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://cdn.programiz.com/sites/tutorial2program/files/cpp-type-conversion.png" alt="Data loss in C++ if a larger type of data is converted to a smaller type." title="C++ Type Conversion"><figcaption class="wp-element-caption">Possible Data Loss During Type Conversion</figcaption></figure>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity">
+
+
+
+<h2 class="wp-block-heading" id="explicit">C++ Explicit Conversion</h2>
+
+
+
+<p>When the user manually changes data from one type to another, this is known as&nbsp;<strong>explicit conversion</strong>. This type of conversion is also known as&nbsp;<strong>type casting</strong>.</p>
+
+
+
+<p>There are three major ways in which we can use explicit conversion in C++. They are:</p>
+
+
+
+<ol>
+<li>C-style type casting (also known as&nbsp;<strong>cast notation</strong>)</li>
+
+
+
+<li>Function notation (also known as&nbsp;<strong>old C++ style type casting</strong>)</li>
+
+
+
+<li>Type conversion operators</li>
+</ol>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity">
+
+
+
+<h3 class="wp-block-heading" id="c-style-casting">C-style Type Casting</h3>
+
+
+
+<p>As the name suggests, this type of casting is favored by the&nbsp;<strong>C programming language</strong>. It is also known as&nbsp;<strong>cast notation</strong>.</p>
+
+
+
+<p>The syntax for this style is:</p>
+
+
+
+<pre class="wp-block-code"><code>(data_type)expression;</code></pre>
+
+
+
+<p>For example,</p>
+
+
+
+<pre class="wp-block-code"><code>// initializing int variable
+int num_int = 26;
+
+// declaring double variable
+double num_double;
+
+// converting from int to double
+num_double = (double)num_int;</code></pre>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity">
+
+
+
+<h3 class="wp-block-heading" id="function-notation">Function-style Casting</h3>
+
+
+
+<p>We can also use the function like notation to cast data from one type to another.</p>
+
+
+
+<p>The syntax for this style is:</p>
+
+
+
+<pre class="wp-block-code"><code>data_type(expression);</code></pre>
+
+
+
+<p>For example,</p>
+
+
+
+<pre class="wp-block-code"><code>// initializing int variable
+int num_int = 26;
+
+// declaring double variable
+double num_double;
+
+// converting from int to double
+num_double = double(num_int);</code></pre>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity">
+
+
+
+<h3 class="wp-block-heading" id="example3">Example 3: Type Casting</h3>
+
+
+
+<pre class="wp-block-code"><code>#include &lt;iostream&gt;
+
+using namespace std;
+
+int main() {
+    // initializing a double variable
+    double num_double = 3.56;
+    cout &lt;&lt; "num_double = " &lt;&lt; num_double &lt;&lt; endl;
+
+    // C-style conversion from double to int
+    int num_int1 = (int)num_double;
+    cout &lt;&lt; "num_int1   = " &lt;&lt; num_int1 &lt;&lt; endl;
+
+    // function-style conversion from double to int
+    int num_int2 = int(num_double);
+    cout &lt;&lt; "num_int2   = " &lt;&lt; num_int2 &lt;&lt; endl;
+
+    return 0;
+}</code></pre>
+
+
+
+<p><a href="https://www.programiz.com/cpp-programming/online-compiler" target="_blank" rel="noreferrer noopener">Run Code</a></p>
+
+
+
+<p><strong>Output</strong></p>
+
+
+
+<pre class="wp-block-preformatted"><samp>num_double = 3.56
+num_int1   = 3
+num_int2   = 3</samp></pre>
+
+
+
+<p>We used both the&nbsp;<strong>C style type conversion</strong>&nbsp;and the&nbsp;<strong>function-style casting for type conversion</strong>&nbsp;and displayed the results. Since they perform the same task, both give us the same output.</p>
 </div>
 
 
@@ -245,7 +464,7 @@ Average = 3.95</samp></pre>
 <div class="wp-block-columns is-layout-flex wp-container-11">
 <div class="wp-block-column is-layout-flow">
 <div class="post-navigation-link-previous is-style-hovershadow wp-block-post-navigation-link">
-<span class="post-navigation-link__label">«</span> <a href="https://harriscr7.github.io/imharris/c-return-by-reference/" rel="prev">C++ Return by Reference</a>
+<span class="post-navigation-link__label">«</span> <a href="https://harriscr7.github.io/imharris/c-operators/" rel="prev">C++ Operators</a>
 </div>
 <style scoped>.wp-block-post-navigation-link.is-style-hovershadow:before{position: absolute;top: 0;right: 0;left: 0;bottom: 0;transition: box-shadow 0.5s var(--greenshift-transition);content: "";border-radius: 5px;border: 1px solid var(--wp--preset--color--lightborder);}.wp-block-post-navigation-link.is-style-hovershadow:hover:before{box-shadow: 0 3px 40px rgb(188 207 219 / 35%);}.wp-block-post-navigation-link.is-style-hovershadow:empty:before{display:none}.wp-block-post-navigation-link.is-style-hovershadow{padding:20px}.wp-block-post-navigation-link.is-style-hovershadow a{text-decoration:none}</style>
 </div>
@@ -258,7 +477,7 @@ Average = 3.95</samp></pre>
 
 <div class="wp-block-column is-layout-flow">
 <div class="post-navigation-link-next has-text-align-right is-style-hovershadow wp-block-post-navigation-link">
-<span class="post-navigation-link__label">»</span> <a href="https://harriscr7.github.io/imharris/using-constructos/" rel="next">C++ Using Constructos</a>
+<span class="post-navigation-link__label">»</span> <a href="https://harriscr7.github.io/imharris/c-basic-input-output/" rel="next">C++ Basic Input/Output</a>
 </div>
 <style scoped>.wp-block-post-navigation-link.is-style-hovershadow:before{position: absolute;top: 0;right: 0;left: 0;bottom: 0;transition: box-shadow 0.5s var(--greenshift-transition);content: "";border-radius: 5px;border: 1px solid var(--wp--preset--color--lightborder);}.wp-block-post-navigation-link.is-style-hovershadow:hover:before{box-shadow: 0 3px 40px rgb(188 207 219 / 35%);}.wp-block-post-navigation-link.is-style-hovershadow:empty:before{display:none}.wp-block-post-navigation-link.is-style-hovershadow{padding:20px}.wp-block-post-navigation-link.is-style-hovershadow a{text-decoration:none}</style>
 </div>

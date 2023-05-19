@@ -7,11 +7,11 @@
 	>
 <channel>
 	<title>
-	Comments for imharris	</title>
-	<atom:link href="https://harriscr7.github.io/imharris/comments/feed/" rel="self" type="application/rss+xml" />
-	<link>https://harriscr7.github.io/imharris</link>
+	Comments on: C++ Functions	</title>
+	<atom:link href="https://harriscr7.github.io/imharris/c-functions/feed/" rel="self" type="application/rss+xml" />
+	<link>https://harriscr7.github.io/imharris/c-functions/</link>
 	<description></description>
-	<lastBuildDate>Fri, 19 May 2023 10:04:22 +0000</lastBuildDate>
+	<lastBuildDate>Thu, 18 May 2023 21:22:45 +0000</lastBuildDate>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
