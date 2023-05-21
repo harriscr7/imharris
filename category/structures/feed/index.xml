@@ -1,0 +1,566 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Structures &#8211; imharris</title>
+	<atom:link href="https://harriscr7.github.io/imharris/category/structures/feed/" rel="self" type="application/rss+xml" />
+	<link>https://harriscr7.github.io/imharris</link>
+	<description></description>
+	<lastBuildDate>Sun, 21 May 2023 17:58:24 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.2</generator>
+
+<image>
+	<url>https://harriscr7.github.io/imharris/wp-content/uploads/2023/05/image_2023-05-14_210105897.png</url>
+	<title>Structures &#8211; imharris</title>
+	<link>https://harriscr7.github.io/imharris</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Pointers to Structure</title>
+		<link>https://harriscr7.github.io/imharris/pointers-to-structure/</link>
+					<comments>https://harriscr7.github.io/imharris/pointers-to-structure/#respond</comments>
+		
+		<dc:creator><![CDATA[harrixxaeed]]></dc:creator>
+		<pubDate>Sun, 21 May 2023 17:45:28 +0000</pubDate>
+				<category><![CDATA[C++ Content]]></category>
+		<category><![CDATA[Structures]]></category>
+		<guid isPermaLink="false">https://harriscr7.github.io/imharris/?p=467</guid>
+
+					<description><![CDATA[In this article, you&#8217;ll find relevant examples that will help you to work with pointers to access data within a structure. A pointer variable can be created not only for native types like (int, float, double etc.) but they can also be created for user defined types like structure. If you do not know what pointers are, visit C++ pointers. Here is [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<p>In this article, you&#8217;ll find relevant examples that will help you to work with pointers to access data within a structure.</p>
+
+
+
+<p>A pointer variable can be created not only for native types like (<code>int</code>, <code>float</code>, <code>double</code> etc.) but they can also be created for user defined types like structure.</p>
+
+
+
+<p>If you do not know what pointers are, visit C++ pointers.</p>
+
+
+
+<p>Here is how you can create pointer for structures:</p>
+
+
+
+<pre class="wp-block-code"><code>#include &lt;iostream&gt;
+using namespace std;
+
+struct temp {
+    int i;
+    float f;
+};
+
+int main() {
+    temp *ptr;
+    return 0;
+}</code></pre>
+
+
+
+<p>This program creates a pointer&nbsp;<var>ptr</var>&nbsp;of type structure&nbsp;<var>temp</var>.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading" id="example-pointers-to-structure">Example: Pointers to Structure</h2>
+
+
+
+<pre class="wp-block-code"><code>#include &lt;iostream&gt;
+using namespace std;
+
+struct Distance {
+    int feet;
+    float inch;
+};
+
+int main() {
+    Distance *ptr, d;
+
+    ptr = &amp;d;
+    
+    cout &lt;&lt; "Enter feet: ";
+    cin &gt;&gt; (*ptr).feet;
+    cout &lt;&lt; "Enter inch: ";
+    cin &gt;&gt; (*ptr).inch;
+ 
+    cout &lt;&lt; "Displaying information." &lt;&lt; endl;
+    cout &lt;&lt; "Distance = " &lt;&lt; (*ptr).feet &lt;&lt; " feet " &lt;&lt; (*ptr).inch &lt;&lt; " inches";
+
+    return 0;
+}</code></pre>
+
+
+
+<p><strong>Output</strong></p>
+
+
+
+<pre class="wp-block-preformatted"><samp>Enter feet: 4
+Enter inch: 3.5
+Displaying information.
+Distance = 4 feet 3.5 inches</samp></pre>
+
+
+
+<p>In this program, a pointer variable&nbsp;<var>ptr</var>&nbsp;and normal variable&nbsp;<var>d</var>&nbsp;of type structure&nbsp;<var>Distance</var>&nbsp;is defined.</p>
+
+
+
+<p>The address of variable&nbsp;<var>d</var>&nbsp;is stored to pointer variable, that is,&nbsp;<var>ptr</var>&nbsp;is pointing to variable&nbsp;<var>d</var>. Then, the member function of variable&nbsp;<var>d</var>&nbsp;is accessed using pointer.</p>
+
+
+
+<p><strong>Notes:</strong></p>
+
+
+
+<ul>
+<li>Since pointer&nbsp;<var>ptr</var>&nbsp;is pointing to variable&nbsp;<var>d</var>&nbsp;in this program,&nbsp;<code>(*ptr).inch</code>&nbsp;and&nbsp;<code>d.inch</code>&nbsp;are equivalent. Similarly,&nbsp;<code>(*ptr).feet</code>&nbsp;and&nbsp;<code>d.feet</code>&nbsp;are equivalent.</li>
+
+
+
+<li>However, if we are using pointers, it is far more preferable to access struct members using the&nbsp;<code>-&gt;</code>&nbsp;operator,&nbsp;since&nbsp;the&nbsp;<code>.</code>&nbsp;operator has a higher precedence than the&nbsp;<code>*</code>&nbsp;operator.<br><br>Hence,&nbsp;we enclose&nbsp;<code>*ptr</code>&nbsp;in brackets when using&nbsp;<code>(*ptr).inch</code>. Because of this, it is easier to make mistakes if both operators are used together in a single code.<br>&nbsp;ptr-&gt;feet is same as (*ptr).feet ptr-&gt;inch is same as (*ptr).inc</li>
+</ul>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://harriscr7.github.io/imharris/pointers-to-structure/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Structure and Function</title>
+		<link>https://harriscr7.github.io/imharris/structure-and-function/</link>
+					<comments>https://harriscr7.github.io/imharris/structure-and-function/#respond</comments>
+		
+		<dc:creator><![CDATA[harrixxaeed]]></dc:creator>
+		<pubDate>Sun, 21 May 2023 17:44:22 +0000</pubDate>
+				<category><![CDATA[C++ Content]]></category>
+		<category><![CDATA[Structures]]></category>
+		<guid isPermaLink="false">https://harriscr7.github.io/imharris/?p=464</guid>
+
+					<description><![CDATA[In this article, you&#8217;ll find relevant examples to pass structures as an argument to a function, and use them in your program. Structure variables can be passed to a function and returned in a similar way as normal arguments. Passing structure to function in C++ A structure variable can be passed to a function in similar way as [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<p>In this article, you&#8217;ll find relevant examples to pass structures as an argument to a function, and use them in your program.</p>
+
+
+
+<p>Structure variables can be passed to a function and returned in a similar way as normal arguments.</p>
+
+
+
+<h2 class="wp-block-heading" id="passing-structure-to-function-in-c">Passing structure to function in C++</h2>
+
+
+
+<p>A structure variable can be passed to a function in similar way as normal argument. Consider this example:</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h3 class="wp-block-heading" id="example-1-c-structure-and-function">Example 1: C++ Structure and Function</h3>
+
+
+
+<pre class="wp-block-code"><code>#include &lt;iostream&gt;
+using namespace std;
+
+struct Person {
+    char name&#91;50];
+    int age;
+    float salary;
+};
+
+void displayData(Person);   // Function declaration
+
+int main() {
+    Person p;
+
+    cout &lt;&lt; "Enter Full name: ";
+    cin.get(p.name, 50);
+    cout &lt;&lt; "Enter age: ";
+    cin &gt;&gt; p.age;
+    cout &lt;&lt; "Enter salary: ";
+    cin &gt;&gt; p.salary;
+
+    // Function call with structure variable as an argument
+    displayData(p);
+
+    return 0;
+}
+
+void displayData(Person p) {
+    cout &lt;&lt; "\nDisplaying Information." &lt;&lt; endl;
+    cout &lt;&lt; "Name: " &lt;&lt; p.name &lt;&lt; endl;
+    cout &lt;&lt;"Age: " &lt;&lt; p.age &lt;&lt; endl;
+    cout &lt;&lt; "Salary: " &lt;&lt; p.salary;
+}</code></pre>
+
+
+
+<p><strong>Output</strong></p>
+
+
+
+<pre class="wp-block-preformatted"><samp>Enter Full name: Bill Jobs
+Enter age: 55
+Enter salary: 34233.4
+
+Displaying Information.
+Name: Bill Jobs
+Age: 55
+Salary: 34233.4</samp></pre>
+
+
+
+<p>In this program, user is asked to enter the&nbsp;<var>name</var>,&nbsp;<var>age</var>&nbsp;and&nbsp;<var>salary</var>&nbsp;of a Person inside&nbsp;<code>main()</code>&nbsp;function.</p>
+
+
+
+<p>Then, the structure variable&nbsp;<var>p</var>&nbsp;is to passed to a function using.</p>
+
+
+
+<pre class="wp-block-preformatted">displayData(p);</pre>
+
+
+
+<p>The return type of&nbsp;<code>displayData()</code>&nbsp;is&nbsp;<code>void</code>&nbsp;and a single argument of type structure&nbsp;<var>Person</var>&nbsp;is passed.</p>
+
+
+
+<p>Then the members of structure&nbsp;<code>p</code>&nbsp;is displayed from this function.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h3 class="wp-block-heading" id="example-2-returning-structure-from-function-in-c">Example 2: Returning structure from function in C++</h3>
+
+
+
+<pre class="wp-block-code"><code>#include &lt;iostream&gt;
+using namespace std;
+
+struct Person {
+    char name&#91;50];
+    int age;
+    float salary;
+};
+
+Person getData(Person); 
+void displayData(Person); 
+
+int main() {
+
+    Person p, temp;
+
+    temp = getData(p);
+&nbsp;   p = temp;
+    displayData(p);
+
+    return 0;
+}
+
+Person getData(Person p) {
+
+    cout &lt;&lt; "Enter Full name: ";
+    cin.get(p.name, 50);
+
+    cout &lt;&lt; "Enter age: ";
+    cin &gt;&gt; p.age;
+
+    cout &lt;&lt; "Enter salary: ";
+    cin &gt;&gt; p.salary;
+
+    return p;
+}
+
+void displayData(Person p) {
+    cout &lt;&lt; "\nDisplaying Information." &lt;&lt; endl;
+    cout &lt;&lt; "Name: " &lt;&lt; p.name &lt;&lt; endl;
+    cout &lt;&lt;"Age: " &lt;&lt; p.age &lt;&lt; endl;
+    cout &lt;&lt; "Salary: " &lt;&lt; p.salary;
+}
+</code></pre>
+
+
+
+<p>The output of this program is the same as the program above.</p>
+
+
+
+<p>In this program, we have created two&nbsp;structure&nbsp;variables&nbsp;<var>p</var>&nbsp;and&nbsp;<var>temp</var>&nbsp;of type&nbsp;<code><var>Person</var></code>&nbsp;under the&nbsp;<code>main()</code>&nbsp;function.</p>
+
+
+
+<p>The structure variable&nbsp;<var>p</var>&nbsp;is passed to&nbsp;<code>getData()</code>&nbsp;function which takes input from the user which is then stored in the&nbsp;<var>temp</var>&nbsp;variable.</p>
+
+
+
+<pre class="wp-block-preformatted">temp = getData(p); </pre>
+
+
+
+<p>We then assign the value of&nbsp;<var>temp</var>&nbsp;to&nbsp;<var>p</var>.</p>
+
+
+
+<pre class="wp-block-preformatted">p = temp;</pre>
+
+
+
+<p>Then the structure variable&nbsp;<var>p</var>&nbsp;is passed to&nbsp;<code>displayData()</code>&nbsp;function, which displays the information.</p>
+
+
+
+<p><strong>Note:</strong>&nbsp;We don&#8217;t really need&nbsp;to use the&nbsp;<var>temp</var>&nbsp;variable for most compilers and C++ versions. Instead, we can simply use the following code:</p>
+
+
+
+<pre class="wp-block-preformatted">p = getData(p); </pre>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://harriscr7.github.io/imharris/structure-and-function/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Structures</title>
+		<link>https://harriscr7.github.io/imharris/structures/</link>
+					<comments>https://harriscr7.github.io/imharris/structures/#respond</comments>
+		
+		<dc:creator><![CDATA[harrixxaeed]]></dc:creator>
+		<pubDate>Sun, 21 May 2023 17:43:33 +0000</pubDate>
+				<category><![CDATA[C++ Content]]></category>
+		<category><![CDATA[Structures]]></category>
+		<guid isPermaLink="false">https://harriscr7.github.io/imharris/?p=461</guid>
+
+					<description><![CDATA[In this article, you&#8217;ll learn about structures in C++ programming; what is it, how to define it and use it in your program. Structure is a collection of variables of different data types under a single name. It is similar to a class in that, both holds a collecion of data of different data types. For example:&#160;You [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<p>In this article, you&#8217;ll learn about structures in C++ programming; what is it, how to define it and use it in your program.</p>
+
+
+
+<p>Structure is a collection of variables of different data types under a single name. It is similar to a class in that, both holds a collecion of data of different data types.</p>
+
+
+
+<p><strong>For example:&nbsp;</strong>You want to store some information about a person: his/her name, citizenship number and salary. You can easily create different variables&nbsp;<var>name, citNo, salary</var>&nbsp;to store these information separately.</p>
+
+
+
+<p>However, in the future, you would want to store information about multiple persons. Now, you&#8217;d need to create different variables for each information per person:&nbsp;<var>name1, citNo1, salary1, name2, citNo2, salary2</var></p>
+
+
+
+<p>You can easily visualize how big and messy the code would look. Also, since no relation between the variables (information) would exist, it&#8217;s going to be a daunting task.</p>
+
+
+
+<p>A better approach will be to have a collection of all related information under a single name&nbsp;<code>Person</code>, and use it for every person. Now, the code looks much cleaner, readable and efficient as well.</p>
+
+
+
+<p>This collection of all related information under a single name&nbsp;<code>Person</code>&nbsp;is a structure.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading" id="how-to-declare-a-structure-in-c-programming">How to declare a structure in C++ programming?</h2>
+
+
+
+<p>The&nbsp;<code>struct</code>&nbsp;keyword defines a structure type followed by an identifier (name of the structure).</p>
+
+
+
+<p>Then inside the curly braces, you can declare one or more members (declare variables inside curly braces) of that structure. For example:</p>
+
+
+
+<pre class="wp-block-preformatted"><strong>struct</strong> Person
+{
+    char name[50];
+    int age;
+    float salary;
+};</pre>
+
+
+
+<p>Here a structure&nbsp;<var>person</var>&nbsp;is defined which has three members:&nbsp;<var>name</var>,&nbsp;<var>age</var>&nbsp;and&nbsp;<var>salary</var>.</p>
+
+
+
+<p>When a structure is created, no memory is allocated.</p>
+
+
+
+<p>The structure definition is only the blueprint for the creating of variables. You can imagine it as a datatype. When you define an integer as below:</p>
+
+
+
+<pre class="wp-block-preformatted">int foo;</pre>
+
+
+
+<p>The&nbsp;<code>int</code>&nbsp;specifies that, variable&nbsp;<var>foo</var>&nbsp;can hold integer element only. Similarly, structure definition only specifies that, what property a structure variable holds when it is defined.</p>
+
+
+
+<p><strong>Note:&nbsp;</strong>Remember to end the declaration with a semicolon&nbsp;<strong>(;)</strong></p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading" id="how-to-define-a-structure-variable">How to define a structure variable?</h2>
+
+
+
+<p>Once you declare a structure&nbsp;<var>person</var>&nbsp;as above. You can define a structure variable as:</p>
+
+
+
+<pre class="wp-block-preformatted">Person bill;</pre>
+
+
+
+<p>Here, a structure variable&nbsp;<var>bill</var>&nbsp;is defined which is of type structure P<code>erson</code>.</p>
+
+
+
+<p>When structure variable is defined, only then the required memory is allocated by the compiler.</p>
+
+
+
+<p>Considering you have either 32-bit or 64-bit system, the memory of&nbsp;<code>float</code>&nbsp;is 4 bytes, memory of&nbsp;<code>int</code>&nbsp;is 4 bytes and memory of&nbsp;<code>char</code>&nbsp;is 1 byte.</p>
+
+
+
+<p>Hence, 58 bytes of memory is allocated for structure variable&nbsp;<var>bill</var>.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading" id="how-to-access-members-of-a-structure">How to access members of a structure?</h2>
+
+
+
+<p>The members of structure variable is accessed using a&nbsp;<strong>dot (.)</strong>&nbsp;operator.</p>
+
+
+
+<p>Suppose, you want to access&nbsp;<var>age</var>&nbsp;of structure variable&nbsp;<var>bill</var>&nbsp;and assign it 50 to it. You can perform this task by using following code below:</p>
+
+
+
+<pre class="wp-block-preformatted">bill.age = 50;</pre>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading" id="example-c-structure">Example: C++ Structure</h2>
+
+
+
+<p>C++ Program to assign data to members of a structure variable and display it.</p>
+
+
+
+<pre class="wp-block-code"><code>#include &lt;iostream&gt;
+using namespace std;
+
+struct Person
+{
+    char name&#91;50];
+    int age;
+    float salary;
+};
+
+int main()
+{
+    Person p1;
+    
+    cout &lt;&lt; "Enter Full name: ";
+    cin.get(p1.name, 50);
+    cout &lt;&lt; "Enter age: ";
+    cin &gt;&gt; p1.age;
+    cout &lt;&lt; "Enter salary: ";
+    cin &gt;&gt; p1.salary;
+
+    cout &lt;&lt; "\nDisplaying Information." &lt;&lt; endl;
+    cout &lt;&lt; "Name: " &lt;&lt; p1.name &lt;&lt; endl;
+    cout &lt;&lt;"Age: " &lt;&lt; p1.age &lt;&lt; endl;
+    cout &lt;&lt; "Salary: " &lt;&lt; p1.salary;
+
+    return 0;
+}
+</code></pre>
+
+
+
+<p><strong>Output</strong></p>
+
+
+
+<pre class="wp-block-preformatted"><samp>Enter Full name: Magdalena Dankova
+Enter age: 27
+Enter salary: 1024.4
+
+Displaying Information.
+Name: Magdalena Dankova
+Age: 27
+Salary: 1024.4</samp></pre>
+
+
+
+<p>Here a structure P<var>erson</var>&nbsp;is declared which has three members&nbsp;<var>name</var>,&nbsp;<var>age</var>&nbsp;and&nbsp;<var>salary</var>.</p>
+
+
+
+<p>Inside <code>main()</code> function, a structure variable <var>p1</var> is defined. Then, the user is asked to enter information and data entered by user is displayed.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://harriscr7.github.io/imharris/structures/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

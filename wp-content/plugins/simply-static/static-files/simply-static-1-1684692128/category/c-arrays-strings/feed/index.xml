@@ -1,0 +1,1446 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Arrays &amp; Strings &#8211; imharris</title>
+	<atom:link href="https://harriscr7.github.io/imharris/category/c-arrays-strings/feed/" rel="self" type="application/rss+xml" />
+	<link>https://harriscr7.github.io/imharris</link>
+	<description></description>
+	<lastBuildDate>Sun, 21 May 2023 17:57:33 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.2</generator>
+
+<image>
+	<url>https://harriscr7.github.io/imharris/wp-content/uploads/2023/05/image_2023-05-14_210105897.png</url>
+	<title>Arrays &amp; Strings &#8211; imharris</title>
+	<link>https://harriscr7.github.io/imharris</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Strings</title>
+		<link>https://harriscr7.github.io/imharris/strings/</link>
+					<comments>https://harriscr7.github.io/imharris/strings/#respond</comments>
+		
+		<dc:creator><![CDATA[harrixxaeed]]></dc:creator>
+		<pubDate>Sun, 21 May 2023 17:28:14 +0000</pubDate>
+				<category><![CDATA[Arrays & Strings]]></category>
+		<category><![CDATA[C++ Content]]></category>
+		<guid isPermaLink="false">https://harriscr7.github.io/imharris/?p=432</guid>
+
+					<description><![CDATA[In this tutorial, you&#8217;ll learn to handle strings in C++. You&#8217;ll learn to declare them, initialize them and use them for various input/output operations. String is a collection of characters. There are two types of strings commonly used in C++ programming language: C-strings In C programming, the collection of characters is stored in the form [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<p>In this tutorial, you&#8217;ll learn to handle strings in C++. You&#8217;ll learn to declare them, initialize them and use them for various input/output operations.</p>
+
+
+
+<p>String is a collection of characters. There are two types of strings commonly used in C++ programming language:</p>
+
+
+
+<ul>
+<li>Strings that are objects of string class (The Standard C++ Library string class)</li>
+
+
+
+<li>C-strings (C-style Strings)</li>
+</ul>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading" id="c-strings">C-strings</h2>
+
+
+
+<p>In C programming, the collection of characters is stored in the form of arrays.&nbsp;This is also supported in C++ programming. Hence it&#8217;s called C-strings.</p>
+
+
+
+<p>C-strings are arrays of type&nbsp;<code>char</code>&nbsp;terminated with null character, that is,&nbsp;<code>\0</code>&nbsp;(ASCII value of null character is 0).</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h3 class="wp-block-heading" id="how-to-define-a-c-string">How to define a C-string?</h3>
+
+
+
+<pre class="wp-block-preformatted">char str[] = "C++";</pre>
+
+
+
+<p>In the above code,&nbsp;<code>str</code>&nbsp;is a string and it holds 4 characters.</p>
+
+
+
+<p>Although, &#8220;<code>C++</code>&#8221; has 3 character, the null character&nbsp;<code>\0</code>&nbsp;is added to the end of the string automatically.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h3 class="wp-block-heading" id="alternative-ways-of-defining-a-string">Alternative ways of defining a string</h3>
+
+
+
+<pre class="wp-block-preformatted">char str[4] = "C++";
+     
+char str[] = {'C','+','+','\0'};
+
+char str[4] = {'C','+','+','\0'};</pre>
+
+
+
+<p>Like arrays, it is not necessary to use all the space allocated for the string. For example:</p>
+
+
+
+<pre class="wp-block-preformatted">char str[100] = "C++";</pre>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h3 class="wp-block-heading" id="example-1-c-string-to-read-a-word">Example 1: C++ String to read a word</h3>
+
+
+
+<p><strong>C++ program to display a string entered by user.</strong></p>
+
+
+
+<pre class="wp-block-code"><code>#include &lt;iostream&gt;
+using namespace std;
+
+int main()
+{
+    char str&#91;100];
+
+    cout &lt;&lt; "Enter a string: ";
+    cin &gt;&gt; str;
+    cout &lt;&lt; "You entered: " &lt;&lt; str &lt;&lt; endl;
+
+    cout &lt;&lt; "\nEnter another string: ";
+    cin &gt;&gt; str;
+    cout &lt;&lt; "You entered: "&lt;&lt;str&lt;&lt;endl;
+
+    return 0;
+}</code></pre>
+
+
+
+<p><strong>Output</strong></p>
+
+
+
+<pre class="wp-block-preformatted"><samp>Enter a string: C++
+You entered: C++
+
+Enter another string: Programming is fun.
+You entered: Programming</samp>
+</pre>
+
+
+
+<p>Notice that, in the second example only &#8220;Programming&#8221; is displayed instead of &#8220;Programming is fun&#8221;.</p>
+
+
+
+<p>This is because the extraction operator &gt;&gt; works as&nbsp;<code>scanf()</code>&nbsp;in C and considers a space &#8221; &#8221; has a terminating character.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h3 class="wp-block-heading" id="example-2-c-string-to-read-a-line-of-text">Example 2: C++ String to read a line of text</h3>
+
+
+
+<p><strong>C++ program to read and display an entire line entered by user.</strong></p>
+
+
+
+<pre class="wp-block-code"><code>#include &lt;iostream&gt;
+using namespace std;
+
+int main()
+{
+    char str&#91;100];
+    cout &lt;&lt; "Enter a string: ";
+    cin.get(str, 100);
+
+    cout &lt;&lt; "You entered: " &lt;&lt; str &lt;&lt; endl;
+    return 0;
+}</code></pre>
+
+
+
+<p><strong>Output</strong></p>
+
+
+
+<pre class="wp-block-preformatted"><samp>Enter a string: Programming is fun.
+You entered: Programming is fun.
+</samp></pre>
+
+
+
+<p>To read the text containing blank space,&nbsp;<code>cin.get</code>&nbsp;function can be used. This function takes two arguments.</p>
+
+
+
+<p>First argument is the name of the string (address of first element of string) and second argument is the maximum size of the array.</p>
+
+
+
+<p>In the above program,&nbsp;<var>str</var>&nbsp;is the name of the string and&nbsp;<code>100</code>&nbsp;is the maximum size of the array.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading" id="string-object">string Object</h2>
+
+
+
+<p>In C++, you can also create a string object for holding strings.</p>
+
+
+
+<p>Unlike using char arrays, string objects has no fixed length, and can be extended as per your requirement.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h3 class="wp-block-heading" id="example-3-c-string-using-string-data-type">Example 3: C++ string using string data type</h3>
+
+
+
+<pre class="wp-block-code"><code>#include &lt;iostream&gt;
+using namespace std;
+
+int main()
+{
+    // Declaring a string object
+    string str;
+    cout &lt;&lt; "Enter a string: ";
+    getline(cin, str);
+
+    cout &lt;&lt; "You entered: " &lt;&lt; str &lt;&lt; endl;
+    return 0;
+}</code></pre>
+
+
+
+<p><strong>Output</strong></p>
+
+
+
+<pre class="wp-block-preformatted"><samp>Enter a string: Programming is fun.
+You entered: Programming is fun.
+</samp></pre>
+
+
+
+<p>In this program, a string&nbsp;<var>str</var>&nbsp;is declared. Then the string is asked from the user.</p>
+
+
+
+<p>Instead of using&nbsp;<code>cin&gt;&gt;</code>&nbsp;or&nbsp;<code>cin.get()</code>&nbsp;function, you can get the entered line of text using&nbsp;<code>getline()</code>.</p>
+
+
+
+<p><code>getline()</code>&nbsp;function takes the input stream as the first parameter which is&nbsp;<code>cin</code>&nbsp;and&nbsp;<code>str</code>&nbsp;as the location of the line to be stored.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading" id="passing-string-to-a-function">Passing String to a Function</h2>
+
+
+
+<p>Strings are passed to a function in a similar way arrays are passed to a function.</p>
+
+
+
+<pre class="wp-block-code"><code>#include &lt;iostream&gt;
+
+using namespace std;
+
+void display(char *);
+void display(string);
+
+int main()
+{
+    string str1;
+    char str&#91;100];
+
+    cout &lt;&lt; "Enter a string: ";
+    getline(cin, str1);
+
+    cout &lt;&lt; "Enter another string: ";
+    cin.get(str, 100, '\n');
+
+    display(str1);
+    display(str);
+    return 0;
+}
+
+void display(char s&#91;])
+{
+    cout &lt;&lt; "Entered char array is: " &lt;&lt; s &lt;&lt; endl;
+}
+
+void display(string s)
+{
+    cout &lt;&lt; "Entered string is: " &lt;&lt; s &lt;&lt; endl;
+}</code></pre>
+
+
+
+<p><strong>Output</strong></p>
+
+
+
+<pre class="wp-block-preformatted"><samp>Enter a string:  Programming is fun.
+Enter another string:  Really?
+Entered string is: Programming is fun.
+Entered char array is: Really?</samp></pre>
+
+
+
+<p>In the above program, two strings are asked to enter. These are stored in&nbsp;<var>str</var>&nbsp;and&nbsp;<var>str1</var>&nbsp;respectively, where str is a&nbsp;<code>char</code>&nbsp;array and str1 is a&nbsp;<code>string</code>&nbsp;object.</p>
+
+
+
+<p>Then, we have two functions&nbsp;<code>display()</code>&nbsp;that outputs the string onto the string.</p>
+
+
+
+<p>The only difference between the two functions is the parameter. The first&nbsp;<code>display()</code>&nbsp;function takes char array as a parameter, while the second takes string as a parameter.</p>
+
+
+
+<p>This process is known as function overloading. Learn more about Function Overloading.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://harriscr7.github.io/imharris/strings/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Passing Array to a Function</title>
+		<link>https://harriscr7.github.io/imharris/passing-array-to-a-function/</link>
+					<comments>https://harriscr7.github.io/imharris/passing-array-to-a-function/#respond</comments>
+		
+		<dc:creator><![CDATA[harrixxaeed]]></dc:creator>
+		<pubDate>Sun, 21 May 2023 17:27:04 +0000</pubDate>
+				<category><![CDATA[Arrays & Strings]]></category>
+		<category><![CDATA[C++ Content]]></category>
+		<guid isPermaLink="false">https://harriscr7.github.io/imharris/?p=429</guid>
+
+					<description><![CDATA[In this tutorial, we will learn how to pass a single-dimensional and multidimensional array as a function parameter in C++ with the help of examples. In C++, we can pass arrays as an argument to a function. And, also we can return arrays from a function. Before you learn about passing arrays as a function [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<p>In this tutorial, we will learn how to pass a single-dimensional and multidimensional array as a function parameter in C++ with the help of examples.</p>
+
+
+
+<p id="introduction">In C++, we can pass arrays as an argument to a function. And, also we can return arrays from a function.</p>
+
+
+
+<p>Before you learn about passing arrays as a function argument, make sure you know about C++ Arrays and C++ Functions.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading" id="passing-array">Syntax for Passing Arrays as Function Parameters</h2>
+
+
+
+<p>The syntax for passing an array to a function is:</p>
+
+
+
+<pre class="wp-block-code"><code>returnType functionName(dataType arrayName&#91;arraySize]) {
+    // code
+}</code></pre>
+
+
+
+<p>Let&#8217;s see an example,</p>
+
+
+
+<pre class="wp-block-code"><code>int total(int marks&#91;5]) {
+    // code
+}</code></pre>
+
+
+
+<p>Here, we have passed an&nbsp;<code>int</code>&nbsp;type array named&nbsp;<var>marks</var>&nbsp;to the function&nbsp;<code>total()</code>. The size of the array is&nbsp;<var>5</var>.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h3 class="wp-block-heading" id="example1">Example 1: Passing One-dimensional Array to a Function</h3>
+
+
+
+<pre class="wp-block-code"><code>// C++ Program to display marks of 5 students
+
+#include &lt;iostream&gt;
+using namespace std;
+
+// declare function to display marks
+// take a 1d array as parameter
+void display(int m&#91;5]) {
+    cout &lt;&lt; "Displaying marks: " &lt;&lt; endl;
+
+    // display array elements    
+    for (int i = 0; i &lt; 5; ++i) {
+        cout &lt;&lt; "Student " &lt;&lt; i + 1 &lt;&lt; ": " &lt;&lt; m&#91;i] &lt;&lt; endl;
+    }
+}
+
+int main() {
+
+    // declare and initialize an array
+    int marks&#91;5] = {88, 76, 90, 61, 69};
+    
+    // call display function
+    // pass array as argument
+    display(marks);
+
+    return 0;
+}</code></pre>
+
+
+
+<p><a href="https://www.programiz.com/cpp-programming/online-compiler" target="_blank" rel="noreferrer noopener">Run Code</a></p>
+
+
+
+<p><strong>Output</strong></p>
+
+
+
+<pre class="wp-block-preformatted"><samp>Displaying marks: 
+Student 1: 88
+Student 2: 76
+Student 3: 90
+Student 4: 61
+Student 5: 69</samp></pre>
+
+
+
+<p>Here,</p>
+
+
+
+<ol>
+<li>When we call a function by passing an array as the argument, only the name of the array is used.<code>display(marks);</code>Here, the argument&nbsp;<var>marks</var>&nbsp;represent the memory address of the first element of array&nbsp;<var>marks[5]</var>.</li>
+
+
+
+<li>However, notice the parameter of the&nbsp;<code>display()</code>&nbsp;function.<code>void display(int m[5])</code>Here, we use the full declaration of the array in the function parameter, including the square braces&nbsp;<code>[]</code>.</li>
+
+
+
+<li>The function parameter&nbsp;<code>int m[5]</code>&nbsp;converts to&nbsp;<code>int* m;</code>. This points to the same address pointed by the array&nbsp;<var>marks</var>. This means that when we manipulate&nbsp;<var>m[5]</var>&nbsp;in the function body, we are actually manipulating the original array&nbsp;<var>marks</var>.<br><br>C++ handles passing an array to a function in this way to save memory and time.</li>
+</ol>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h3 class="wp-block-heading" id="multidimensional-pass">Passing Multidimensional Array to a Function</h3>
+
+
+
+<p>We can also pass Multidimensional arrays as an argument to the function. For example,</p>
+
+
+
+<h3 class="wp-block-heading" id="example-2-passing-multidimensional-array-to-a-function">Example 2: Passing Multidimensional Array to a Function</h3>
+
+
+
+<pre class="wp-block-code"><code>// C++ Program to display the elements of two
+// dimensional array by passing it to a function
+
+#include &lt;iostream&gt;
+using namespace std;
+
+// define a function 
+// pass a 2d array as a parameter
+void display(int n&#91;]&#91;2]) {
+    cout &lt;&lt; "Displaying Values: " &lt;&lt; endl;
+    for (int i = 0; i &lt; 3; ++i) {
+        for (int j = 0; j &lt; 2; ++j) {
+            cout &lt;&lt; "num&#91;" &lt;&lt; i &lt;&lt; "]&#91;" &lt;&lt; j &lt;&lt; "]: " &lt;&lt; n&#91;i]&#91;j] &lt;&lt; endl;
+        }
+    }
+}
+
+int main() {
+
+    // initialize 2d array
+    int num&#91;3]&#91;2] = {
+        {3, 4},
+        {9, 5},
+        {7, 1}
+    };
+
+    // call the function
+    // pass a 2d array as an argument
+    display(num);
+
+    return 0;
+}<strong>
+</strong></code></pre>
+
+
+
+<p><a href="https://www.programiz.com/cpp-programming/online-compiler" target="_blank" rel="noreferrer noopener">Run Code</a></p>
+
+
+
+<p><strong>Output</strong></p>
+
+
+
+<pre class="wp-block-preformatted"><samp>Displaying Values: 
+num[0][0]: 3
+num[0][1]: 4
+num[1][0]: 9
+num[1][1]: 5
+num[2][0]: 7
+num[2][1]: 1</samp></pre>
+
+
+
+<p>In the above program, we have defined a function named&nbsp;<code>display()</code>. The function takes a two dimensional array,&nbsp;<code>int n[][2]</code>&nbsp;as its argument and prints the elements of the array.</p>
+
+
+
+<p>While calling the function, we only pass the name of the two dimensional array as the function argument&nbsp;<code>display(num)</code>.</p>
+
+
+
+<p><strong>Note</strong>: It is not mandatory to specify the number of rows in the array. However, the number of columns should always be specified. This is why we have used&nbsp;<code>int n[][2]</code>.</p>
+
+
+
+<p>We can also pass arrays with more than 2 dimensions as a function argument.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading" id="returning-array">C++ Returning an Array From a Function</h2>
+
+
+
+<p>We can also return an array from the function. However, the actual array is not returned. Instead the address of the first element of the array is returned with the help of pointers.</p>
+
+
+
+<p>We will learn about returning arrays from a function in the coming tutorials.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://harriscr7.github.io/imharris/passing-array-to-a-function/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Multidimensional Arrays</title>
+		<link>https://harriscr7.github.io/imharris/multidimensional-arrays/</link>
+					<comments>https://harriscr7.github.io/imharris/multidimensional-arrays/#respond</comments>
+		
+		<dc:creator><![CDATA[harrixxaeed]]></dc:creator>
+		<pubDate>Sun, 21 May 2023 17:25:55 +0000</pubDate>
+				<category><![CDATA[Arrays & Strings]]></category>
+		<category><![CDATA[C++ Content]]></category>
+		<guid isPermaLink="false">https://harriscr7.github.io/imharris/?p=427</guid>
+
+					<description><![CDATA[In this tutorial, we&#8217;ll learn about multi-dimensional arrays in C++. More specifically, how to declare them, access them, and use them efficiently in our program. In C++, we can create an array of an array, known as a multidimensional array. For example: Here,&#160;x&#160;is a two-dimensional array. It can hold a maximum of 12 elements. We can think [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<p>In this tutorial, we&#8217;ll learn about multi-dimensional arrays in C++. More specifically, how to declare them, access them, and use them efficiently in our program.</p>
+
+
+
+<p id="introduction">In C++, we can create an array of an array, known as a multidimensional array. For example:</p>
+
+
+
+<pre class="wp-block-code"><code>int x&#91;3]&#91;4];</code></pre>
+
+
+
+<p>Here,&nbsp;<var>x</var>&nbsp;is a two-dimensional array. It can hold a maximum of 12 elements.</p>
+
+
+
+<p>We can think of this array as a table with 3 rows and each row has 4 columns as shown below.</p>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://cdn.programiz.com/sites/tutorial2program/files/cpp-two-dimensional-array.png" alt="C++ two dimensional array" title="C++ two dimensional array"/><figcaption class="wp-element-caption">Elements in two-dimensional array in C++ Programming</figcaption></figure>
+
+
+
+<p>Three-dimensional arrays also work in a similar way. For example:</p>
+
+
+
+<pre class="wp-block-code"><code>float x&#91;2]&#91;4]&#91;3];</code></pre>
+
+
+
+<p>This array&nbsp;<var>x</var>&nbsp;can hold a maximum of 24 elements.</p>
+
+
+
+<p>We can find out the total number of elements in the array simply by multiplying its dimensions:</p>
+
+
+
+<pre class="wp-block-code"><code>2 x 4 x 3 = 24</code></pre>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading" id="initialization">Multidimensional Array Initialization</h2>
+
+
+
+<p>Like a normal array, we can initialize a multidimensional array in more than one way.</p>
+
+
+
+<h3 class="wp-block-heading" id="1-initialization-of-two-dimensional-array">1. Initialization of two-dimensional array</h3>
+
+
+
+<pre class="wp-block-code"><code>int test&#91;2]&#91;3] = {2, 4, 5, 9, 0, 19};</code></pre>
+
+
+
+<p>The above method is not preferred. A better way to initialize this array with the same array elements is given below:</p>
+
+
+
+<pre class="wp-block-code"><code>int  test&#91;2]&#91;3] = { {2, 4, 5}, {9, 0, 19}};</code></pre>
+
+
+
+<p>This array has 2 rows and 3 columns, which is why we have two rows of elements with 3 elements each.</p>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://cdn.programiz.com/sites/tutorial2program/files/cpp-two-dimensional-array-initialization.png" alt="C++ Two-dimensional array initialization" title="C++ Two-dimensional array initialization"/><figcaption class="wp-element-caption">Initializing a two-dimensional array in C++</figcaption></figure>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h3 class="wp-block-heading" id="2-initialization-of-three-dimensional-array">2. Initialization of three-dimensional array</h3>
+
+
+
+<pre class="wp-block-code"><code>int test&#91;2]&#91;3]&#91;4] = {3, 4, 2, 3, 0, -3, 9, 11, 23, 12, 23, 
+                 2, 13, 4, 56, 3, 5, 9, 3, 5, 5, 1, 4, 9};</code></pre>
+
+
+
+<p>This is not a good way of initializing a three-dimensional array. A better way to initialize this array is:</p>
+
+
+
+<pre class="wp-block-code"><code>int test&#91;2]&#91;3]&#91;4] = { 
+                     { {3, 4, 2, 3}, {0, -3, 9, 11}, {23, 12, 23, 2} },
+                     { {13, 4, 56, 3}, {5, 9, 3, 5}, {5, 1, 4, 9} }
+                 };</code></pre>
+
+
+
+<p>Notice the dimensions of this three-dimensional array.</p>
+
+
+
+<p>The first dimension has the value&nbsp;<code>2</code>. So, the two elements comprising the first dimension are:</p>
+
+
+
+<pre class="wp-block-preformatted">Element 1 = { {3, 4, 2, 3}, {0, -3, 9, 11}, {23, 12, 23, 2} }
+Element 2 = { {13, 4, 56, 3}, {5, 9, 3, 5}, {5, 1, 4, 9} }
+</pre>
+
+
+
+<p>The second dimension has the value&nbsp;<code>3</code>. Notice that each of the elements of the first dimension has three elements each:</p>
+
+
+
+<pre class="wp-block-preformatted">{3, 4, 2, 3}, {0, -3, 9, 11} and {23, 12, 23, 2} for Element 1.
+{13, 4, 56, 3}, {5, 9, 3, 5} and {5, 1, 4, 9} for Element 2.</pre>
+
+
+
+<p>Finally, there are four&nbsp;<code>int</code>&nbsp;numbers inside each of the elements of the second dimension:</p>
+
+
+
+<pre class="wp-block-preformatted">{3, 4, 2, 3}
+{0, -3, 9, 11}
+... .. ...
+... .. ...</pre>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading" id="example1">Example 1: Two Dimensional Array</h2>
+
+
+
+<pre class="wp-block-code"><code>// C++ Program to display all elements
+// of an initialised two dimensional array
+
+#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    int test&#91;3]&#91;2] = {{2, -5},
+                      {4, 0},
+                      {9, 1}};
+
+    // use of nested for loop
+    // access rows of the array
+    for (int i = 0; i &lt; 3; ++i) {
+
+        // access columns of the array
+        for (int j = 0; j &lt; 2; ++j) {
+            cout &lt;&lt; "test&#91;" &lt;&lt; i &lt;&lt; "]&#91;" &lt;&lt; j &lt;&lt; "] = " &lt;&lt; test&#91;i]&#91;j] &lt;&lt; endl;
+        }
+    }
+
+    return 0;
+}</code></pre>
+
+
+
+<p><a href="https://www.programiz.com/cpp-programming/online-compiler" target="_blank" rel="noreferrer noopener">Run Code</a></p>
+
+
+
+<p><strong>Output</strong></p>
+
+
+
+<pre class="wp-block-preformatted"><samp>test[0][0] = 2
+test[0][1] = -5
+test[1][0] = 4
+test[1][1] = 0
+test[2][0] = 9
+test[2][1] = 1</samp></pre>
+
+
+
+<p>In the above example, we have initialized a two-dimensional&nbsp;<code>int</code>&nbsp;array named&nbsp;<var>test</var>&nbsp;that has 3 &#8220;rows&#8221; and 2 &#8220;columns&#8221;.</p>
+
+
+
+<p>Here, we have used the nested&nbsp;<code>for</code>&nbsp;loop to display the array elements.</p>
+
+
+
+<ul>
+<li>the outer loop from&nbsp;<code>i == 0</code>&nbsp;to&nbsp;<code>i == 2</code>&nbsp;access the rows of the array</li>
+
+
+
+<li>the inner loop from&nbsp;<code>j == 0</code>&nbsp;to&nbsp;<code>j == 1</code>&nbsp;access the columns of the array</li>
+</ul>
+
+
+
+<p>Finally, we print the array elements in each iteration.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading" id="example2">Example 2: Taking Input for Two Dimensional Array</h2>
+
+
+
+<pre class="wp-block-code"><code>#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    int numbers&#91;2]&#91;3];
+
+    cout &lt;&lt; "Enter 6 numbers: " &lt;&lt; endl;
+
+    // Storing user input in the array
+    for (int i = 0; i &lt; 2; ++i) {
+        for (int j = 0; j &lt; 3; ++j) {
+            cin &gt;&gt; numbers&#91;i]&#91;j];
+        }
+    }
+
+    cout &lt;&lt; "The numbers are: " &lt;&lt; endl;
+
+    //  Printing array elements
+    for (int i = 0; i &lt; 2; ++i) {
+        for (int j = 0; j &lt; 3; ++j) {
+            cout &lt;&lt; "numbers&#91;" &lt;&lt; i &lt;&lt; "]&#91;" &lt;&lt; j &lt;&lt; "]: " &lt;&lt; numbers&#91;i]&#91;j] &lt;&lt; endl;
+        }
+    }
+
+    return 0;
+}</code></pre>
+
+
+
+<p><a href="https://www.programiz.com/cpp-programming/online-compiler" target="_blank" rel="noreferrer noopener">Run Code</a></p>
+
+
+
+<p><strong>Output</strong></p>
+
+
+
+<pre class="wp-block-preformatted"><samp>Enter 6 numbers: 
+1
+2
+3
+4
+5
+6
+The numbers are:
+numbers[0][0]: 1
+numbers[0][1]: 2
+numbers[0][2]: 3
+numbers[1][0]: 4
+numbers[1][1]: 5
+numbers[1][2]: 6</samp></pre>
+
+
+
+<p>Here, we have used a nested&nbsp;<code>for</code>&nbsp;loop to take the input of the 2d array. Once all the input has been taken, we have used another nested&nbsp;<code>for</code>&nbsp;loop to print the array members.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading" id="example3">Example 3: Three Dimensional Array</h2>
+
+
+
+<pre class="wp-block-code"><code>// C++ Program to Store value entered by user in
+// three dimensional array and display it.
+
+#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    // This array can store upto 12 elements (2x3x2)
+    int test&#91;2]&#91;3]&#91;2] = {
+                            {
+                                {1, 2},
+                                {3, 4},
+                                {5, 6}
+                            }, 
+                            {
+                                {7, 8}, 
+                                {9, 10}, 
+                                {11, 12}
+                            }
+                        };
+
+    // Displaying the values with proper index.
+    for (int i = 0; i &lt; 2; ++i) {
+        for (int j = 0; j &lt; 3; ++j) {
+            for (int k = 0; k &lt; 2; ++k) {
+                cout &lt;&lt; "test&#91;" &lt;&lt; i &lt;&lt; "]&#91;" &lt;&lt; j &lt;&lt; "]&#91;" &lt;&lt; k &lt;&lt; "] = " &lt;&lt; test&#91;i]&#91;j]&#91;k] &lt;&lt; endl;
+            }
+        }
+    }
+
+    return 0;
+}</code></pre>
+
+
+
+<p><a href="https://www.programiz.com/cpp-programming/online-compiler" target="_blank" rel="noreferrer noopener">Run Code</a></p>
+
+
+
+<p><strong>Output</strong></p>
+
+
+
+<pre class="wp-block-preformatted"><samp>test[0][0][0] = 1
+test[0][0][1] = 2
+test[0][1][0] = 3
+test[0][1][1] = 4
+test[0][2][0] = 5
+test[0][2][1] = 6
+test[1][0][0] = 7
+test[1][0][1] = 8
+test[1][1][0] = 9
+test[1][1][1] = 10
+test[1][2][0] = 11
+test[1][2][1] = 12</samp></pre>
+
+
+
+<p>The basic concept of printing elements of a 3d array is similar to that of a 2d array.</p>
+
+
+
+<p>However, since we are manipulating 3 dimensions, we use a nested for loop with 3 total loops instead of just 2:</p>
+
+
+
+<ul>
+<li>the outer loop from&nbsp;<code>i == 0</code>&nbsp;to&nbsp;<code>i == 1</code>&nbsp;accesses the first dimension&nbsp;of the array</li>
+
+
+
+<li>the middle&nbsp;loop from&nbsp;<code>j == 0</code>&nbsp;to&nbsp;<code>j == 2</code>&nbsp;accesses the second dimension&nbsp;of the array</li>
+
+
+
+<li>the innermost&nbsp;loop from&nbsp;<code>k == 0</code>&nbsp;to&nbsp;<code>k == 1</code>&nbsp;accesses the third dimension&nbsp;of the array</li>
+</ul>
+
+
+
+<p>As we can see, the complexity of the array increases exponentially with the increase in dimensions.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://harriscr7.github.io/imharris/multidimensional-arrays/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>One Dimensional Arrays</title>
+		<link>https://harriscr7.github.io/imharris/one-dimensional-arrays/</link>
+					<comments>https://harriscr7.github.io/imharris/one-dimensional-arrays/#respond</comments>
+		
+		<dc:creator><![CDATA[harrixxaeed]]></dc:creator>
+		<pubDate>Sun, 21 May 2023 17:24:01 +0000</pubDate>
+				<category><![CDATA[Arrays & Strings]]></category>
+		<category><![CDATA[C++ Content]]></category>
+		<guid isPermaLink="false">https://harriscr7.github.io/imharris/?p=424</guid>
+
+					<description><![CDATA[In this tutorial, we will learn to work with arrays. We will learn to declare, initialize, and access array elements in C++ programming with the help of examples. In C++, an array is a variable that can store multiple values of the same type. For example, Suppose a class has 27 students, and we need [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<p>In this tutorial, we will learn to work with arrays. We will learn to declare, initialize, and access array elements in C++ programming with the help of examples.</p>
+
+
+
+<p id="introduction">In C++, an array is a variable that can store multiple values of the same type. For example,</p>
+
+
+
+<p>Suppose a class has 27 students, and we need to store the grades of all of them. Instead of creating 27 separate variables, we can simply create an array:</p>
+
+
+
+<pre class="wp-block-code"><code>double grade&#91;27];</code></pre>
+
+
+
+<p>Here,&nbsp;<var>grade</var>&nbsp;is an array that can hold a maximum of 27 elements of&nbsp;<code>double</code>&nbsp;type.</p>
+
+
+
+<p>In C++, the size and type of arrays cannot be changed after its declaration.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading" id="declaration">C++ Array Declaration</h2>
+
+
+
+<pre class="wp-block-code"><code>dataType arrayName&#91;arraySize];</code></pre>
+
+
+
+<p>For example,</p>
+
+
+
+<pre class="wp-block-code"><code>int x&#91;6];</code></pre>
+
+
+
+<p>Here,</p>
+
+
+
+<ul>
+<li><code>int</code>&nbsp;&#8211; type of element to be stored</li>
+
+
+
+<li><var>x</var>&nbsp;&#8211; name of the array</li>
+
+
+
+<li><code>6</code>&nbsp;&#8211; size of the array</li>
+</ul>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading" id="elements">Access Elements in C++ Array</h2>
+
+
+
+<p>In C++, each element in an array is associated with a number. The number is known as an array index. We can access elements of an array by using those indices.</p>
+
+
+
+<pre class="wp-block-code"><code>// syntax to access array elements
+array&#91;index];</code></pre>
+
+
+
+<p>Consider the array&nbsp;<var>x</var>&nbsp;we have seen above.</p>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://cdn.programiz.com/sites/tutorial2program/files/cpp-array-declaration.png" alt="C++ Array Declaration" title="Elements of an array in C++"/><figcaption class="wp-element-caption">Elements of an array in C++</figcaption></figure>
+
+
+
+<h3 class="wp-block-heading" id="few-things-to-remember">Few Things to Remember:</h3>
+
+
+
+<ul>
+<li>The array indices start with&nbsp;<code>0</code>. Meaning&nbsp;<var>x[0]</var>&nbsp;is the first element stored at index&nbsp;<code>0</code>.</li>
+
+
+
+<li>If the size of an array is&nbsp;<code>n</code>, the last element is stored at index&nbsp;<code>(n-1)</code>. In this example,&nbsp;<var>x[5]</var>&nbsp;is the last element.</li>
+
+
+
+<li>Elements of an array have consecutive addresses. For example, suppose the starting address of&nbsp;<code>x[0]</code>&nbsp;is&nbsp;<strong>2120</strong>.<br><br>Then, the address of the next element&nbsp;<code>x[1]</code>&nbsp;will be&nbsp;<strong>2124</strong>, the address of&nbsp;<code>x[2]</code>&nbsp;will be&nbsp;<strong>2128</strong>, and so on.<br><br>Here, the size of each element is increased by&nbsp;<strong>4</strong>. This is because the size of&nbsp;<code>int</code>&nbsp;is 4 bytes.</li>
+</ul>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading" id="initialization">C++ Array Initialization</h2>
+
+
+
+<p>In C++, it&#8217;s possible to initialize an array during declaration. For example,</p>
+
+
+
+<pre class="wp-block-code"><code>// declare and initialize and array
+int x&#91;6] = {19, 10, 8, 17, 9, 15};</code></pre>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://cdn.programiz.com/sites/tutorial2program/files/cpp-array-initialization.png" alt="C++ Array Initialization" title="C++ Array elements and their data"/><figcaption class="wp-element-caption">C++ Array elements and their data</figcaption></figure>
+
+
+
+<p>Another method to initialize array during declaration:</p>
+
+
+
+<pre class="wp-block-code"><code>// declare and initialize an array
+int x&#91;] = {19, 10, 8, 17, 9, 15};</code></pre>
+
+
+
+<p>Here, we have not mentioned the size of the array. In such cases, the compiler automatically computes the size.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h3 class="wp-block-heading" id="empty-members">C++ Array With Empty Members</h3>
+
+
+
+<p>In C++, if an array has a size&nbsp;<code>n</code>, we can store upto&nbsp;<var>n</var>&nbsp;number of elements in the array. However, what will happen if we store less than&nbsp;<var>n</var>&nbsp;number of elements.</p>
+
+
+
+<p>For example,</p>
+
+
+
+<pre class="wp-block-code"><code>// store only 3 elements in the array
+int x&#91;6] = {19, 10, 8};</code></pre>
+
+
+
+<p>Here, the array&nbsp;<var>x</var>&nbsp;has a size of&nbsp;<code>6</code>. However, we have initialized it with only 3 elements.</p>
+
+
+
+<p>In such cases, the compiler assigns random values to the remaining places. Oftentimes, this random value is simply&nbsp;<code>0</code>.</p>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://cdn.programiz.com/sites/tutorial2program/files/cpp-array-empty-members.png" alt="C++ Array with empty members" title="C++ Array with empty members"/><figcaption class="wp-element-caption">Empty array members are automatically assigned the value 0</figcaption></figure>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading" id="insert-elements">How to insert and print array elements?</h2>
+
+
+
+<pre class="wp-block-code"><code>int mark&#91;5] = {19, 10, 8, 17, 9}
+
+// change 4th element to 9
+mark&#91;3] = 9;
+
+// take input from the user
+// store the value at third position
+cin &gt;&gt; mark&#91;2];
+
+
+// take input from the user
+// insert at ith position
+cin &gt;&gt; mark&#91;i-1];
+
+// print first element of the array
+cout &lt;&lt; mark&#91;0];
+
+// print ith element of the array
+cout &gt;&gt; mark&#91;i-1];</code></pre>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading" id="example1">Example 1: Displaying Array Elements</h2>
+
+
+
+<pre class="wp-block-code"><code>#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+
+  int numbers&#91;5] = {7, 5, 6, 12, 35};
+
+  cout &lt;&lt; "The numbers are: ";
+
+  //  Printing array elements
+  // using range based for loop
+  for (const int &amp;n : numbers) {
+    cout &lt;&lt; n &lt;&lt; "  ";
+  }
+
+  cout &lt;&lt; "\nThe numbers are: ";
+
+  //  Printing array elements
+  // using traditional for loop
+  for (int i = 0; i &lt; 5; ++i) {
+    cout &lt;&lt; numbers&#91;i] &lt;&lt; "  ";
+  }
+
+  return 0;
+}</code></pre>
+
+
+
+<p><a href="https://www.programiz.com/cpp-programming/online-compiler" target="_blank" rel="noreferrer noopener">Run Code</a></p>
+
+
+
+<p><strong>Output</strong></p>
+
+
+
+<pre class="wp-block-preformatted"><samp>The numbers are: 7  5  6  12  35
+The numbers are: 7  5  6  12  35</samp></pre>
+
+
+
+<p>Here, we have used a&nbsp;<code>for</code>&nbsp;loop to iterate from&nbsp;<code>i = 0</code>&nbsp;to&nbsp;<code>i = 4</code>. In each iteration, we have printed&nbsp;<code>numbers[i]</code>.</p>
+
+
+
+<p>We again used a range-based <code>for</code> loop to print out the elements of the array. To learn more about this loop, check C++ Ranged for Loop.</p>
+
+
+
+<p><strong>Note:</strong>&nbsp;In our range-based loop, we have used the code&nbsp;<code>const int &amp;n</code>&nbsp;instead of&nbsp;<code>int n</code>&nbsp;as the range declaration. However, the&nbsp;<code>const int &amp;n</code>&nbsp;is more preferred because:</p>
+
+
+
+<ol>
+<li>Using&nbsp;<code>int n</code>&nbsp;simply copies the array elements to the variable&nbsp;<var>n</var>&nbsp;during each iteration. This is not memory-efficient.<br><br><var>&amp;n</var>, however, uses the memory address of the array elements to access their data without copying them to a new variable. This is memory-efficient.</li>
+
+
+
+<li>We are simply printing the array elements, not modifying them. Therefore, we use&nbsp;<code>const</code>&nbsp;so as not to accidentally change the values of the array.</li>
+</ol>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading" id="example2">Example 2: Take Inputs from User and Store Them in an Array</h2>
+
+
+
+<pre class="wp-block-code"><code>#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+
+  int numbers&#91;5];
+
+  cout &lt;&lt; "Enter 5 numbers: " &lt;&lt; endl;
+
+  //  store input from user to array
+  for (int i = 0; i &lt; 5; ++i) {
+    cin &gt;&gt; numbers&#91;i];
+  }
+
+  cout &lt;&lt; "The numbers are: ";
+
+  //  print array elements
+  for (int n = 0; n &lt; 5; ++n) {
+    cout &lt;&lt; numbers&#91;n] &lt;&lt; "  ";
+  }
+
+  return 0;
+}</code></pre>
+
+
+
+<p><a href="https://www.programiz.com/cpp-programming/online-compiler" target="_blank" rel="noreferrer noopener">Run Code</a></p>
+
+
+
+<p><strong>Output</strong></p>
+
+
+
+<pre class="wp-block-preformatted"><samp>Enter 5 numbers: 
+11
+12
+13
+14
+15
+The numbers are: 11  12  13  14  15</samp></pre>
+
+
+
+<p>Once again, we have used a&nbsp;<code>for</code>&nbsp;loop to iterate from&nbsp;<code>i = 0</code>&nbsp;to&nbsp;<code>i = 4</code>. In each iteration, we took an input from the user and stored it in&nbsp;<code>numbers[i]</code>.</p>
+
+
+
+<p>Then, we used another&nbsp;<code>for</code>&nbsp;loop to print all the array elements.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading" id="example3">Example 3: Display Sum and Average of Array Elements Using for Loop</h2>
+
+
+
+<pre class="wp-block-code"><code>#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    
+  // initialize an array without specifying size
+  double numbers&#91;] = {7, 5, 6, 12, 35, 27};
+
+  double sum = 0;
+  double count = 0;
+  double average;
+
+  cout &lt;&lt; "The numbers are: ";
+
+  //  print array elements
+  // use of range-based for loop
+  for (const double &amp;n : numbers) {
+    cout &lt;&lt; n &lt;&lt; "  ";
+
+    //  calculate the sum
+    sum += n;
+
+    // count the no. of array elements
+    ++count;
+  }
+
+  // print the sum
+  cout &lt;&lt; "\nTheir Sum = " &lt;&lt; sum &lt;&lt; endl;
+
+  // find the average
+  average = sum / count;
+  cout &lt;&lt; "Their Average = " &lt;&lt; average &lt;&lt; endl;
+
+  return 0;
+}</code></pre>
+
+
+
+<p><a href="https://www.programiz.com/cpp-programming/online-compiler" target="_blank" rel="noreferrer noopener">Run Code</a></p>
+
+
+
+<p><strong>Output</strong></p>
+
+
+
+<pre class="wp-block-preformatted"><samp>The numbers are: 7  5  6  12  35  27
+Their Sum = 92
+Their Average = 15.3333</samp></pre>
+
+
+
+<p>In this program:</p>
+
+
+
+<ol>
+<li>We have initialized a&nbsp;<var>double</var>&nbsp;array named&nbsp;<var>numbers</var>&nbsp;but without specifying its size. We also declared three double variables&nbsp;<var>sum</var>,&nbsp;<var>count</var>, and&nbsp;<var>average</var>.<br><br>Here,&nbsp;<code>sum =0</code>&nbsp;and&nbsp;<code>count = 0</code>.</li>
+
+
+
+<li>Then we used a range-based&nbsp;<code>for</code>&nbsp;loop to print the array elements. In each iteration of the loop, we add the current array element to&nbsp;<var>sum</var>.</li>
+
+
+
+<li>We also increase the value of&nbsp;<var>count</var>&nbsp;by&nbsp;<code>1</code>&nbsp;in each iteration, so that we can get the size of the array by the end of the for loop.</li>
+
+
+
+<li>After printing all the elements, we print the sum and the average of all the numbers. The average of the numbers is given by&nbsp;<code>average = sum / count;</code></li>
+</ol>
+
+
+
+<p><strong>Note:</strong>&nbsp;We used a ranged&nbsp;<code>for</code>&nbsp;loop instead of a normal&nbsp;<code>for</code>&nbsp;loop.</p>
+
+
+
+<p>A normal&nbsp;<code>for</code>&nbsp;loop requires us to specify the number of iterations, which is given by the size of the array.</p>
+
+
+
+<p>But a ranged&nbsp;<code>for</code>&nbsp;loop does not require such specifications.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading" id="out-bound">C++ Array Out of Bounds</h2>
+
+
+
+<p>If we declare an array of size&nbsp;<strong>10</strong>, then the array will contain elements from index&nbsp;<strong>0</strong>&nbsp;to&nbsp;<strong>9</strong>.</p>
+
+
+
+<p>However, if we try to access the element at index&nbsp;<strong>10</strong>&nbsp;or more than&nbsp;<strong>10</strong>, it will result in Undefined Behaviour.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://harriscr7.github.io/imharris/one-dimensional-arrays/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>
